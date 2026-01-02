@@ -11,11 +11,11 @@ const visioOptions = [
   {
     id: 'visio-30',
     title: 'Consultation Visio 30 min',
-    price: 45,
+    price: 50,
     duration: '30 minutes',
     description: 'Idéal pour une question précise ou un tirage rapide',
     features: [
-      'Consultation en direct par vidéo',
+      'Consultation en direct (SMS, vocal ou visio)',
       'Tirage de cartes personnalisé',
       'Réponses à vos questions',
       'Conseils et guidance',
@@ -24,11 +24,11 @@ const visioOptions = [
   {
     id: 'visio-45',
     title: 'Consultation Visio 45 min',
-    price: 65,
+    price: 70,
     duration: '45 minutes',
     description: 'Pour approfondir plusieurs aspects de votre vie',
     features: [
-      'Consultation en direct par vidéo',
+      'Consultation en direct (SMS, vocal ou visio)',
       'Tirage approfondi',
       'Plusieurs questions possibles',
       'Guidance détaillée',
@@ -39,11 +39,11 @@ const visioOptions = [
   {
     id: 'visio-60',
     title: 'Consultation Visio 1h',
-    price: 85,
+    price: 90,
     duration: '60 minutes',
     description: 'Pour une séance complète et transformatrice',
     features: [
-      'Consultation en direct par vidéo',
+      'Consultation en direct (SMS, vocal ou visio)',
       'Tirage complet multi-thématique',
       'Questions illimitées',
       'Guidance approfondie',
