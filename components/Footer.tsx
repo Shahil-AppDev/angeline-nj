@@ -73,18 +73,10 @@ export default function Footer() {
                   contact@angeline-nj.xyz
                 </a>
               </li>
-              <li>
-                <a
-                  href="tel:+33123456789"
-                  className="hover:text-gold transition-colors hover:drop-shadow-[0_0_6px_var(--gold-glow)]"
-                >
-                  +33 1 23 45 67 89
-                </a>
-              </li>
             </ul>
             <div className="flex space-x-4 mt-6">
               <a
-                href="https://www.tiktok.com/@angelinenj"
+                href="https://www.tiktok.com/@angeline.nj"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-surface hover:bg-surface flex items-center justify-center transition-all border border-border hover:border-gold-2 hover:shadow-[0_0_12px_var(--gold-glow)]"
@@ -95,7 +87,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.instagram.com/reiki.by.angie"
+                href="https://www.instagram.com/Angeline.NJ"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-surface hover:bg-surface flex items-center justify-center transition-all border border-border hover:border-gold-2 hover:shadow-[0_0_12px_var(--gold-glow)]"
