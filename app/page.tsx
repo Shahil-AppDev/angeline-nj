@@ -121,8 +121,8 @@ export default function Home() {
                         transition={{ duration: 0.6, delay: 0.4 + (i - 1) * 0.1 }}
                       >
                         <NextImage
-                          src="/mystica-dos.jpg"
-                          alt="Oracle Mystica"
+                          src="/mystica-pentagramme.jpg"
+                          alt="Le Mystica - Oracle"
                           fill
                           className="object-cover"
                           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 33vw, 200px"
