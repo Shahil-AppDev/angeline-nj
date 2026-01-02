@@ -85,9 +85,10 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "votre-code-google-search-console",
-  },
+  // À remplacer par le vrai code de vérification Google Search Console si disponible
+  // verification: {
+  //   google: "votre-code-google-search-console",
+  // },
 };
 
 export default function RootLayout({
