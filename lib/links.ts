@@ -5,8 +5,10 @@
 
 export const EXTERNAL_LINKS = {
   // Réseaux sociaux
-  tiktok: 'https://www.tiktok.com/@angelinenj',
-  instagram: 'https://www.instagram.com/reiki.by.angie',
+  tiktok: 'https://www.tiktok.com/@angelinenj?_r=1&_t=ZN-92jl0gNLqDO',
+  instagram: 'https://www.instagram.com/reiki.by.angie?igsh=MXMxMGNtejZhN3QxbA==',
+  youtube: 'https://youtube.com/@angelinenj-j7z?si=csJ4O1SUYl2SOX0K',
+  facebook: 'https://www.facebook.com/share/1AdgYgoytY/',
   
   // Réservation (à configurer selon le système choisi)
   booking: '/prendre-rdv', // ou URL externe type Calendly

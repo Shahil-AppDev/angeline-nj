@@ -76,7 +76,7 @@ export default function Footer() {
             </ul>
             <div className="flex space-x-4 mt-6">
               <a
-                href="https://www.tiktok.com/@angeline.nj"
+                href="https://www.tiktok.com/@angelinenj?_r=1&_t=ZN-92jl0gNLqDO"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-surface hover:bg-surface flex items-center justify-center transition-all border border-border hover:border-gold-2 hover:shadow-[0_0_12px_var(--gold-glow)]"
@@ -87,7 +87,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.instagram.com/Angeline.NJ"
+                href="https://www.instagram.com/reiki.by.angie?igsh=MXMxMGNtejZhN3QxbA=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-surface hover:bg-surface flex items-center justify-center transition-all border border-border hover:border-gold-2 hover:shadow-[0_0_12px_var(--gold-glow)]"

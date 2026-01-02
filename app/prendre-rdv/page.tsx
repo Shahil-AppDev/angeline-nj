@@ -35,7 +35,7 @@ export default function PrendreRdvPage() {
               
               <div className="space-y-6">
                 <a
-                  href="https://www.instagram.com/Angeline.NJ"
+                  href="https://www.instagram.com/reiki.by.angie?igsh=MXMxMGNtejZhN3QxbA=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center space-x-4 p-4 bg-surface rounded-lg hover:bg-surface/80 transition-all border border-border hover:border-gold-2"
@@ -45,12 +45,12 @@ export default function PrendreRdvPage() {
                   </svg>
                   <div className="text-left">
                     <div className="font-semibold text-text">Instagram</div>
-                    <div className="text-sm text-muted">@Angeline.NJ</div>
+                    <div className="text-sm text-muted">@reiki.by.angie</div>
                   </div>
                 </a>
 
                 <a
-                  href="https://www.tiktok.com/@angeline.nj"
+                  href="https://www.tiktok.com/@angelinenj?_r=1&_t=ZN-92jl0gNLqDO"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center space-x-4 p-4 bg-surface rounded-lg hover:bg-surface/80 transition-all border border-border hover:border-gold-2"
@@ -60,7 +60,7 @@ export default function PrendreRdvPage() {
                   </svg>
                   <div className="text-left">
                     <div className="font-semibold text-text">TikTok</div>
-                    <div className="text-sm text-muted">@angeline.nj</div>
+                    <div className="text-sm text-muted">@angelinenj</div>
                   </div>
                 </a>
 
