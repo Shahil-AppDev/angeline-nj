@@ -119,7 +119,7 @@ export default function Home() {
                   >
                     <NextImage
                       src="/angeline-cartes-volantes.jpg"
-                      alt="Angeline NJ - Cartes de tarot"
+                      alt="Angeline NJ - Oracles divinatoires"
                       fill
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 400px"

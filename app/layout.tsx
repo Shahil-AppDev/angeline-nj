@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "voyance bienveillante",
     "reiki à distance",
     "soin énergétique",
-    "tarot de marseille",
+    "oracles divinatoires",
     "oracle divination",
     "éveil spirituel",
     "Angeline NJ",

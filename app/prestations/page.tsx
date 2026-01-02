@@ -125,10 +125,10 @@ export default function PrestationsPage() {
           >
             <h2 className="text-gold font-title text-center mb-8">Votre Accompagnement en Cartomancie et Voyance</h2>
             <p>
-              La <strong>voyance</strong> et la guidance spirituelle sont des outils précieux pour naviguer dans les eaux parfois troubles de l'existence. Chaque consultation que je propose est conçue comme un miroir de votre âme, permettant de mettre en lumière les dynamiques invisibles qui influencent votre quotidien. Que ce soit pour des questions sentimentales, professionnelles ou un besoin de reconnexion personnelle, mes tirages offrent une perspective claire et bienveillante.
+              La <strong>voyance</strong> et la guidance spirituelle sont des outils précieux pour naviguer dans les eaux parfois troubles de l'existence. Chaque consultation que je propose est conçue comme un miroir de votre âme, permettant de mettre en lumière les dynamiques invisibles qui influencent votre quotidien. Que ce soit pour des questions sentimentales ou professionnelles, mes tirages offrent une perspective claire et bienveillante.
             </p>
             <p>
-              Mon approche de la <strong>cartomancie</strong> repose sur une alliance entre la symbolique traditionnelle (Tarot de Marseille, Oracles) et une intuition profonde. Il ne s'agit pas de prédire un futur figé, mais de vous redonner votre libre arbitre en identifiant les chemins les plus lumineux pour vous. Chaque séance est un espace de non-jugement où votre parole est accueillie avec respect et confidentialité.
+              Mon approche de la <strong>cartomancie</strong> repose sur une alliance entre mes oracles divinatoires personnalisés et une intuition profonde. Il ne s'agit pas de prédire un futur figé, mais de vous redonner votre libre arbitre en identifiant les chemins les plus lumineux pour vous. Chaque séance est un espace de non-jugement où votre parole est accueillie avec respect et confidentialité.
             </p>
           </motion.div>
         </div>

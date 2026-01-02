@@ -151,7 +151,7 @@ export default function AProposPage() {
               Ma pratique
             </h2>
             <p className="text-text-2 text-lg leading-relaxed mb-6">
-              Je travaille principalement avec le Tarot de Marseille et différents oracles, 
+              Je travaille principalement avec mes oracles divinatoires personnalisés, 
               que je choisis en fonction de votre question et de votre énergie du moment.
             </p>
             <p className="text-text-2 text-lg leading-relaxed mb-6">

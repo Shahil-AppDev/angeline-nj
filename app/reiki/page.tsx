@@ -106,7 +106,7 @@ export default function ReikiPage() {
               Comment se déroule votre séance énergétique ?
             </h3>
             <p className="text-text-2 text-lg leading-relaxed mb-6">
-              Chaque séance est unique. Durant le soin, vous pouvez ressentir des sensations de chaleur, de picotements, ou simplement un état de détente absolue. Certains voient des couleurs ou reçoivent des messages intuitifs, tandis que d'autres s'endorment paisiblement. Quel que soit votre ressenti, l'énergie travaille en profondeur pour réaligner votre fréquence vibratoire avec celle de la santé et de la joie.
+              Chaque séance est unique. Durant le soin, vous pouvez ressentir des sensations de chaleur, de picotements, ou simplement un état de détente absolue. Certains voient des couleurs ou reçoivent des messages intuitifs, tandis que d'autres s'endorment paisiblement. Quel que soit votre ressenti, l'énergie travaille en profondeur pour réaligner votre fréquence vibratoire avec celle du bien-être et de la joie.
             </p>
           </motion.div>
         </div>

@@ -147,7 +147,7 @@ export default function BoutiquePage() {
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 border-t border-gold-2/10 pt-16"
           >
             <div className="space-y-4">
-              <h3 className="text-gold font-title text-xl">Oracles & Tarots</h3>
+              <h3 className="text-gold font-title text-xl">Oracles Divinatoires</h3>
               <p className="text-text-2 text-sm leading-relaxed">
                 Découvrez une sélection d'oracles aux illustrations inspirantes et aux messages profonds. Des outils parfaits pour développer votre intuition et recevoir votre guidance quotidienne.
               </p>
