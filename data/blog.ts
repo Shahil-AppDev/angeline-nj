@@ -31,7 +31,7 @@ export const blogPosts: BlogPost[] = [
       "Tarot",
       "Débutant"
     ],
-    "cover": "🃏",
+    "cover": "/carte-1.png",
     "category": "Cartomancie",
     "sections": [
       {
@@ -802,7 +802,7 @@ export const blogPosts: BlogPost[] = [
       "Symbolisme",
       "Marseille"
     ],
-    "cover": "🃏",
+    "cover": "/carte-1.png",
     "category": "Cartomancie",
     "sections": [
       {

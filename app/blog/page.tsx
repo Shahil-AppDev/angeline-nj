@@ -6,6 +6,7 @@ import Card from '@/components/ui/Card';
 import Section from '@/components/ui/Section';
 import { blogPosts } from '@/data/blog';
 import { motion } from 'framer-motion';
+import NextImage from 'next/image';
 import Link from 'next/link';
 
 export default function BlogPage() {
@@ -42,8 +43,18 @@ export default function BlogPage() {
               >
                 <Link href={`/blog/${post.slug}`} className="block group h-full">
                   <Card hover className="h-full overflow-hidden flex flex-col">
-                    <div className="aspect-video bg-gradient-to-br from-gold-3/20 to-gold-2/20 flex items-center justify-center text-6xl border-b border-border">
-                      {post.cover}
+                    <div className="aspect-video bg-gradient-to-br from-gold-3/20 to-gold-2/20 flex items-center justify-center text-6xl border-b border-border relative overflow-hidden">
+                      {post.cover.startsWith('/') ? (
+                        <NextImage
+                          src={post.cover}
+                          alt={post.title}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        />
+                      ) : (
+                        post.cover
+                      )}
                     </div>
                     <div className="p-6 flex flex-col flex-1">
                       <div className="flex flex-wrap gap-2 mb-3">
