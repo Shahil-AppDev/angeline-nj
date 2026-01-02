@@ -6,8 +6,8 @@ export interface Prestation {
   badge: string;
   shortDescription: string;
   price: string;
-  duration: string;
   format: string;
+  oldSiteUrl: string;
   intro: string;
   forWho: string[];
   whatYouGet: string[];
@@ -32,8 +32,8 @@ export const prestations: Prestation[] = [
     badge: 'À distance',
     shortDescription: 'Obtenez une réponse oui/non à votre question précise (hors domaine sentimental).',
     price: '10€',
-    duration: '15-20 min',
     format: 'Réponse écrite ou audio envoyée sous 24h',
+    oldSiteUrl: 'https://angeline-nj.com/produit/tirage-question-precise-hors-sentimentale-oui-non/',
     intro: 'Vous avez besoin d\'une réponse rapide et claire à une question précise ? Ce tirage vous apporte une guidance directe sous forme de oui/non avec une brève explication.',
     forWho: [
       'Vous avez une question simple nécessitant une réponse claire',
@@ -94,8 +94,8 @@ export const prestations: Prestation[] = [
     badge: 'À distance',
     shortDescription: 'Découvrez les énergies et conseils pour votre semaine.',
     price: '15€',
-    duration: '20-25 min',
     format: 'Réponse écrite ou audio envoyée sous 24h',
+    oldSiteUrl: 'https://angeline-nj.com/produit/question-sur-une-semaine/',
     intro: 'Vous souhaitez connaître les énergies de votre semaine à venir ? Ce tirage vous donne une vision claire des jours qui arrivent avec des conseils pour chaque période.',
     forWho: [
       'Vous voulez anticiper votre semaine',
@@ -156,8 +156,8 @@ export const prestations: Prestation[] = [
     badge: 'À distance',
     shortDescription: 'Obtenez une réponse détaillée sur une question dans le domaine de votre choix.',
     price: '25€',
-    duration: '30-35 min',
     format: 'Vidéo ou audio personnalisé envoyé sous 48h',
+    oldSiteUrl: 'https://angeline-nj.com/produit/question-precise-domaine-de-votre-choix-hors-sentimentale/',
     intro: 'Vous avez une question précise sur un domaine particulier (travail, finances, santé, spiritualité...) ? Ce tirage vous apporte une réponse approfondie et des conseils concrets.',
     forWho: [
       'Vous avez une question précise sur un domaine spécifique',
@@ -218,8 +218,8 @@ export const prestations: Prestation[] = [
     badge: 'À distance',
     shortDescription: 'Obtenez des réponses claires sur votre vie amoureuse et sentimentale.',
     price: '30€',
-    duration: '35-40 min',
     format: 'Vidéo personnalisée envoyée sous 48h',
+    oldSiteUrl: 'https://angeline-nj.com/produit/tirage-sentimental/',
     intro: 'Vous vous posez des questions sur votre relation, un amour naissant ou votre avenir sentimental ? Le tirage sentimental vous apporte des réponses claires et bienveillantes.',
     forWho: [
       'Vous traversez une période de doute dans votre couple',
@@ -280,8 +280,8 @@ export const prestations: Prestation[] = [
     badge: 'À distance',
     shortDescription: 'Un tirage centré sur le positif, les opportunités et les solutions.',
     price: '30€',
-    duration: '35-40 min',
     format: 'Vidéo personnalisée envoyée sous 48h',
+    oldSiteUrl: 'https://angeline-nj.com/produit/tirage-positif/',
     intro: 'Vous souhaitez vous concentrer sur les aspects positifs de votre vie et les opportunités à venir ? Le tirage positif met en lumière vos forces, vos talents et les énergies favorables.',
     forWho: [
       'Vous traversez une période difficile et cherchez de l\'espoir',
@@ -342,8 +342,8 @@ export const prestations: Prestation[] = [
     badge: 'Prioritaire',
     shortDescription: 'Obtenez une réponse rapide et complète en cas de situation urgente.',
     price: '80€',
-    duration: '40-50 min',
     format: 'Vidéo personnalisée envoyée sous 24h maximum',
+    oldSiteUrl: 'https://angeline-nj.com/produit/tirage-en-urgence/',
     intro: 'Vous faites face à une situation urgente nécessitant une guidance rapide ? Le tirage en urgence vous apporte une réponse complète et prioritaire sous 24h maximum.',
     forWho: [
       'Vous devez prendre une décision importante rapidement',

@@ -3,7 +3,6 @@
 import Button from '@/components/ui/Button';
 import Card from '@/components/ui/Card';
 import Section from '@/components/ui/Section';
-import { siteConfig } from '@/lib/config';
 import { getRelatedPrestations } from '@/lib/prestations';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -15,8 +14,8 @@ interface Prestation {
   subtitle: string;
   badge: string;
   price: string;
-  duration: string;
   format: string;
+  oldSiteUrl: string;
   intro: string;
   forWho: string[];
   whatYouGet: string[];
@@ -62,7 +61,6 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
                     <span className="font-semibold text-primary text-2xl">{prestation.price}</span>
                   </div>
                   <div className="text-sm">
-                    <div>{prestation.duration}</div>
                     <div>{prestation.format}</div>
                   </div>
                 </div>
@@ -70,9 +68,9 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
             </div>
 
             <div className="flex gap-4 mb-8">
-              <a href={siteConfig.rdv.url} target="_blank" rel="noopener noreferrer" className="flex-1 sm:flex-initial">
+              <a href={prestation.oldSiteUrl} target="_blank" rel="noopener noreferrer" className="flex-1 sm:flex-initial">
                 <Button variant="primary" size="lg" className="w-full sm:w-auto">
-                  Prendre rendez-vous
+                  Commander
                 </Button>
               </a>
               <Link href="/contact" className="flex-1 sm:flex-initial">
@@ -190,11 +188,11 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
               Prêt(e) à commencer ?
             </h2>
             <p className="text-text-2 mb-8">
-              Réservez votre {prestation.title.toLowerCase()} dès maintenant et recevez votre guidance sous 48h.
+              Commandez votre {prestation.title.toLowerCase()} dès maintenant et recevez votre guidance sous 48h.
             </p>
-            <a href={siteConfig.rdv.url} target="_blank" rel="noopener noreferrer">
+            <a href={prestation.oldSiteUrl} target="_blank" rel="noopener noreferrer">
               <Button variant="primary" size="lg">
-                Prendre rendez-vous
+                Commander
               </Button>
             </a>
           </motion.div>

@@ -130,11 +130,11 @@
   --font-title: var(--font-cinzel-decorative);
   --font-body: var(--font-manrope);
 
-  /* DARK MYSTIC GOLD PALETTE */
+  /* DARK MYSTIC GOLD PALETTE - LIGHTENED */
   --bg: #07040F;
   --bg-2: #0C0720;
-  --surface: rgba(255, 255, 255, 0.06);
-  --border: rgba(255, 255, 255, 0.12);
+  --surface: rgba(255, 255, 255, 0.10);
+  --border: rgba(255, 255, 255, 0.20);
   
   --text: #F4EEFF;
   --muted: rgba(244, 238, 255, 0.70);

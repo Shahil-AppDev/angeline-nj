@@ -65,7 +65,6 @@ export default function PrestationsPage() {
                   <div className="flex items-center justify-between gap-4 pt-4 border-t border-border">
                     <div className="text-text-2 text-sm">
                       <div className="font-semibold text-primary text-lg">{prestation.price}</div>
-                      <div>{prestation.duration}</div>
                     </div>
                     <div className="flex gap-2">
                       <Link href={`/prestations/${prestation.slug}`}>
@@ -73,9 +72,9 @@ export default function PrestationsPage() {
                           Découvrir
                         </Button>
                       </Link>
-                      <a href={siteConfig.rdv.url} target="_blank" rel="noopener noreferrer">
+                      <a href={prestation.oldSiteUrl} target="_blank" rel="noopener noreferrer">
                         <Button variant="primary" size="sm">
-                          Réserver
+                          Commander
                         </Button>
                       </a>
                     </div>
