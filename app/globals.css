@@ -3,6 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Safari iOS Optimizations */
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  -webkit-overflow-scrolling: touch;
+}
+
 /* ============================================
    GRIMOIRE BACKGROUND - Keyframes & Layers
    ============================================ */
@@ -429,6 +441,10 @@ a {
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-md);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Safari iOS fix */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
   }
   
   .glass-card:hover {
@@ -442,6 +458,9 @@ a {
     -webkit-backdrop-filter: blur(var(--blur-sm));
     backdrop-filter: blur(var(--blur-sm));
     border: 1px solid var(--border);
+    /* Safari iOS fix */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
   }
   
   .glow-border {
