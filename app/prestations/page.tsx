@@ -42,18 +42,18 @@ export default function PrestationsPage() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Card hover glow className="h-full flex flex-col">
-                  <div className="flex items-start gap-4 mb-4">
+                  <div className="flex flex-col sm:flex-row items-start gap-4 mb-4">
                     <div className="text-5xl">{prestation.icon}</div>
                     <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-2">
-                        <h2 className="text-2xl font-semibold text-gold font-title">
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
+                        <h2 className="text-xl sm:text-2xl font-semibold text-gold font-title break-words">
                           {prestation.title}
                         </h2>
-                        <span className="px-3 py-1 rounded-full bg-surface border border-border text-xs text-text-2">
+                        <span className="px-2 py-1 rounded-full bg-surface border border-border text-xs text-text-2 whitespace-nowrap inline-block">
                           {prestation.badge}
                         </span>
                       </div>
-                      <p className="text-text-2 mb-2">{prestation.subtitle}</p>
+                      <p className="text-text-2 mb-2 text-sm sm:text-base">{prestation.subtitle}</p>
                     </div>
                   </div>
 
@@ -61,11 +61,11 @@ export default function PrestationsPage() {
                     {prestation.shortDescription}
                   </p>
 
-                  <div className="flex items-center justify-between gap-4 pt-4 border-t border-border">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-4 border-t border-border">
                     <div className="text-text-2 text-sm">
                       <div className="font-semibold text-primary text-lg">{prestation.price}</div>
                     </div>
-                    <div className="flex gap-2">
+                    <div className="flex gap-2 w-full sm:w-auto">
                       <Link href={`/prestations/${prestation.slug}`}>
                         <Button variant="secondary" size="sm">
                           Découvrir
