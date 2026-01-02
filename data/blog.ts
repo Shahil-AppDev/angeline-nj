@@ -149,65 +149,104 @@ export const blogPosts: BlogPost[] = [
     ]
   },
   {
-    "slug": "comprendre-utiliser-pendule-debutant",
-    "title": "Débuter au Pendule : Guide Pratique et Exercices",
-    "metaDescription": "Apprenez à utiliser un pendule divinatoire. Guide complet pour choisir, purifier et poser les bonnes questions à votre pendule avec succès.",
-    "h1": "Le Guide Ultime pour Maîtriser le Pendule Divinatoire",
+    "slug": "nettoyer-recharger-bijoux-pierres-naturelles",
+    "title": "Comment Nettoyer et Recharger vos Bijoux en Pierres Naturelles",
+    "metaDescription": "Découvrez les meilleures méthodes pour nettoyer, purifier et recharger vos bijoux en pierres naturelles. Guide complet pour préserver l'énergie de vos cristaux.",
+    "h1": "Entretenir vos Bijoux en Pierres : Nettoyage et Rechargement",
     "date": "2026-01-08",
     "tags": [
-      "Pendule",
-      "Radiesthésie",
-      "Débutant"
+      "Pierres",
+      "Lithothérapie",
+      "Entretien"
     ],
-    "cover": "🔮",
+    "cover": "💎",
     "category": "Spiritualité",
     "sections": [
       {
         "type": "h2",
-        "value": "Comment choisir son pendule ?"
+        "value": "Pourquoi nettoyer vos bijoux en pierres ?"
       },
       {
         "type": "p",
-        "value": "Il existe des pendules en bois, en métal ou en pierre. Pour un débutant, le bois est souvent recommandé car il est neutre et léger. Les pendules en cristal sont magnifiques mais demandent une purification fréquente. Choisissez celui qui vous semble équilibré en main."
+        "value": "Les pierres naturelles absorbent les énergies de leur environnement. Après un achat ou une utilisation prolongée, elles peuvent être saturées d'énergies négatives ou simplement épuisées. Un nettoyage régulier permet de les purifier et de restaurer leurs propriétés énergétiques."
       },
       {
         "type": "h2",
-        "value": "Établir votre convention personnelle"
-      },
-      {
-        "type": "p",
-        "value": "Avant toute question, vous devez 'accorder' votre instrument. Demandez à votre pendule : 'Donne-moi un OUI'. Observez le mouvement. Faites de même pour le 'NON'. Cette convention est unique à chaque individu."
+        "value": "Méthodes de nettoyage"
       },
       {
         "type": "h3",
-        "value": "Formuler des questions efficaces"
+        "value": "L'eau courante"
       },
       {
         "type": "p",
-        "value": "Le pendule répond par oui ou par non. Vos questions doivent donc être fermes, précises et dénuées d'ambiguïté. Évitez les questions chargées d'un trop fort enjeu émotionnel au début."
+        "value": "Passez vos bijoux sous l'eau froide pendant quelques minutes en visualisant les énergies négatives qui s'écoulent. Attention : certaines pierres comme la sélénite ou la pyrite ne supportent pas l'eau !"
+      },
+      {
+        "type": "h3",
+        "value": "La fumigation"
+      },
+      {
+        "type": "p",
+        "value": "Utilisez de la sauge blanche, du palo santo ou de l'encens pour purifier vos pierres. Passez-les dans la fumée pendant quelques instants en formulant une intention de purification."
+      },
+      {
+        "type": "h3",
+        "value": "Le sel"
+      },
+      {
+        "type": "p",
+        "value": "Placez vos bijoux dans un bol de sel marin pendant quelques heures. Cette méthode est très efficace mais peut abîmer certaines pierres fragiles. Privilégiez le sel indirect (pierre dans un bol, bol dans le sel)."
+      },
+      {
+        "type": "h2",
+        "value": "Comment recharger vos pierres ?"
+      },
+      {
+        "type": "h3",
+        "value": "La lumière lunaire"
+      },
+      {
+        "type": "p",
+        "value": "Exposez vos bijoux à la lumière de la pleine lune pendant toute une nuit. C'est la méthode la plus douce et universelle, adaptée à toutes les pierres."
+      },
+      {
+        "type": "h3",
+        "value": "La lumière solaire"
+      },
+      {
+        "type": "p",
+        "value": "Quelques heures au soleil suffisent pour recharger la plupart des pierres. Attention : certaines pierres comme l'améthyste ou le quartz rose peuvent perdre leur couleur au soleil."
+      },
+      {
+        "type": "h3",
+        "value": "Les amas de quartz"
+      },
+      {
+        "type": "p",
+        "value": "Déposez vos bijoux sur une géode d'améthyste ou un amas de cristal de roche pendant plusieurs heures. Ces pierres ont la capacité de recharger les autres cristaux."
       },
       {
         "type": "faq",
         "value": [
           {
-            "question": "Pourquoi mon pendule ne bouge pas ?",
-            "answer": "Vous êtes peut-être trop tendu(e). Détendez votre poignet et respirez profondément."
+            "question": "À quelle fréquence nettoyer mes bijoux ?",
+            "answer": "Idéalement après chaque utilisation intensive, ou au minimum une fois par mois pour un port quotidien."
           },
           {
-            "question": "Faut-il purifier son pendule ?",
-            "answer": "Oui, après chaque utilisation importante, surtout s'il est en pierre."
+            "question": "Puis-je porter mes bijoux pendant le nettoyage ?",
+            "answer": "Non, il est préférable de les retirer pour un nettoyage efficace."
           },
           {
-            "question": "Le pendule peut-il se tromper ?",
-            "answer": "Le pendule ne se trompe pas, mais notre état émotionnel peut fausser la réponse."
+            "question": "Toutes les pierres supportent-elles l'eau ?",
+            "answer": "Non, certaines pierres comme la sélénite, la pyrite ou la malachite se dissolvent ou s'oxydent au contact de l'eau. Privilégiez la fumigation pour ces pierres."
           }
         ]
       },
       {
         "type": "links",
         "value": [
-          "<a href='/formations'>formation complète au pendule</a>  pour approfondir votre pratique.",
-          "<a href='/boutique'>pendules artisanaux</a> ."
+          "<a href='/boutique'>bijoux en pierres naturelles</a> de qualité sur notre boutique."
         ]
       }
     ]
