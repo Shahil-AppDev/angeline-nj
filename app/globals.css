@@ -130,14 +130,14 @@
   --font-title: var(--font-cinzel-decorative);
   --font-body: var(--font-manrope);
 
-  /* LAVANDE CLAIRE PALETTE */
-  --bg: #1a1520;
-  --bg-2: #2d2233;
-  --surface: rgba(204, 204, 255, 0.15);
-  --border: rgba(204, 204, 255, 0.30);
+  /* MYSTIC PURPLE PALETTE */
+  --bg: #1a0f2e;
+  --bg-2: #2d1b4e;
+  --surface: rgba(175, 164, 206, 0.15);
+  --border: rgba(175, 164, 206, 0.30);
   
-  --text: #F5F0F6;
-  --muted: rgba(245, 240, 246, 0.70);
+  --text: #F4EEFF;
+  --muted: rgba(244, 238, 255, 0.70);
   
   --gold-1: #F7E7A1;
   --gold-2: #D6A84A;
@@ -145,7 +145,7 @@
   --gold-glow: rgba(246, 201, 90, 0.25);
   
   /* GRIMOIRE BACKGROUND */
-  --ink: rgba(245, 240, 246, 0.08);
+  --ink: rgba(244, 238, 255, 0.08);
   --dust: rgba(246, 201, 90, 0.14);
   --sigil: rgba(246, 201, 90, 0.10);
   
@@ -158,10 +158,10 @@
   --glow-2: rgba(214, 168, 74, 0.18)
   
   /* GRADIENTS */
-  --mystic-gradient: linear-gradient(135deg, #2d2233 0%, #3d3244 50%, #4d4255 100%);
-  --aurora-gradient: linear-gradient(135deg, rgba(204, 204, 255, 0.15) 0%, rgba(188, 188, 255, 0.12) 50%, rgba(172, 172, 255, 0.1) 100%);
-  --glow-gradient: radial-gradient(circle at center, rgba(204, 204, 255, 0.3) 0%, transparent 70%);
-  --glass-gradient: linear-gradient(135deg, rgba(204, 204, 255, 0.12) 0%, rgba(204, 204, 255, 0.06) 100%);
+  --mystic-gradient: linear-gradient(135deg, #2d1b4e 0%, #3d2b5e 50%, #4a3570 100%);
+  --aurora-gradient: linear-gradient(135deg, rgba(175, 164, 206, 0.15) 0%, rgba(175, 164, 206, 0.12) 50%, rgba(175, 164, 206, 0.1) 100%);
+  --glow-gradient: radial-gradient(circle at center, rgba(175, 164, 206, 0.3) 0%, transparent 70%);
+  --glass-gradient: linear-gradient(135deg, rgba(175, 164, 206, 0.12) 0%, rgba(175, 164, 206, 0.06) 100%);
   
   /* SHADOWS */
   --shadow: rgba(0, 0, 0, 0.5);
