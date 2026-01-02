@@ -1,15 +1,7 @@
-'use client';
-
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
-import Button from '@/components/ui/Button';
-import Card from '@/components/ui/Card';
-import Section from '@/components/ui/Section';
-import { siteConfig } from '@/lib/config';
-import { getPrestationBySlug, getRelatedPrestations } from '@/lib/prestations';
-import { motion } from 'framer-motion';
+import { getPrestationBySlug } from '@/lib/prestations';
 import { Metadata } from 'next';
-import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
