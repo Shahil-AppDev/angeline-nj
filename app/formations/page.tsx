@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import productsData from '@/data/products.json';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const formationProducts = productsData.filter(p => 
@@ -25,7 +26,7 @@ const formations = [
   },
   {
     title: 'Formation Oracles Divinatoires',
-    icon: '🃏',
+    icon: '/carte-1.png',
     description: 'Maîtrisez l\'art divinatoire de lire les cartes. Apprenez à interpréter vos oracles avec clarté et à poser les bonnes questions pour des réponses précises.',
     slug: 'formation-oracles-divinatoires',
     level: 'Tous niveaux',
@@ -119,8 +120,12 @@ export default function FormationsPage() {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="glass-card p-6 group hover:border-gold-2 transition-all"
                 >
-                  <div className="text-6xl mb-4 text-center">
-                    {formation.icon}
+                  <div className="mb-4 text-center flex justify-center">
+                    {formation.icon.startsWith('/') ? (
+                      <img src={formation.icon} alt={formation.title} className="w-16 h-16 object-contain" />
+                    ) : (
+                      <div className="text-6xl">{formation.icon}</div>
+                    )}
                   </div>
                   
                   <div className="mb-3">

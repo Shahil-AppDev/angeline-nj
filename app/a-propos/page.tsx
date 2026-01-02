@@ -105,7 +105,9 @@ export default function AProposPage() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="glass-card p-8"
             >
-              <div className="text-5xl mb-4">🃏</div>
+              <div className="mb-4 flex justify-center">
+                <img src="/carte-1.png" alt="Tirage de Cartes" className="w-16 h-16 object-contain" />
+              </div>
               <h3 className="font-serif text-2xl font-semibold text-gold font-title mb-4">
                 Tirage de Cartes
               </h3>
