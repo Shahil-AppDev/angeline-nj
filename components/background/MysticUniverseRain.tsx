@@ -54,49 +54,7 @@ export default function MysticUniverseRain() {
       className="fixed inset-0 z-10 pointer-events-none overflow-hidden"
       aria-hidden="true"
     >
-      {/* LAYER 1: Overlays anim1 + anim2 (ultra discrets) */}
-      <motion.div
-        className="absolute inset-0"
-        animate={{
-          backgroundPosition: ['0% 0%', '100% 100%'],
-        }}
-        transition={{
-          duration: 120,
-          repeat: Infinity,
-          ease: 'linear',
-        }}
-        style={{
-          backgroundImage: 'url("/anims/anim1.png")',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          opacity: 0.08,
-          mixBlendMode: 'overlay',
-          filter: 'blur(1px)',
-        }}
-      />
-
-      <motion.div
-        className="absolute inset-0"
-        animate={{
-          backgroundPosition: ['100% 100%', '0% 0%'],
-        }}
-        transition={{
-          duration: 140,
-          repeat: Infinity,
-          ease: 'linear',
-        }}
-        style={{
-          backgroundImage: 'url("/anims/anim2.png")',
-          backgroundSize: 'contain',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          opacity: 0.06,
-          mixBlendMode: 'soft-light',
-          filter: 'blur(0.5px)',
-        }}
-      />
-
-      {/* LAYER 2: Starfield CSS (sans canvas) */}
+      {/* LAYER 1: Starfield CSS (sans canvas) */}
       <div
         className="absolute inset-0 starfield-rain"
         style={{
