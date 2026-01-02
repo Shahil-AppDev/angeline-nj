@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://angeline-nj.fr/sitemap.xml',
+    sitemap: 'https://angeline-nj.xyz/sitemap.xml',
   };
 }
