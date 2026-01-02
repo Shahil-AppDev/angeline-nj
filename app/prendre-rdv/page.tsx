@@ -85,6 +85,82 @@ export default function PrendreRdvPage() {
                 </p>
               </div>
             </Card>
+
+            <div className="mt-12 space-y-8">
+              <Card className="p-6">
+                <h3 className="text-xl font-semibold text-gold mb-4 font-title flex items-center gap-2">
+                  <span className="text-2xl">🎴</span>
+                  Tirages de cartes en vidéo
+                </h3>
+                <div className="space-y-3 text-text-2">
+                  <p className="leading-relaxed">
+                    <strong className="text-text">Comment ça marche ?</strong><br/>
+                    Les tirages en vidéo sont entièrement à distance, sans contact direct. Voici le processus simple :
+                  </p>
+                  <ol className="list-decimal list-inside space-y-2 ml-4">
+                    <li>Vous commandez votre tirage sur le site</li>
+                    <li><strong className="text-gold">Vous expliquez votre question ou situation dans la case prévue à cet effet</strong></li>
+                    <li>Vous effectuez le paiement</li>
+                    <li>Je réalise votre tirage personnalisé</li>
+                    <li>Vous recevez la vidéo par email sous 48h maximum</li>
+                  </ol>
+                  <div className="mt-4 p-3 bg-gold/10 rounded-lg border border-gold/20">
+                    <p className="text-sm">
+                      <strong className="text-gold">⚠️ Important :</strong> Plus vos informations sont précises dans la case de commande, plus votre tirage sera précis et personnalisé. N'hésitez pas à détailler votre situation !
+                    </p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6">
+                <h3 className="text-xl font-semibold text-gold mb-4 font-title flex items-center gap-2">
+                  <span className="text-2xl">💻</span>
+                  Consultations en visio
+                </h3>
+                <div className="space-y-3 text-text-2">
+                  <p className="leading-relaxed">
+                    <strong className="text-text">Comment ça marche ?</strong><br/>
+                    Pour une consultation en direct par visioconférence :
+                  </p>
+                  <ol className="list-decimal list-inside space-y-2 ml-4">
+                    <li>Vous payez votre consultation sur le site</li>
+                    <li><strong className="text-gold">Vous me contactez sur Instagram ou TikTok</strong></li>
+                    <li>Nous convenons ensemble d'un créneau pour la visio</li>
+                    <li>Le jour J, nous échangeons en direct</li>
+                  </ol>
+                  <div className="mt-4 p-3 bg-gold/10 rounded-lg border border-gold/20">
+                    <p className="text-sm">
+                      <strong className="text-gold">📱 Après paiement :</strong> Contactez-moi via mes réseaux sociaux pour fixer le rendez-vous ensemble.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6">
+                <h3 className="text-xl font-semibold text-gold mb-4 font-title flex items-center gap-2">
+                  <span className="text-2xl">✨</span>
+                  Soins Reiki à distance
+                </h3>
+                <div className="space-y-3 text-text-2">
+                  <p className="leading-relaxed">
+                    <strong className="text-text">Comment ça marche ?</strong><br/>
+                    Pour un soin Reiki à distance :
+                  </p>
+                  <ol className="list-decimal list-inside space-y-2 ml-4">
+                    <li>Vous payez votre soin sur le site</li>
+                    <li><strong className="text-gold">Vous me contactez pour prendre rendez-vous</strong></li>
+                    <li>Vous me fournissez les informations nécessaires (nom, prénom, photo, intention)</li>
+                    <li>Une fois validé, je réalise votre soin à distance</li>
+                    <li>Vous recevez un compte-rendu du soin</li>
+                  </ol>
+                  <div className="mt-4 p-3 bg-gold/10 rounded-lg border border-gold/20">
+                    <p className="text-sm">
+                      <strong className="text-gold">📋 Informations requises :</strong> Pour un soin efficace, je vous demanderai certaines informations lors de la prise de rendez-vous.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            </div>
           </div>
         </div>
       </Section>

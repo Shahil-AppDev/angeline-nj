@@ -69,7 +69,7 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
               </div>
             </div>
 
-            <div className="flex gap-4 mb-12">
+            <div className="flex gap-4 mb-8">
               <a href={siteConfig.rdv.url} target="_blank" rel="noopener noreferrer" className="flex-1 sm:flex-initial">
                 <Button variant="primary" size="lg" className="w-full sm:w-auto">
                   Prendre rendez-vous
@@ -81,6 +81,20 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
                 </Button>
               </Link>
             </div>
+
+            <Card className="bg-gold/5 border-gold/20">
+              <div className="flex items-start gap-3">
+                <span className="text-2xl">💡</span>
+                <div className="flex-1 text-sm text-text-2">
+                  <p className="font-semibold text-gold mb-2">Comment commander ce tirage ?</p>
+                  <p className="leading-relaxed">
+                    Après avoir cliqué sur "Prendre rendez-vous", vous serez redirigé vers le formulaire de commande. 
+                    <strong className="text-text"> Pensez à bien détailler votre question ou situation dans la case prévue à cet effet</strong> - plus vos informations sont précises, plus votre tirage sera personnalisé et pertinent. 
+                    Une fois le paiement effectué, vous recevrez votre vidéo par email sous {prestation.format.includes('24h') ? '24h' : '48h'} maximum.
+                  </p>
+                </div>
+              </div>
+            </Card>
           </motion.div>
         </div>
       </Section>
