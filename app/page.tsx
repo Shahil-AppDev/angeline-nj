@@ -16,9 +16,10 @@ import Link from 'next/link';
 
 const services = [
   {
-    title: 'L’Art de la Cartomancie',
+    title: 'L\'Art de la Cartomancie',
     description: 'Plongez dans la symbolique sacrée des cartes pour obtenir des réponses claires sur votre passé, votre présent et les potentiels de votre avenir. Une guidance lumineuse pour avancer avec confiance.',
     icon: '🃏',
+    iconImage: '/mystica-pentagramme.jpg',
     href: '/tirages',
   },
   {
