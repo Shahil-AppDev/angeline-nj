@@ -121,7 +121,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                   rel="noopener noreferrer"
                   className="btn-primary flex-1 text-center"
                 >
-                  <span>Acheter sur le site officiel</span>
+                  <span>Acheter</span>
                 </a>
                 <Link 
                   href="/contact"

@@ -227,7 +227,7 @@ export default function FormationsPage() {
                   Certification
                 </h3>
                 <p className="text-text-2">
-                  Recevez un certificat officiel à la fin de chaque formation
+                  Recevez un certificat à la fin de chaque formation
                 </p>
               </div>
 
