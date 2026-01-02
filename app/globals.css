@@ -418,7 +418,7 @@ a {
   }
   
   .mystic-gradient {
-    background: var(--mystic-gradient);
+    background: transparent;
   }
   
   .glass-card {
