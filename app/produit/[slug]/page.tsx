@@ -31,6 +31,11 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
     notFound();
   }
 
+  const isFormation = product.category === 'formations-reiki' || 
+                      product.category === 'pendule' || 
+                      product.category === 'formation-tirage-oracle' ||
+                      product.title.toLowerCase().includes('formation');
+
   return (
     <>
       <Navbar />
@@ -136,18 +141,37 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                   Informations
                 </h3>
                 <ul className="space-y-2 text-text-2">
-                  <li className="flex items-center gap-2">
-                    <span className="text-gold">✓</span>
-                    Livraison rapide sous 48h
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="text-gold">✓</span>
-                    Paiement sécurisé
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="text-gold">✓</span>
-                    Emballage soigné avec amour
-                  </li>
+                  {isFormation ? (
+                    <>
+                      <li className="flex items-center gap-2">
+                        <span className="text-gold">✓</span>
+                        Accès immédiat après paiement
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-gold">✓</span>
+                        Formation 100% en ligne et autonome
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-gold">✓</span>
+                        Supports vidéo et PDF téléchargeables
+                      </li>
+                    </>
+                  ) : (
+                    <>
+                      <li className="flex items-center gap-2">
+                        <span className="text-gold">✓</span>
+                        Livraison rapide sous 48h
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-gold">✓</span>
+                        Paiement sécurisé
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-gold">✓</span>
+                        Emballage soigné avec amour
+                      </li>
+                    </>
+                  )}
                 </ul>
               </div>
             </div>
