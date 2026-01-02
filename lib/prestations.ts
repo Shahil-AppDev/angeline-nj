@@ -105,8 +105,7 @@ export const prestations: Prestation[] = [
     ],
     whatYouGet: [
       'Un tirage sur 7 jours',
-      'Une vision des énergies quotidiennes',
-      'Des conseils pour chaque jour',
+      'Une vision des énergies de la semaine',
       'Une guidance globale pour la semaine',
       'Réponse sous 24h',
     ],
@@ -123,8 +122,8 @@ export const prestations: Prestation[] = [
       },
       {
         step: 3,
-        title: 'Analyse jour par jour',
-        description: 'J\'interprète les énergies et tendances de chaque journée.',
+        title: 'Analyse complète',
+        description: 'J\'interprète les énergies et tendances de votre semaine.',
       },
       {
         step: 4,
@@ -158,7 +157,7 @@ export const prestations: Prestation[] = [
     price: '25€',
     format: 'Vidéo ou audio personnalisé envoyé sous 48h',
     oldSiteUrl: 'https://angeline-nj.com/produit/question-precise-domaine-de-votre-choix-hors-sentimentale/',
-    intro: 'Vous avez une question précise sur un domaine particulier (travail, finances, santé, spiritualité...) ? Ce tirage vous apporte une réponse approfondie et des conseils concrets.',
+    intro: 'Vous avez une question précise sur un domaine particulier (travail, finances, spiritualité, famille, projets...) ? Ce tirage vous apporte une réponse approfondie et des conseils concrets. Exclusions : santé et mort.',
     forWho: [
       'Vous avez une question précise sur un domaine spécifique',
       'Vous cherchez des conseils détaillés',
@@ -166,11 +165,10 @@ export const prestations: Prestation[] = [
       'Vous avez besoin de clarté sur une situation',
     ],
     whatYouGet: [
-      'Un tirage personnalisé de 5 à 7 cartes',
-      'Une interprétation détaillée',
+      'Un tirage personnalisé adapté à votre question',
+      'Une interprétation détaillée et claire',
       'Des conseils concrets et actionnables',
-      'Une réponse en vidéo ou audio (30-35 min)',
-      'Possibilité de question de suivi',
+      'Une réponse en vidéo ou audio',
     ],
     process: [
       {
@@ -197,7 +195,7 @@ export const prestations: Prestation[] = [
     faq: [
       {
         question: 'Quels domaines puis-je aborder ?',
-        answer: 'Tous sauf le sentimental : travail, finances, santé, spiritualité, famille, projets, etc.',
+        answer: 'Tous sauf le sentimental, la santé et la mort : travail, finances, spiritualité, famille, projets, etc.',
       },
       {
         question: 'Puis-je poser plusieurs questions ?',
@@ -228,11 +226,10 @@ export const prestations: Prestation[] = [
       'Vous voulez connaître les énergies amoureuses à venir',
     ],
     whatYouGet: [
-      'Un tirage personnalisé de 7 à 10 cartes',
-      'Une interprétation détaillée en vidéo (35-40 min)',
+      'Un tirage personnalisé adapté à votre situation',
+      'Une interprétation détaillée en vidéo',
       'Des conseils concrets et bienveillants',
-      'Une guidance pour prendre les bonnes décisions',
-      'Possibilité de poser une question de suivi',
+      'Une guidance claire pour prendre les bonnes décisions',
     ],
     process: [
       {
