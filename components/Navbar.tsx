@@ -43,7 +43,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center space-x-2 group">
             <Image 
-              src="/brand/logo-transparent.png" 
+              src="/brand/logo-transparent.png?v=2" 
               alt="Angeline NJ"
               width={48}
               height={48}

@@ -27,7 +27,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="inline-flex items-center space-x-2 mb-4 group">
               <NextImage
-                src="/brand/logo-transparent.png"
+                src="/brand/logo-transparent.png?v=2"
                 alt="Angeline NJ"
                 width={40}
                 height={40}
