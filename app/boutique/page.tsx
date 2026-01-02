@@ -10,7 +10,7 @@ import { useState } from 'react';
 
 const categories = [
   { id: 'tous', label: 'Tous les produits', count: productsData.length },
-  ...categoriesData.slice(0, 8).map(cat => ({
+  ...categoriesData.slice(0, 9).map(cat => ({
     id: cat.slug,
     label: cat.name,
     count: cat.count
