@@ -88,7 +88,7 @@ export default function VisioPage() {
             <h2 className="text-2xl font-semibold text-gold mb-6 font-title text-center">
               📋 Comment ça marche ?
             </h2>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-gold">1</span>
@@ -114,7 +114,7 @@ export default function VisioPage() {
           </Card>
 
           {/* Formules */}
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {visioOptions.map((option, index) => (
               <motion.div
                 key={option.id}
