@@ -44,7 +44,9 @@ export default function PrestationsPage() {
               >
                 <Card hover glow className="h-full flex flex-col">
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="text-5xl">{prestation.icon}</div>
+                    <div className="w-16 h-16 flex-shrink-0">
+                      <img src={prestation.icon} alt={prestation.title} className="w-full h-full object-contain" />
+                    </div>
                     <div className="flex-1">
                       <div className="flex items-center gap-2 mb-2">
                         <h2 className="text-2xl font-semibold text-gold font-title">
