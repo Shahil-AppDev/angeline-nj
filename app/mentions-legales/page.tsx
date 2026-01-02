@@ -25,11 +25,13 @@ export default function MentionsLegalesPage() {
           <p className="text-text-2 mb-6">
             Le site angeline-nj.xyz est édité par :<br />
             <strong>Angeline NJ</strong><br />
-            Entrepreneur individuel<br />
-            SIREN : 894 371 681<br />
-            SIRET : 894 371 681 00012<br />
-            Numéro de TVA intracommunautaire : FR92894371681<br />
-            Adresse : 25 Allée de l'Orvet Fragile, 45430 Chécy, France<br />
+            SAS, société par actions simplifiée<br />
+            SIREN : 892 179 623<br />
+            SIRET : 892 179 623 00038<br />
+            Numéro de TVA intracommunautaire : FR33892179623<br />
+            Capital social : 200,00 €<br />
+            RCS Nanterre 892 179 623<br />
+            Adresse : 144 Avenue Charles de Gaulle, 92200 Neuilly-sur-Seine, France<br />
             Email : contact@angeline-nj.xyz
           </p>
 

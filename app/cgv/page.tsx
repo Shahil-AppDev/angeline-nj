@@ -24,7 +24,7 @@ export default function CGVPage() {
           <h2 className="font-serif text-2xl text-gold font-title mb-4">Article 1 - Objet</h2>
           <p className="text-text-2 mb-6">
             Les présentes Conditions Générales de Vente (CGV) régissent les relations contractuelles 
-            entre Angeline NJ, entrepreneur individuel, et toute personne physique ou morale souhaitant 
+            entre Angeline NJ, SAS (société par actions simplifiée), et toute personne physique ou morale souhaitant 
             effectuer un achat via le site angeline-nj.xyz.
           </p>
 

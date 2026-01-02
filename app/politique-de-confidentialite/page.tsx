@@ -116,9 +116,11 @@ export default function PolitiqueConfidentialitePage() {
           <h2 className="font-serif text-2xl text-gold font-title mb-4 mt-8">Responsable du traitement</h2>
           <p className="text-text-2 mb-6">
             <strong>Angeline NJ</strong><br />
-            Entrepreneur individuel<br />
-            SIREN : 894 371 681<br />
-            Adresse : 25 Allée de l'Orvet Fragile, 45430 Chécy, France<br />
+            SAS, société par actions simplifiée<br />
+            SIREN : 892 179 623<br />
+            SIRET : 892 179 623 00038<br />
+            RCS Nanterre 892 179 623<br />
+            Adresse : 144 Avenue Charles de Gaulle, 92200 Neuilly-sur-Seine, France<br />
             Email : contact@angeline-nj.xyz
           </p>
 
