@@ -112,21 +112,21 @@ export default function Home() {
               <div className="relative w-full max-w-md">
                 <div className="glass-card p-8 glow-border">
                   <div className="grid grid-cols-3 gap-4">
-                    {['carte-1.png', 'carte-2.png', 'carte-3.png'].map((img, i) => (
+                    {[1, 2, 3].map((i) => (
                       <motion.div
                         key={i}
                         className="aspect-[2/3] rounded-lg overflow-hidden border border-gold-2/30 relative bg-gradient-to-br from-gold-2/10 to-gold-1/10"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.4 + i * 0.1 }}
+                        transition={{ duration: 0.6, delay: 0.4 + (i - 1) * 0.1 }}
                       >
                         <NextImage
-                          src={`/${img}`}
-                          alt={`Carte de tarot ${i + 1}`}
+                          src="/mystica-dos.jpg"
+                          alt="Oracle Mystica"
                           fill
                           className="object-cover"
                           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 33vw, 200px"
-                          priority={i === 0}
+                          priority={i === 1}
                         />
                       </motion.div>
                     ))}
