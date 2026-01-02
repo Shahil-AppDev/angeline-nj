@@ -27,7 +27,7 @@ interface Prestation {
 }
 
 export default function PrestationClientContent({ prestation }: { prestation: Prestation }) {
-  const relatedPrestations = getRelatedPrestations(prestation.slug, prestation.relatedPrestations);
+  const relatedPrestations = getRelatedPrestations(prestation.slug, prestation.relatedPrestations || []);
 
   return (
     <>
