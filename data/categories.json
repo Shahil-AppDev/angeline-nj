@@ -1,0 +1,135 @@
+[
+  {
+    "id": 19,
+    "slug": "tous-les-produits",
+    "name": "Tous les produits",
+    "link": "https://angeline-nj.com/categorie-produit/ma-boutique/tous-les-produits/",
+    "count": 33
+  },
+  {
+    "id": 20,
+    "slug": "bougies",
+    "name": "Bougies",
+    "link": "https://angeline-nj.com/categorie-produit/ma-boutique/bougies/",
+    "count": 18
+  },
+  {
+    "id": 35,
+    "slug": "oracles",
+    "name": "Mes oracles",
+    "link": "https://angeline-nj.com/categorie-produit/oracles/",
+    "count": 13
+  },
+  {
+    "id": 36,
+    "slug": "oracles-ma-boutique",
+    "name": "Oracles",
+    "link": "https://angeline-nj.com/categorie-produit/ma-boutique/oracles-ma-boutique/",
+    "count": 13
+  },
+  {
+    "id": 22,
+    "slug": "encens",
+    "name": "Encens",
+    "link": "https://angeline-nj.com/categorie-produit/ma-boutique/encens/",
+    "count": 12
+  },
+  {
+    "id": 23,
+    "slug": "amour",
+    "name": "Amour",
+    "link": "https://angeline-nj.com/categorie-produit/ma-boutique/amour/",
+    "count": 10
+  },
+  {
+    "id": 27,
+    "slug": "protection",
+    "name": "Protection",
+    "link": "https://angeline-nj.com/categorie-produit/ma-boutique/protection/",
+    "count": 10
+  },
+  {
+    "id": 21,
+    "slug": "bracelets",
+    "name": "Bracelets",
+    "link": "https://angeline-nj.com/categorie-produit/ma-boutique/bracelets/",
+    "count": 10
+  },
+  {
+    "id": 37,
+    "slug": "promotions",
+    "name": "Promotions",
+    "link": "https://angeline-nj.com/categorie-produit/promotions/",
+    "count": 8
+  },
+  {
+    "id": 32,
+    "slug": "mes-prestations",
+    "name": "Mes prestations",
+    "link": "https://angeline-nj.com/categorie-produit/mes-prestations/",
+    "count": 7
+  },
+  {
+    "id": 26,
+    "slug": "sauges",
+    "name": "Sauges et charbons",
+    "link": "https://angeline-nj.com/categorie-produit/ma-boutique/sauges/",
+    "count": 6
+  },
+  {
+    "id": 34,
+    "slug": "tirages-de-cartes",
+    "name": "Tirages de cartes",
+    "link": "https://angeline-nj.com/categorie-produit/mes-prestations/tirages-de-cartes/",
+    "count": 6
+  },
+  {
+    "id": 28,
+    "slug": "serenite",
+    "name": "Sérénité",
+    "link": "https://angeline-nj.com/categorie-produit/ma-boutique/serenite/",
+    "count": 5
+  },
+  {
+    "id": 38,
+    "slug": "formations-reiki",
+    "name": "Formations REIKI",
+    "link": "https://angeline-nj.com/categorie-produit/formations-reiki/",
+    "count": 3
+  },
+  {
+    "id": 30,
+    "slug": "mineraux-pierres-lithotherapie",
+    "name": "Minéraux - Pierres lithothérapie",
+    "link": "https://angeline-nj.com/categorie-produit/ma-boutique/mineraux-pierres-lithotherapie/",
+    "count": 3
+  },
+  {
+    "id": 25,
+    "slug": "pendules",
+    "name": "Pendules",
+    "link": "https://angeline-nj.com/categorie-produit/ma-boutique/pendules/",
+    "count": 2
+  },
+  {
+    "id": 41,
+    "slug": "pendule",
+    "name": "Formation pendule",
+    "link": "https://angeline-nj.com/categorie-produit/pendule/",
+    "count": 1
+  },
+  {
+    "id": 39,
+    "slug": "formation-tirage-oracle",
+    "name": "Formation tirage oracle",
+    "link": "https://angeline-nj.com/categorie-produit/formation-tirage-oracle/",
+    "count": 1
+  },
+  {
+    "id": 33,
+    "slug": "reiki",
+    "name": "Reiki",
+    "link": "https://angeline-nj.com/categorie-produit/mes-prestations/reiki/",
+    "count": 1
+  }
+]
