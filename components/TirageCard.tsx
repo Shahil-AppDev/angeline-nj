@@ -7,7 +7,7 @@ import Link from 'next/link';
 interface TirageCardProps {
   title: string;
   description: string;
-  icon: string;
+  icon?: string;
   iconImage?: string;
   href: string;
   delay?: number;
