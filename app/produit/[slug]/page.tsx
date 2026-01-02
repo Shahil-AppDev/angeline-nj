@@ -2,6 +2,7 @@ import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import productsData from '@/data/products.json';
 import { Metadata } from 'next';
+import NextImage from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
