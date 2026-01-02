@@ -396,6 +396,77 @@ export const prestations: Prestation[] = [
     ],
     relatedPrestations: ['tirage-sentimental', 'question-precise-domaine', 'tirage-positif'],
   },
+  {
+    slug: 'reiki-a-distance',
+    title: 'Reiki à distance',
+    subtitle: 'Soin énergétique pour rééquilibrer votre corps et votre esprit',
+    icon: '✨',
+    badge: 'À distance',
+    shortDescription: 'Le praticien canalise et transmet l\'énergie par visualisation pour activer le processus naturel de guérison.',
+    price: '40€',
+    format: 'Soin à distance avec compte-rendu',
+    oldSiteUrl: 'https://angeline-nj.com/produit/reiki-a-distance/',
+    intro: 'Le Reiki à distance est une méthode de soin énergétique puissante qui transcende les barrières physiques. Le praticien canalise l\'énergie universelle et la transmet par visualisation pour activer votre processus naturel de guérison, où que vous soyez.',
+    forWho: [
+      'Vous ressentez un déséquilibre énergétique',
+      'Vous traversez une période de stress ou d\'anxiété',
+      'Vous souhaitez un soin de bien-être global',
+      'Vous cherchez à harmoniser votre corps et votre esprit',
+    ],
+    whatYouGet: [
+      'Un soin énergétique complet à distance',
+      'Rééquilibrage de vos centres énergétiques',
+      'Un compte-rendu détaillé du soin',
+      'Conseils personnalisés pour votre bien-être',
+      'Suivi après le soin',
+    ],
+    process: [
+      {
+        step: 1,
+        title: 'Commande',
+        description: 'Vous commandez et payez votre soin sur le site.',
+      },
+      {
+        step: 2,
+        title: 'Informations',
+        description: 'Vous recevez un email avec un formulaire pour fournir vos informations (photo récente sans filtre, date de naissance, intention).',
+      },
+      {
+        step: 3,
+        title: 'Planification',
+        description: 'Nous convenons ensemble d\'une date et heure pour le soin.',
+      },
+      {
+        step: 4,
+        title: 'Soin à distance',
+        description: 'Je réalise votre soin Reiki à distance en canalisant l\'énergie universelle.',
+      },
+      {
+        step: 5,
+        title: 'Compte-rendu',
+        description: 'Vous recevez un compte-rendu détaillé du soin avec mes ressentis et conseils.',
+      },
+    ],
+    faq: [
+      {
+        question: 'Comment fonctionne le Reiki à distance ?',
+        answer: 'Le Reiki transcende l\'espace et le temps. Le praticien se connecte à votre énergie par visualisation et intention, permettant une transmission efficace de l\'énergie de guérison.',
+      },
+      {
+        question: 'Que dois-je faire pendant le soin ?',
+        answer: 'Idéalement, installez-vous confortablement dans un endroit calme pendant le créneau convenu. Vous pouvez vous allonger, méditer ou simplement vous détendre.',
+      },
+      {
+        question: 'Quelles informations dois-je fournir ?',
+        answer: 'Une photo récente sans filtre, votre date de naissance et votre intention pour le soin (ce sur quoi vous souhaitez travailler).',
+      },
+      {
+        question: 'Combien de temps dure un soin ?',
+        answer: 'Un soin Reiki dure généralement entre 45 minutes et 1 heure.',
+      },
+    ],
+    relatedPrestations: ['tirage-positif', 'question-precise-domaine', 'tirage-sentimental'],
+  },
 ];
 
 export function getPrestationBySlug(slug: string): Prestation | undefined {
