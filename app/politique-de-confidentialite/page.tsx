@@ -90,7 +90,7 @@ export default function PolitiqueConfidentialitePage() {
             <li><strong>Droit de limitation :</strong> vous pouvez demander la limitation du traitement</li>
           </ul>
           <p className="text-text-2 mb-6">
-            Pour exercer ces droits, contactez-nous à : contact@angeline-nj.fr
+            Pour exercer ces droits, contactez-nous à : contact@angeline-nj.xyz
           </p>
 
           <h2 className="font-serif text-2xl text-gold font-title mb-4 mt-8">Sécurité des données</h2>
@@ -113,12 +113,20 @@ export default function PolitiqueConfidentialitePage() {
             Les modifications seront publiées sur cette page avec une nouvelle date de mise à jour.
           </p>
 
+          <h2 className="font-serif text-2xl text-gold font-title mb-4 mt-8">Responsable du traitement</h2>
+          <p className="text-text-2 mb-6">
+            <strong>Angeline NJ</strong><br />
+            Entrepreneur individuel<br />
+            SIREN : 894 371 681<br />
+            Adresse : 25 Allée de l'Orvet Fragile, 45430 Chécy, France<br />
+            Email : contact@angeline-nj.xyz
+          </p>
+
           <h2 className="font-serif text-2xl text-gold font-title mb-4 mt-8">Contact</h2>
           <p className="text-text-2 mb-6">
             Pour toute question concernant cette politique de confidentialité ou vos données personnelles, 
             vous pouvez nous contacter à :<br />
-            Email : contact@angeline-nj.fr<br />
-            Téléphone : +33 1 23 45 67 89
+            Email : contact@angeline-nj.xyz
           </p>
         </div>
       </section>

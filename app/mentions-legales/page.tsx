@@ -23,26 +23,29 @@ export default function MentionsLegalesPage() {
         <div className="container-custom max-w-4xl prose prose-mystic">
           <h2 className="font-serif text-2xl text-gold font-title mb-4">Éditeur du site</h2>
           <p className="text-text-2 mb-6">
-            Le site angeline-nj.fr est édité par :<br />
+            Le site angeline-nj.xyz est édité par :<br />
             <strong>Angeline NJ</strong><br />
-            Auto-entrepreneur<br />
-            SIRET : [À compléter]<br />
-            Adresse : [À compléter]<br />
-            Email : contact@angeline-nj.fr<br />
-            Téléphone : +33 1 23 45 67 89
+            Entrepreneur individuel<br />
+            SIREN : 894 371 681<br />
+            SIRET : 894 371 681 00012<br />
+            Numéro de TVA intracommunautaire : FR92894371681<br />
+            Adresse : 25 Allée de l'Orvet Fragile, 45430 Chécy, France<br />
+            Email : contact@angeline-nj.xyz
           </p>
 
           <h2 className="font-serif text-2xl text-gold font-title mb-4 mt-8">Directeur de publication</h2>
           <p className="text-text-2 mb-6">
-            Angeline NJ
+            Shahil AppDev
           </p>
 
           <h2 className="font-serif text-2xl text-gold font-title mb-4 mt-8">Hébergement</h2>
           <p className="text-text-2 mb-6">
-            Le site est hébergé par :<br />
-            [Nom de l'hébergeur]<br />
-            [Adresse de l'hébergeur]<br />
-            [Téléphone de l'hébergeur]
+            Ce site est hébergé par :<br />
+            <strong>Hetzner Online GmbH</strong><br />
+            Industriestr. 25<br />
+            91710 Gunzenhausen, Allemagne<br />
+            Téléphone : +49 (0)9831 505-0<br />
+            Site web : <a href="https://www.hetzner.com" target="_blank" rel="noopener noreferrer" className="text-gold hover:text-gold-2 underline">www.hetzner.com</a>
           </p>
 
           <h2 className="font-serif text-2xl text-gold font-title mb-4 mt-8">Propriété intellectuelle</h2>
@@ -56,7 +59,7 @@ export default function MentionsLegalesPage() {
           <p className="text-text-2 mb-6">
             Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, 
             vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition aux données personnelles 
-            vous concernant. Pour exercer ce droit, vous pouvez nous contacter à l'adresse : contact@angeline-nj.fr
+            vous concernant. Pour exercer ce droit, vous pouvez nous contacter à l'adresse : contact@angeline-nj.xyz
           </p>
           <p className="text-text-2 mb-6">
             Pour plus d'informations sur la gestion de vos données personnelles, consultez notre{' '}

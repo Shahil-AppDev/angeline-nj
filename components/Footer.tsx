@@ -12,6 +12,8 @@ const footerLinks = {
   legal: [
     { href: '/mentions-legales', label: 'Mentions légales' },
     { href: '/politique-de-confidentialite', label: 'Politique de confidentialité' },
+    { href: '/cgv', label: 'CGV' },
+    { href: '/cgu', label: 'CGU' },
   ],
 };
 
@@ -65,10 +67,10 @@ export default function Footer() {
             <ul className="space-y-2 text-muted">
               <li>
                 <a
-                  href="mailto:contact@angeline-nj.fr"
+                  href="mailto:contact@angeline-nj.xyz"
                   className="hover:text-gold transition-colors hover:drop-shadow-[0_0_6px_var(--gold-glow)]"
                 >
-                  contact@angeline-nj.fr
+                  contact@angeline-nj.xyz
                 </a>
               </li>
               <li>

@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Angeline NJ" }],
   creator: "Angeline NJ",
   publisher: "Angeline NJ",
-  metadataBase: new URL("https://angeline-nj.fr"),
+  metadataBase: new URL("https://angeline-nj.xyz"),
   alternates: {
     canonical: "/",
   },
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://angeline-nj.fr",
+    url: "https://angeline-nj.xyz",
     siteName: "Angeline NJ",
     title: "Angeline NJ - Cartomancie & Guidance Spirituelle",
     description:
