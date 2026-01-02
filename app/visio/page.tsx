@@ -108,7 +108,7 @@ export default function VisioPage() {
                   <span className="text-2xl font-bold text-gold">3</span>
                 </div>
                 <h3 className="font-semibold text-text mb-2">Prenez RDV</h3>
-                <p className="text-text-2 text-sm">Contactez-moi sur Instagram ou TikTok pour fixer la date et l'heure</p>
+                <p className="text-text-2 text-sm">Recevez les instructions par email pour fixer la date et l'heure</p>
               </div>
             </div>
           </Card>

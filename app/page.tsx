@@ -167,7 +167,7 @@ export default function Home() {
               Mes Services
             </h2>
             <p className="text-text-2 text-lg max-w-2xl mx-auto">
-              Je propose des tirages de cartes et du Reiki à distance pour vous accompagner dans votre bien-être
+              Je propose des tirages de cartes et du Reiki à distance pour votre bien-être spirituel
             </p>
           </motion.div>
 

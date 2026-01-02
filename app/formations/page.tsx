@@ -186,7 +186,7 @@ export default function FormationsPage() {
             >
               <h3 className="text-gold font-title mb-4">Pourquoi se former avec Angeline NJ ?</h3>
               <p className="text-text-2 leading-relaxed">
-                Choisir Angeline NJ, c'est opter pour une expertise reconnue, un suivi personnalisé et une approche moderne de la spiritualité. Je ne me contente pas de vous délivrer un cours ; je vous accompagne dans votre évolution, je réponds à vos doutes et je vous transmets des méthodes éprouvées par des années de pratique en cabinet et à distance.
+                Choisir Angeline NJ, c'est opter pour une expertise reconnue et une approche moderne de la spiritualité. Vous recevez un contenu complet et structuré avec des méthodes éprouvées par des années de pratique. Chaque formation inclut des supports détaillés (vidéos + PDF) pour vous permettre d'apprendre à votre rythme.
               </p>
             </motion.div>
           </div>
@@ -233,13 +233,13 @@ export default function FormationsPage() {
 
               <div className="glass-card p-6">
                 <div className="w-16 h-16 rounded-full bg-gold-2/20 flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl">💝</span>
+                  <span className="text-3xl">⏰</span>
                 </div>
                 <h3 className="font-serif text-xl font-semibold text-gold font-title mb-3">
-                  Accompagnement
+                  À votre rythme
                 </h3>
                 <p className="text-text-2">
-                  Support personnalisé et suivi tout au long de votre apprentissage
+                  Accès illimité aux contenus pour apprendre selon votre disponibilité
                 </p>
               </div>
             </div>

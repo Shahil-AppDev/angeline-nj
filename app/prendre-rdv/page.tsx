@@ -23,14 +23,14 @@ export default function PrendreRdvPage() {
               Me contacter
             </h1>
             <p className="text-xl text-text-2 max-w-2xl mx-auto">
-              Tous mes services sont disponibles à distance
+              Services à distance - Commandez en ligne
             </p>
           </motion.div>
 
           <div className="max-w-2xl mx-auto">
             <Card className="p-8">
               <h2 className="text-2xl font-semibold text-gold mb-6 font-title text-center">
-                Contactez-moi sur mes réseaux sociaux
+                Mes réseaux sociaux
               </h2>
               
               <div className="space-y-6">
@@ -123,14 +123,14 @@ export default function PrendreRdvPage() {
                     Pour une consultation en direct par visioconférence :
                   </p>
                   <ol className="list-decimal list-inside space-y-2 ml-4">
-                    <li>Vous payez votre consultation sur le site</li>
-                    <li><strong className="text-gold">Vous me contactez sur Instagram ou TikTok</strong></li>
-                    <li>Nous convenons ensemble d'un créneau pour la visio</li>
+                    <li>Vous commandez et payez votre consultation sur le site</li>
+                    <li><strong className="text-gold">Vous recevez un email avec les instructions</strong></li>
+                    <li>Nous fixons ensemble un créneau pour la visio</li>
                     <li>Le jour J, nous échangeons en direct</li>
                   </ol>
                   <div className="mt-4 p-3 bg-gold/10 rounded-lg border border-gold/20">
                     <p className="text-sm">
-                      <strong className="text-gold">📱 Après paiement :</strong> Contactez-moi via mes réseaux sociaux pour fixer le rendez-vous ensemble.
+                      <strong className="text-gold">📱 Après paiement :</strong> Vous recevez les instructions par email pour organiser votre rendez-vous.
                     </p>
                   </div>
                 </div>

@@ -130,11 +130,11 @@
   --font-title: var(--font-cinzel-decorative);
   --font-body: var(--font-manrope);
 
-  /* DARK MYSTIC GOLD PALETTE - LIGHTENED */
-  --bg: #07040F;
-  --bg-2: #0C0720;
-  --surface: rgba(255, 255, 255, 0.10);
-  --border: rgba(255, 255, 255, 0.20);
+  /* MYSTIC PURPLE PALETTE */
+  --bg: #1a0f2e;
+  --bg-2: #2d1b4e;
+  --surface: rgba(167, 139, 250, 0.15);
+  --border: rgba(167, 139, 250, 0.30);
   
   --text: #F4EEFF;
   --muted: rgba(244, 238, 255, 0.70);
@@ -158,10 +158,10 @@
   --glow-2: rgba(214, 168, 74, 0.18)
   
   /* GRADIENTS */
-  --mystic-gradient: linear-gradient(135deg, #0C0720 0%, #1a1208 50%, #2d2012 100%);
-  --aurora-gradient: linear-gradient(135deg, rgba(246, 201, 90, 0.1) 0%, rgba(214, 168, 74, 0.1) 50%, rgba(139, 90, 18, 0.1) 100%);
-  --glow-gradient: radial-gradient(circle at center, var(--glow) 0%, transparent 70%);
-  --glass-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  --mystic-gradient: linear-gradient(135deg, #2d1b4e 0%, #3d2b5e 50%, #4a3570 100%);
+  --aurora-gradient: linear-gradient(135deg, rgba(167, 139, 250, 0.15) 0%, rgba(139, 92, 246, 0.12) 50%, rgba(124, 58, 237, 0.1) 100%);
+  --glow-gradient: radial-gradient(circle at center, rgba(167, 139, 250, 0.3) 0%, transparent 70%);
+  --glass-gradient: linear-gradient(135deg, rgba(167, 139, 250, 0.12) 0%, rgba(167, 139, 250, 0.06) 100%);
   
   /* SHADOWS */
   --shadow: rgba(0, 0, 0, 0.5);
