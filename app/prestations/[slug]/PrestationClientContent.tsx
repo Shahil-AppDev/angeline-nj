@@ -27,6 +27,7 @@ interface Prestation {
 
 export default function PrestationClientContent({ prestation }: { prestation: Prestation }) {
   const relatedPrestations = getRelatedPrestations(prestation.slug, prestation.relatedPrestations || []);
+  const isReiki = prestation.slug.includes('reiki');
 
   return (
     <>
@@ -84,11 +85,11 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
               <div className="flex items-start gap-3">
                 <span className="text-2xl">💡</span>
                 <div className="flex-1 text-sm text-text-2">
-                  <p className="font-semibold text-gold mb-2">Comment commander ce tirage ?</p>
+                  <p className="font-semibold text-gold mb-2">Comment commander {isReiki ? 'ce soin' : 'ce tirage'} ?</p>
                   <p className="leading-relaxed">
-                    Après avoir cliqué sur "Prendre rendez-vous", vous serez redirigé vers le formulaire de commande. 
-                    <strong className="text-text"> Pensez à bien détailler votre question ou situation dans la case prévue à cet effet</strong> - plus vos informations sont précises, plus votre tirage sera personnalisé et pertinent. 
-                    Une fois le paiement effectué, vous recevrez votre vidéo par email sous {prestation.format.includes('24h') ? '24h' : '48h'} maximum.
+                    Après avoir cliqué sur "Commander", vous serez redirigé vers le formulaire de commande. 
+                    <strong className="text-text"> Pensez à bien détailler {isReiki ? 'votre intention et situation' : 'votre question ou situation'} dans la case prévue à cet effet</strong> - plus vos informations sont précises, plus {isReiki ? 'le soin sera adapté' : 'votre tirage sera personnalisé et pertinent'}. 
+                    Une fois le paiement effectué, vous recevrez {isReiki ? 'un email avec les instructions' : 'votre vidéo par email sous ' + (prestation.format.includes('24h') ? '24h' : '48h') + ' maximum'}.
                   </p>
                 </div>
               </div>
@@ -107,7 +108,7 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
           >
             <Card className="mb-12">
               <h2 className="font-serif text-2xl font-semibold text-text mb-4">
-                Pourquoi choisir ce tirage ?
+                Pourquoi choisir {isReiki ? 'ce soin' : 'ce tirage'} ?
               </h2>
               <p className="text-text-2 leading-relaxed mb-6">{prestation.intro}</p>
             </Card>
