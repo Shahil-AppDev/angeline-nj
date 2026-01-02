@@ -101,7 +101,7 @@ export default function FormationsPage() {
                 En complément du Reiki, je propose une formation dédiée au <strong>pendule divinatoire</strong>. Souvent perçu comme mystérieux, le pendule est en réalité une extension de notre propre intuition. Cet atelier pratique vous enseigne comment choisir votre pendule, comment le purifier et surtout comment formuler vos questions pour obtenir des réponses fiables. Nous explorons ensemble la radiesthésie moderne pour que vous puissiez utiliser cet outil pour tester la vitalité d'un lieu, choisir vos pierres de lithothérapie ou obtenir des éclairages sur vos choix de vie.
               </p>
               <p>
-                Se former avec Angeline NJ, c'est bénéficier d'un contenu riche, structuré et accessible. Mes supports de cours sont détaillés, incluant des vidéos explicatives et des livrets PDF complets. Je mets un point d'honneur à allier la théorie indispensable à une pratique intensive, car c'est par l'expérience que l'on intègre véritablement les concepts spirituels.
+                Se former avec Angeline NJ, c'est bénéficier d'un contenu riche, structuré et accessible <strong>immédiatement après votre paiement</strong>. Toutes les formations sont <strong>téléchargeables instantanément</strong> et contiennent tous les supports nécessaires pour maîtriser l'art : vidéos explicatives détaillées, livrets PDF complets, exercices pratiques et certificat. Je mets un point d'honneur à allier la théorie indispensable à une pratique intensive, car c'est par l'expérience que l'on intègre véritablement les concepts spirituels.
               </p>
             </div>
           </motion.div>
@@ -209,13 +209,13 @@ export default function FormationsPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mt-12">
               <div className="glass-card p-6">
                 <div className="w-16 h-16 rounded-full bg-gold-2/20 flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl">📚</span>
+                  <span className="text-3xl">⚡</span>
                 </div>
                 <h3 className="font-serif text-xl font-semibold text-gold font-title mb-3">
-                  Contenu Complet
+                  Accès Instantané
                 </h3>
                 <p className="text-text-2">
-                  Des modules détaillés avec vidéos explicatives et supports PDF téléchargeables
+                  Téléchargement immédiat après paiement avec tous les supports pour maîtriser l'art
                 </p>
               </div>
 
@@ -233,13 +233,13 @@ export default function FormationsPage() {
 
               <div className="glass-card p-6">
                 <div className="w-16 h-16 rounded-full bg-gold-2/20 flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl">⏰</span>
+                  <span className="text-3xl">📚</span>
                 </div>
                 <h3 className="font-serif text-xl font-semibold text-gold font-title mb-3">
-                  À votre rythme
+                  Supports Complets
                 </h3>
                 <p className="text-text-2">
-                  Accès illimité aux contenus pour apprendre selon votre disponibilité
+                  Vidéos, PDF, exercices pratiques - tout pour maîtriser votre art à votre rythme
                 </p>
               </div>
             </div>
