@@ -45,9 +45,7 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
             </div>
 
             <div className="flex items-start gap-6 mb-8">
-              <div className="w-20 h-20 flex-shrink-0">
-                <img src={prestation.icon} alt={prestation.title} className="w-full h-full object-contain" />
-              </div>
+              <div className="text-6xl">{prestation.icon}</div>
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-3">
                   <h1 className="font-serif text-4xl md:text-5xl font-bold text-text">
