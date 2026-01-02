@@ -24,6 +24,13 @@ const formations = [
     level: 'Débutant',
   },
   {
+    title: 'Formation Oracles Divinatoires',
+    icon: '🃏',
+    description: 'Maîtrisez l\'art divinatoire de lire les cartes. Apprenez à interpréter vos oracles avec clarté et à poser les bonnes questions pour des réponses précises.',
+    slug: 'formation-oracles-divinatoires',
+    level: 'Tous niveaux',
+  },
+  {
     title: 'Reiki Module 1',
     icon: '✨',
     description: 'Plongez dans l\'univers du Reiki avec ce module d\'initiation complet ! Découvrez l\'histoire de cette pratique ancestrale, apprenez à canaliser l\'énergie universelle et réalignez vos chakras.',
@@ -43,13 +50,6 @@ const formations = [
     description: 'Atteignez l\'excellence avec le module de Reiki 3, dédié à la maîtrise ! Apprenez à incarner pleinement le rôle de maître Reiki et transmettez cette énergie sacrée.',
     slug: 'reiki-module-3',
     level: 'Niveau 3',
-  },
-  {
-    title: 'Formation Oracles Divinatoires',
-    icon: '🃏',
-    description: 'Maîtrisez l\'art divinatoire de lire les cartes. Apprenez à interpréter vos oracles avec clarté et à poser les bonnes questions pour des réponses précises.',
-    slug: 'formation-oracles-divinatoires',
-    level: 'Tous niveaux',
   },
 ];
 
