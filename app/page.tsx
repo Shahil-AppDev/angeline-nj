@@ -63,7 +63,7 @@ export default function Home() {
     <>
       <Navbar />
       
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden dark-mystic-bg">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <StarfieldBackground />
         <AuroraGlow />
         
