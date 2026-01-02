@@ -55,7 +55,7 @@ const visioOptions = [
 ];
 
 export default function VisioPage() {
-  const [selectedVisio, setSelectedVisio] = useState<string | null>(null);
+  const [, setSelectedVisio] = useState<string | null>(null);
 
   const handlePayment = (visioId: string, price: number) => {
     setSelectedVisio(visioId);
@@ -173,8 +173,16 @@ export default function VisioPage() {
               📱 Après votre paiement
             </h2>
             <p className="text-text-2 text-center mb-6">
-              Une fois votre paiement effectué, contactez-moi sur mes réseaux sociaux pour convenir ensemble d'une date et d'un horaire qui vous conviennent.
+              Une fois votre paiement PayPal effectué, contactez-moi sur mes réseaux sociaux pour convenir ensemble d'une date et d'un horaire. Le tirage peut être fait par SMS, vocaux ou visioconférence selon votre préférence.
             </p>
+            <div className="bg-primary/5 p-4 rounded-lg border border-gold-2/20 mb-6">
+              <p className="text-text-2 text-sm text-center">
+                <strong className="text-gold">⚠️ Important :</strong> La question doit être précise !<br/>
+                ❌ "Je souhaiterais tout savoir pour mon avenir professionnel" (trop vaste)<br/>
+                ✅ "Est-ce que je vais trouver un nouveau travail prochainement ?" (claire)<br/><br/>
+                <strong className="text-gold">Je ne réponds pas aux questions sur :</strong> la santé • la mort
+              </p>
+            </div>
             <div className="flex flex-wrap justify-center gap-4">
               <a
                 href="https://www.instagram.com/Angeline.NJ"

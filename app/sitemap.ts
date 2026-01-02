@@ -1,50 +1,55 @@
+import { blogPosts } from '@/data/blog';
+import productsData from '@/data/products.json';
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://angeline-nj.xyz';
 
-  return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/tirages`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/reiki`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/boutique`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/a-propos`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.6,
-    },
-  ];
+  // Pages statiques
+  const routes = [
+    '',
+    '/tirages',
+    '/reiki',
+    '/boutique',
+    '/blog',
+    '/a-propos',
+    '/contact',
+    '/visio',
+    '/mentions-legales',
+    '/politique-de-confidentialite',
+    '/cgv',
+    '/cgu',
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: route === '' ? 1 : 0.8,
+  }));
+
+  // Articles de blog dynamiques
+  const blogRoutes = blogPosts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.date),
+    changeFrequency: 'weekly' as const,
+    priority: 0.9,
+  }));
+
+  // Produits de la boutique dynamiques
+  const productRoutes = productsData.map((product) => ({
+    url: `${baseUrl}/produit/${product.slug}`,
+    lastModified: new Date(), // Idéalement, avoir une date de modif dans le JSON
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }));
+
+  // Catégories de la boutique
+  const categories = Array.from(new Set(productsData.map(p => p.category)));
+  const categoryRoutes = categories.map(cat => ({
+    url: `${baseUrl}/boutique/${cat}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.7,
+  }));
+
+  return [...routes, ...blogRoutes, ...productRoutes, ...categoryRoutes];
 }

@@ -68,12 +68,14 @@ export default function CategoryPage({ params }: { params: { categorie: string }
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {products.map((product) => (
                 <div key={product.id} className="glass-card p-6 group">
-                  <div className="aspect-square bg-surface rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                  <div className="aspect-square bg-surface rounded-lg mb-4 flex items-center justify-center overflow-hidden relative">
                     {product.thumbnail ? (
-                      <img 
+                      <NextImage 
                         src={product.thumbnail} 
                         alt={product.title}
-                        className="w-full h-full object-cover"
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                       />
                     ) : (
                       <div className="w-full h-full bg-gradient-to-br from-gold-3/20 to-gold-2/20 flex items-center justify-center">

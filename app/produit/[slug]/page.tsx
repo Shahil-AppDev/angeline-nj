@@ -44,12 +44,15 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
           </Link>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div className="aspect-square bg-surface rounded-lg overflow-hidden">
+            <div className="aspect-square bg-surface rounded-lg overflow-hidden relative">
               {product.image ? (
-                <img 
+                <NextImage 
                   src={product.image} 
                   alt={product.title}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  priority
                 />
               ) : (
                 <div className="w-full h-full bg-gradient-to-br from-gold-3/20 to-gold-2/20 flex items-center justify-center">
