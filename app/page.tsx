@@ -327,16 +327,16 @@ export default function Home() {
               Besoin d'être guidé(e) pour choisir ?
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
+              <Link href="/formations">
                 <Button variant="secondary" size="lg">
-                  Me conseiller
+                  Voir les formations
                 </Button>
               </Link>
-              <a href={siteConfig.rdv.url} target="_blank" rel="noopener noreferrer">
+              <Link href="/boutique">
                 <Button variant="primary" size="lg">
-                  Prendre rendez-vous
+                  Découvrir la boutique
                 </Button>
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>

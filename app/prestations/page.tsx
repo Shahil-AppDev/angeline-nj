@@ -5,7 +5,6 @@ import Navbar from '@/components/Navbar';
 import Button from '@/components/ui/Button';
 import Card from '@/components/ui/Card';
 import Section from '@/components/ui/Section';
-import { siteConfig } from '@/lib/config';
 import { prestations } from '@/lib/prestations';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -98,19 +97,19 @@ export default function PrestationsPage() {
               Besoin d'être guidé(e) pour choisir ?
             </h2>
             <p className="text-text-2 mb-8 max-w-2xl mx-auto">
-              Je suis là pour vous conseiller et vous orienter vers la prestation la plus adaptée à votre situation.
+              Découvrez nos formations pour apprendre à maîtriser les oracles divinatoires ou explorez notre boutique pour trouver vos outils spirituels.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
+              <Link href="/formations">
                 <Button variant="secondary" size="lg">
-                  Me conseiller
+                  Voir les formations
                 </Button>
               </Link>
-              <a href={siteConfig.rdv.url} target="_blank" rel="noopener noreferrer">
+              <Link href="/boutique">
                 <Button variant="primary" size="lg">
-                  Prendre rendez-vous
+                  Découvrir la boutique
                 </Button>
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>
