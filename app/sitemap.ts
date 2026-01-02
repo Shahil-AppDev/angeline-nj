@@ -1,5 +1,6 @@
 import { blogPosts } from '@/data/blog';
 import productsData from '@/data/products.json';
+import { prestations } from '@/lib/prestations';
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -51,5 +52,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...routes, ...blogRoutes, ...productRoutes, ...categoryRoutes];
+  // Prestations dynamiques
+  const prestationRoutes = prestations.map((prestation) => ({
+    url: `${baseUrl}/prestations/${prestation.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.9,
+  }));
+
+  return [...routes, ...blogRoutes, ...productRoutes, ...categoryRoutes, ...prestationRoutes];
 }
