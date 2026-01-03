@@ -15,9 +15,17 @@ export default function AstrologiePage() {
       cta: 'Calculer mon ascendant'
     },
     {
+      title: 'Calculateur de Descendant',
+      description: 'Découvrez votre partenaire idéal et vos dynamiques relationnelles',
+      icon: '💕',
+      href: '/astrologie/descendant',
+      cta: 'Mon Descendant',
+      featured: true
+    },
+    {
       title: 'Compatibilité Amoureuse',
       description: 'Analysez votre compatibilité avec votre partenaire selon les astres',
-      icon: '💕',
+      icon: '💑',
       href: '/astrologie/compatibilite',
       cta: 'Tester ma compatibilité'
     },
@@ -30,10 +38,18 @@ export default function AstrologiePage() {
     },
     {
       title: 'Thème Astral Complet',
-      description: 'Générez votre carte du ciel et explorez votre thème natal',
+      description: 'Générez votre carte du ciel visuelle et explorez votre thème natal',
       icon: '🗺️',
       href: '/astrologie/theme-astral',
       cta: 'Mon thème astral'
+    },
+    {
+      title: 'Calendrier Lunaire',
+      description: 'Suivez les phases lunaires et planifiez vos rituels',
+      icon: '📅',
+      href: '/astrologie/calendrier-lunaire',
+      cta: 'Voir le calendrier',
+      featured: true
     }
   ];
 
@@ -118,7 +134,7 @@ export default function AstrologiePage() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {tools.map((tool, index) => (
               <motion.div
                 key={tool.title}
@@ -126,8 +142,13 @@ export default function AstrologiePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="glass-card p-8 hover:scale-105 transition-transform"
+                className={`glass-card p-8 hover:scale-105 transition-transform ${tool.featured ? 'border-2 border-primary bg-primary/5' : ''}`}
               >
+                {tool.featured && (
+                  <div className="text-center mb-2">
+                    <span className="px-3 py-1 bg-primary/20 rounded-full text-primary text-xs font-semibold">NOUVEAU</span>
+                  </div>
+                )}
                 <div className="text-6xl mb-4 text-center">{tool.icon}</div>
                 <h3 className="text-2xl font-semibold text-gold mb-3 font-title text-center">
                   {tool.title}
@@ -234,11 +255,11 @@ export default function AstrologiePage() {
               Les calculateurs vous donnent des informations générales, mais pour une guidance vraiment personnalisée basée sur votre énergie unique, je vous propose un tirage de cartes sur mesure.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="btn-primary soft-glow">
-                <span>Tirage Personnalisé</span>
+              <Link href="/abonnement" className="btn-primary soft-glow">
+                <span>Abonnements Spirituels</span>
               </Link>
-              <Link href="/boutique" className="btn-secondary">
-                <span>Pierres & Bougies Astrologiques</span>
+              <Link href="/contact" className="btn-secondary">
+                <span>Tirage Personnalisé</span>
               </Link>
             </div>
           </motion.div>
