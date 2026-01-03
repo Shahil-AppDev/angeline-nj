@@ -7,7 +7,7 @@ import { zodiacSigns } from '@/lib/astrology/zodiacData';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-export default function Horoscope2025Page() {
+export default function Horoscope2026Page() {
   const signs: ZodiacSign[] = ['belier', 'taureau', 'gemeaux', 'cancer', 'lion', 'vierge', 'balance', 'scorpion', 'sagittaire', 'capricorne', 'verseau', 'poissons'];
 
   return (
@@ -22,10 +22,10 @@ export default function Horoscope2025Page() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold text-gold mb-6 font-title">
-              Horoscope 2025
+              Horoscope 2026
             </h1>
             <p className="text-xl text-text-2 max-w-3xl mx-auto leading-relaxed">
-              Vos prévisions astrologiques pour toute l'année 2025
+              Vos prévisions astrologiques pour toute l'année 2026
             </p>
           </motion.div>
         </div>
@@ -40,10 +40,10 @@ export default function Horoscope2025Page() {
             className="glass-card p-8 mb-8"
           >
             <h2 className="text-3xl font-bold text-gold mb-6 font-title text-center">
-              L'Année 2025 - Énergies Globales
+              L'Année 2026 - Énergies Globales
             </h2>
             <p className="text-text-2 leading-relaxed mb-6">
-              L'année 2025 s'annonce comme une période de transformation profonde et de croissance spirituelle. 
+              L'année 2026 s'annonce comme une période de transformation profonde et de croissance spirituelle. 
               Les transits planétaires majeurs nous invitent à embrasser le changement et à nous aligner avec notre véritable essence.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -113,7 +113,7 @@ export default function Horoscope2025Page() {
             className="glass-card p-8 bg-primary/5"
           >
             <h3 className="text-2xl font-bold text-gold mb-4 font-title text-center">
-              Votre Année 2025 Personnalisée
+              Votre Année 2026 Personnalisée
             </h3>
             <p className="text-text-2 text-center mb-6">
               Ces prévisions générales vous donnent un aperçu de l'année. Pour une guidance vraiment personnalisée 
@@ -122,7 +122,7 @@ export default function Horoscope2025Page() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="btn-primary soft-glow">
-                <span>Tirage Annuel 2025 (65€)</span>
+                <span>Tirage Annuel 2026 (65€)</span>
               </Link>
               <Link href="/astrologie/theme-astral" className="btn-secondary">
                 <span>Mon Thème Astral</span>

@@ -51,10 +51,10 @@ export default function AstrologiePage() {
       href: '/astrologie/horoscope-pleine-lune'
     },
     {
-      title: 'Horoscope 2025',
+      title: 'Horoscope 2026',
       description: 'Vos prévisions astrologiques pour toute l\'année',
       icon: '📆',
-      href: '/astrologie/horoscope-2025'
+      href: '/astrologie/horoscope-2026'
     }
   ];
 
