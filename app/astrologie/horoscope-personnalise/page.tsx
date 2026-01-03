@@ -152,7 +152,7 @@ export default function HoroscopePersonnalisePage() {
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
                     placeholder="Marie, Thomas..."
-                    className="w-full px-4 py-3 bg-surface border border-border rounded-lg text-text focus:border-primary focus:outline-none"
+                    className="w-full px-4 py-3 bg-surface border border-border rounded-lg text-text placeholder:text-text-2/60 focus:border-primary focus:outline-none"
                   />
                 </div>
 
