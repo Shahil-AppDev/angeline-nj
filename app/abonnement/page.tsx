@@ -101,7 +101,7 @@ export default function AbonnementPage() {
                   <button
                     onClick={() => handleSubscribe(plan.id)}
                     disabled={loading === plan.id}
-                    className={`w-full ${isPopular ? 'btn-primary soft-glow' : 'btn-secondary'}`}
+                    className="w-full btn-primary soft-glow"
                   >
                     <span>{loading === plan.id ? 'Chargement...' : 'S\'abonner'}</span>
                   </button>
