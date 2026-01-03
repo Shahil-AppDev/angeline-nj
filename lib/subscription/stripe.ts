@@ -9,52 +9,40 @@ export interface SubscriptionPlan {
 
 export const subscriptionPlans: SubscriptionPlan[] = [
   {
-    id: 'horoscope-mensuel',
-    name: 'Horoscope Mensuel',
-    price: 9.99,
+    id: 'abonnement-astro',
+    name: 'Abonnement Astro',
+    price: 2.90,
     interval: 'month',
     features: [
-      'Horoscope quotidien personnalisé par IA',
-      'Horoscope hebdomadaire détaillé',
-      'Horoscope mensuel complet',
-      'Accès calendrier lunaire avancé',
-      'Notifications phases lunaires',
-      '10% réduction sur les tirages'
+      'Astro personnalisé chaque jour',
+      'Pas de contenu supplémentaire inclus'
     ],
-    stripePriceId: process.env.STRIPE_HOROSCOPE_MENSUEL_PRICE_ID
+    stripePriceId: process.env.STRIPE_ABONNEMENT_ASTRO_PRICE_ID
   },
   {
-    id: 'guidance-premium',
-    name: 'Guidance Premium',
-    price: 29.99,
+    id: 'abonnement-guidance',
+    name: 'Abonnement Guidance',
+    price: 19.90,
     interval: 'month',
     features: [
-      'Tout du plan Horoscope Mensuel',
-      '1 tirage personnalisé par mois',
-      'Accès prioritaire aux consultations',
-      'Guidance lunaire personnalisée',
-      'Rituels sur mesure',
-      '20% réduction sur tous les services',
-      'Accès communauté privée'
+      '1 prestation par mois',
+      'Tirage de cartes ou soin énergétique Rééqui',
+      'Astro personnalisé chaque jour',
+      'Hors prestation urgente'
     ],
-    stripePriceId: process.env.STRIPE_GUIDANCE_PREMIUM_PRICE_ID
+    stripePriceId: process.env.STRIPE_ABONNEMENT_GUIDANCE_PRICE_ID
   },
   {
-    id: 'cercle-spirituel',
-    name: 'Cercle Spirituel Annuel',
-    price: 299,
-    interval: 'year',
+    id: 'abonnement-box',
+    name: 'Abonnement Box Ésotérique',
+    price: 29.90,
+    interval: 'month',
     features: [
-      'Tout du plan Guidance Premium',
-      '12 tirages personnalisés (1/mois)',
-      '2 consultations privées par an',
-      'Thème astral complet annuel',
-      'Accès formations exclusives',
-      '30% réduction sur tous les services',
-      'Événements en ligne mensuels',
-      'Support prioritaire'
+      'Envoi en point relais (Mondial Relay)',
+      'Articles boutique valeur > 29 €',
+      'Produits ésotériques + surprises sélectionnées'
     ],
-    stripePriceId: process.env.STRIPE_CERCLE_SPIRITUEL_PRICE_ID
+    stripePriceId: process.env.STRIPE_ABONNEMENT_BOX_PRICE_ID
   }
 ];
 

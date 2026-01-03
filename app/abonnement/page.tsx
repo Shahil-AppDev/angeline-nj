@@ -61,7 +61,7 @@ export default function AbonnementPage() {
         <div className="container-custom max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {subscriptionPlans.map((plan, index) => {
-              const isPopular = plan.id === 'guidance-premium';
+              const isPopular = plan.id === 'abonnement-guidance';
               
               return (
                 <motion.div
