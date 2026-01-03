@@ -15,7 +15,9 @@ export const subscriptionPlans: SubscriptionPlan[] = [
     interval: 'month',
     features: [
       'Astro personnalisé chaque jour',
-      'Pas de contenu supplémentaire inclus'
+      'Thème astral complet',
+      'Horoscope personnalisé IA',
+      'Horoscope 2026'
     ],
     stripePriceId: process.env.STRIPE_ABONNEMENT_ASTRO_PRICE_ID
   },
