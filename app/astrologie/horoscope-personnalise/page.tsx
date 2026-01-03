@@ -132,7 +132,7 @@ export default function HoroscopePersonnalisePage() {
                     id="sign"
                     value={formData.sign}
                     onChange={(e) => setFormData({...formData, sign: e.target.value as ZodiacSign})}
-                    className="w-full px-4 py-3 bg-surface border border-border rounded-lg text-text focus:border-primary focus:outline-none"
+                    className="w-full px-4 py-3 bg-primary/10 border border-primary/30 rounded-lg text-white font-medium focus:border-primary focus:outline-none"
                   >
                     {signs.map(sign => (
                       <option key={sign} value={sign}>
