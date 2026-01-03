@@ -276,8 +276,8 @@ export default function HoroscopePersonnalisePage() {
                   avec un tirage de cartes et une analyse complète de votre situation, contactez-moi directement.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link href="/contact" className="btn-primary soft-glow">
-                    <span>Consultation Privée (45€)</span>
+                  <Link href="/abonnement" className="btn-primary soft-glow">
+                    <span>Abonnez-vous</span>
                   </Link>
                   <button onClick={resetForm} className="btn-secondary">
                     <span>Nouvelle guidance</span>

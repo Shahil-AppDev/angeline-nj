@@ -28,6 +28,12 @@ const services = [
     href: '/reiki',
   },
   {
+    title: 'Abonnements Astro & Tirages',
+    description: 'Accédez à des horoscopes personnalisés quotidiens, des tirages mensuels exclusifs et des analyses astrologiques approfondies. Un accompagnement spirituel continu pour illuminer votre chemin.',
+    icon: '🌙',
+    href: '/abonnement',
+  },
+  {
     title: 'Boutique & Savoir',
     description: 'Équipez-vous d’outils vibratoires de haute qualité et formez-vous aux arts énergétiques pour devenir acteur de votre propre bien-être quotidien.',
     icon: '🔮',
