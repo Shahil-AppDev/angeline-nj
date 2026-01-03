@@ -165,7 +165,7 @@ export default function HoroscopePersonnalisePage() {
                     type="date"
                     value={formData.birthDate}
                     onChange={(e) => setFormData({...formData, birthDate: e.target.value})}
-                    className="w-full px-4 py-3 bg-surface border border-border rounded-lg text-text focus:border-primary focus:outline-none"
+                    className="w-full px-4 py-3 bg-lavande border border-border rounded-lg text-text focus:border-primary focus:outline-none"
                   />
                 </div>
 
@@ -180,7 +180,7 @@ export default function HoroscopePersonnalisePage() {
                       onChange={(e) => setFormData({...formData, question: e.target.value})}
                       placeholder="Décrivez votre situation ou posez votre question..."
                       rows={4}
-                      className="w-full px-4 py-3 bg-surface border border-border rounded-lg text-text focus:border-primary focus:outline-none resize-none"
+                      className="w-full px-4 py-3 bg-primary/10 border border-primary/30 rounded-lg text-text placeholder:text-text-2/60 focus:border-primary focus:outline-none resize-none"
                     />
                   </div>
                 )}
