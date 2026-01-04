@@ -294,8 +294,8 @@ export default function Home() {
               >
                 <Card hover glow className="h-full flex flex-col">
                   <div className="text-5xl mb-4 text-center">{prestation.icon}</div>
-                  <h3 className="text-xl font-semibold text-gold mb-2 text-center font-title">
-                    {prestation.title}
+                  <h3 className="text-xl font-semibold mb-2 text-center font-title">
+                    <span className="text-gold inline-block">{prestation.title}</span>
                   </h3>
                   <p className="text-text-2 text-sm mb-4 flex-1 text-center">
                     {prestation.shortDescription}
