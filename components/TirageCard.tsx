@@ -38,8 +38,8 @@ export default function TirageCard({ title, description, icon, iconImage, href, 
               <div className="text-5xl">{icon}</div>
             )}
           </div>
-          <h3 className="font-serif text-2xl font-semibold text-gold mb-3 font-title group-hover:text-gold-1 transition-colors">
-            {title}
+          <h3 className="font-serif text-2xl font-semibold mb-3 font-title group-hover:text-gold-1 transition-colors">
+            <span className="text-gold inline-block">{title}</span>
           </h3>
           <p className="text-text-2 leading-relaxed">
             {description}
