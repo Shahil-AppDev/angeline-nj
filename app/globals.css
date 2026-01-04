@@ -146,7 +146,7 @@ body {
   --bg: #1a0f2e;
   --bg-2: #2d1b4e;
   --surface: rgba(200, 182, 255, 0.15);
-  --border: rgba(139, 92, 246, 0.20);
+  --border: rgba(139, 92, 246, 0.15);
   
   --text: #F4EEFF;
   --muted: rgba(244, 238, 255, 0.70);
@@ -169,8 +169,10 @@ body {
   --glow: rgba(246, 201, 90, 0.22);
   --glow-2: rgba(214, 168, 74, 0.18);
   
-  /* CARD BACKGROUND */
-  --card-bg: rgba(45, 27, 78, 0.6);
+  /* CARD BACKGROUND - LILAS PASTEL */
+  --card-bg: rgba(224, 214, 245, 0.92);
+  --card-text: #2d1b4e;
+  --card-text-muted: rgba(45, 27, 78, 0.75);
   
   /* BUTTON LAVENDER */
   --btn-lavender: #c5b8e8;
@@ -448,9 +450,10 @@ a {
     background: var(--card-bg);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
-    border: 1px solid rgba(139, 92, 246, 0.25);
+    border: 1px solid rgba(139, 92, 246, 0.15);
     border-radius: var(--radius-md);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 16px rgba(139, 92, 246, 0.12);
+    color: var(--card-text);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     /* Safari iOS fix */
     -webkit-transform: translateZ(0);
@@ -460,15 +463,16 @@ a {
   
   .glass-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15), var(--shadow-glow);
-    border-color: var(--primary);
+    box-shadow: 0 8px 32px rgba(139, 92, 246, 0.2), 0 0 20px rgba(197, 184, 232, 0.3);
+    border-color: rgba(139, 92, 246, 0.3);
   }
   
   .glass-surface {
     background: var(--card-bg);
     -webkit-backdrop-filter: blur(var(--blur-sm));
     backdrop-filter: blur(var(--blur-sm));
-    border: 1px solid rgba(139, 92, 246, 0.20);
+    border: 1px solid rgba(139, 92, 246, 0.15);
+    color: var(--card-text);
     /* Safari iOS fix */
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -476,8 +480,9 @@ a {
   
   .glow-border {
     border: 1px solid transparent;
-    background: linear-gradient(var(--bg), var(--bg)) padding-box,
-                linear-gradient(135deg, var(--primary), var(--accent)) border-box;
+    background: linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
+                linear-gradient(135deg, rgba(139, 92, 246, 0.3), rgba(197, 184, 232, 0.5)) border-box;
+    color: var(--card-text);
   }
   
   .soft-glow {
