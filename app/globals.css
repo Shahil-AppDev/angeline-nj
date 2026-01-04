@@ -174,8 +174,9 @@ body {
   --card-text: #2d1b4e;
   --card-text-muted: rgba(45, 27, 78, 0.75);
   
-  /* BUTTON LAVENDER */
-  --btn-lavender: #c5b8e8;
+  /* BUTTONS - GOLD (ORIGINAL) */
+  --btn-primary-bg: linear-gradient(135deg, var(--primary), var(--primary-2));
+  --btn-primary-hover: linear-gradient(135deg, var(--primary-2), var(--primary));
   
   /* GRADIENTS */
   --mystic-gradient: transparent;
@@ -591,11 +592,11 @@ a {
     font-family: var(--font-body);
     font-weight: 600;
     font-size: 1rem;
-    color: var(--bg);
-    background: var(--btn-lavender);
+    color: #FFFFFF;
+    background: linear-gradient(135deg, var(--primary), var(--primary-2));
     border: none;
     border-radius: var(--radius-md);
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-md), 0 0 20px var(--glow);
     cursor: pointer;
     transition: all 0.3s ease;
     white-space: nowrap;
@@ -604,9 +605,9 @@ a {
   }
   
   .btn-primary:hover {
-    background: #b8acd8;
+    background: linear-gradient(135deg, var(--primary-2), var(--primary));
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-lg), 0 0 30px var(--glow);
   }
   
   .btn-primary span {
