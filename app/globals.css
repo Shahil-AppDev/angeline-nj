@@ -170,7 +170,7 @@ body {
   --glow-2: rgba(214, 168, 74, 0.18);
   
   /* CARD BACKGROUND - LILAS PASTEL */
-  --card-bg: rgba(224, 214, 245, 0.92);
+  --card-bg: rgba(212, 201, 244, 0.92); /* #D4C9F4 */
   --card-text: #2d1b4e;
   --card-text-muted: rgba(45, 27, 78, 0.75);
   
@@ -300,13 +300,7 @@ body {
   color: var(--gold-1);
 }
 
-.glass-card {
-  background: var(--surface);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-}
+/* .glass-card moved to @layer components - see line ~450 */
 
 * {
   box-sizing: border-box;
@@ -448,18 +442,36 @@ a {
   }
   
   .glass-card {
-    background: var(--card-bg);
+    background: var(--card-bg) !important;
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(139, 92, 246, 0.15);
     border-radius: var(--radius-md);
     box-shadow: 0 4px 16px rgba(139, 92, 246, 0.12);
-    color: var(--card-text);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     /* Safari iOS fix */
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     will-change: transform;
+  }
+  
+  .glass-card,
+  .glass-card * {
+    color: var(--card-text);
+  }
+  
+  .glass-card h1,
+  .glass-card h2,
+  .glass-card h3,
+  .glass-card h4,
+  .glass-card h5,
+  .glass-card h6 {
+    color: var(--gold-2);
+  }
+  
+  .glass-card p,
+  .glass-card span:not(.text-gold):not(.text-gold-1):not(.text-gold-2) {
+    color: var(--card-text);
   }
   
   .glass-card:hover {
@@ -469,7 +481,7 @@ a {
   }
   
   .glass-surface {
-    background: var(--card-bg);
+    background: var(--card-bg) !important;
     -webkit-backdrop-filter: blur(var(--blur-sm));
     backdrop-filter: blur(var(--blur-sm));
     border: 1px solid rgba(139, 92, 246, 0.15);
@@ -482,7 +494,11 @@ a {
   .glow-border {
     border: 1px solid transparent;
     background: linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
-                linear-gradient(135deg, rgba(139, 92, 246, 0.3), rgba(197, 184, 232, 0.5)) border-box;
+                linear-gradient(135deg, rgba(139, 92, 246, 0.3), rgba(197, 184, 232, 0.5)) border-box !important;
+  }
+  
+  .glow-border,
+  .glow-border * {
     color: var(--card-text);
   }
   
