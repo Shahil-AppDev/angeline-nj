@@ -142,11 +142,11 @@ body {
   --font-title: var(--font-cinzel-decorative);
   --font-body: var(--font-manrope);
 
-  /* MYSTIC PURPLE PALETTE */
+  /* MYSTIC LAVENDER PALETTE */
   --bg: #1a0f2e;
   --bg-2: #2d1b4e;
-  --surface: rgba(200, 182, 255, 0.08);
-  --border: rgba(200, 182, 255, 0.25);
+  --surface: rgba(200, 182, 255, 0.15);
+  --border: rgba(139, 92, 246, 0.20);
   
   --text: #F4EEFF;
   --muted: rgba(244, 238, 255, 0.70);
@@ -157,7 +157,7 @@ body {
   --gold-glow: rgba(246, 201, 90, 0.25);
   
   /* GRIMOIRE BACKGROUND */
-  --ink: rgba(244, 238, 255, 0.08);
+  --ink: rgba(139, 92, 246, 0.08);
   --dust: rgba(246, 201, 90, 0.14);
   --sigil: rgba(246, 201, 90, 0.10);
   
@@ -167,10 +167,13 @@ body {
   --focus: #F7E7A1;
   
   --glow: rgba(246, 201, 90, 0.22);
-  --glow-2: rgba(214, 168, 74, 0.18)
+  --glow-2: rgba(214, 168, 74, 0.18);
+  
+  /* CARD BACKGROUND - RÉFÉRENCE UNIQUE */
+  --card-bg: #c5b8e8;
   
   /* GRADIENTS */
-  --mystic-gradient: linear-gradient(135deg, #2d1b4e 0%, #3d2b5e 50%, #4a3570 100%);
+  --mystic-gradient: transparent;
   --aurora-gradient: linear-gradient(135deg, rgba(200, 182, 255, 0.10) 0%, rgba(200, 182, 255, 0.08) 50%, rgba(200, 182, 255, 0.06) 100%);
   --glow-gradient: radial-gradient(circle at center, rgba(200, 182, 255, 0.25) 0%, transparent 70%);
   --glass-gradient: linear-gradient(135deg, rgba(200, 182, 255, 0.08) 0%, rgba(200, 182, 255, 0.04) 100%);
@@ -433,13 +436,18 @@ a {
     background: transparent;
   }
   
+  .aurora-background {
+    background: transparent;
+    position: relative;
+  }
+  
   .glass-card {
-    background: rgba(200, 182, 255, 0.05);
+    background: var(--card-bg);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
-    border: 1px solid var(--border);
+    border: 1px solid rgba(139, 92, 246, 0.25);
     border-radius: var(--radius-md);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     /* Safari iOS fix */
     -webkit-transform: translateZ(0);
@@ -449,15 +457,15 @@ a {
   
   .glass-card:hover {
     transform: translateY(-4px);
-    box-shadow: var(--shadow-lg), var(--shadow-glow);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15), var(--shadow-glow);
     border-color: var(--primary);
   }
   
   .glass-surface {
-    background: var(--surface);
+    background: var(--card-bg);
     -webkit-backdrop-filter: blur(var(--blur-sm));
     backdrop-filter: blur(var(--blur-sm));
-    border: 1px solid var(--border);
+    border: 1px solid rgba(139, 92, 246, 0.20);
     /* Safari iOS fix */
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
