@@ -22,31 +22,35 @@ body > div.relative.z-20 > section:nth-child(3) button:hover {
   box-shadow: 0 6px 24px rgba(214, 168, 74, 0.4), 0 0 30px rgba(246, 201, 90, 0.3) !important;
 }
 
-/* TEXTES OR ANIMÉS avec fond sombre DERRIÈRE (::before) */
+/* TEXTES OR ANIMÉS avec halo sombre discret DERRIÈRE */
 body > div.relative.z-20 > section:nth-child(3) h3.text-gold,
 body > div.relative.z-20 > section:nth-child(3) .text-gold {
   position: relative !important;
   z-index: 1 !important;
   padding: 0.5rem 1rem !important;
   display: inline-block !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  background: none !important;
 }
 
 body > div.relative.z-20 > section:nth-child(3) h3.text-gold::before,
 body > div.relative.z-20 > section:nth-child(3) .text-gold::before {
   content: "" !important;
   position: absolute !important;
-  inset: 0 !important;
-  background: rgba(26, 15, 46, 0.75) !important;
+  inset: -2px -6px !important;
+  background: rgba(26, 15, 46, 0.65) !important;
   border-radius: 8px !important;
-  -webkit-backdrop-filter: blur(8px) !important;
-  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+  backdrop-filter: blur(6px) !important;
   z-index: -1 !important;
   pointer-events: none !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3) !important;
 }
 
-/* Spécifique aux h3 dans les cartes prestations */
+/* Spécifique aux h3 dans les cartes prestations - centrage du halo */
 body > div.relative.z-20 > section:nth-child(3) .glass-card h3.text-gold {
-  width: 100% !important;
+  margin: 0 auto !important;
   text-align: center !important;
 }
 
