@@ -1,0 +1,51 @@
+/* ============================================
+   OVERRIDES CIBLÉS POUR SECTION 3 (PRESTATIONS)
+   body > div.relative.z-20 > section:nth-child(3)
+   ============================================ */
+
+/* BOUTONS OR PREMIUM dans section 3 uniquement */
+body > div.relative.z-20 > section:nth-child(3) a button,
+body > div.relative.z-20 > section:nth-child(3) button {
+  background: linear-gradient(135deg, #D6A84A, #8B5A12) !important;
+  color: #1a0f2e !important;
+  border: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 16px rgba(214, 168, 74, 0.3), 0 0 20px rgba(246, 201, 90, 0.2) !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+body > div.relative.z-20 > section:nth-child(3) a button:hover,
+body > div.relative.z-20 > section:nth-child(3) button:hover {
+  background: linear-gradient(135deg, #8B5A12, #D6A84A) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 24px rgba(214, 168, 74, 0.4), 0 0 30px rgba(246, 201, 90, 0.3) !important;
+}
+
+/* TEXTES OR ANIMÉS avec fond sombre pour lisibilité */
+body > div.relative.z-20 > section:nth-child(3) h3.text-gold,
+body > div.relative.z-20 > section:nth-child(3) .text-gold {
+  background: rgba(26, 15, 46, 0.75) !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 8px !important;
+  display: inline-block !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+/* Spécifique aux h3 dans les cartes prestations */
+body > div.relative.z-20 > section:nth-child(3) .glass-card h3.text-gold {
+  width: 100% !important;
+  text-align: center !important;
+}
+
+/* HEADER TRANSPARENT - S'assurer qu'il reste transparent */
+nav.fixed {
+  background: transparent !important;
+}
+
+nav.fixed.glass-surface {
+  background: rgba(26, 15, 46, 0.85) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  backdrop-filter: blur(12px) !important;
+}

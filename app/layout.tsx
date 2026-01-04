@@ -3,6 +3,7 @@ import MysticUniverseRain from "@/components/background/MysticUniverseRain";
 import type { Metadata } from "next";
 import { Cinzel_Decorative, Manrope } from "next/font/google";
 import "./globals.css";
+import "./home-section-overrides.css";
 
 const cinzelDecorative = Cinzel_Decorative({
   subsets: ["latin"],
