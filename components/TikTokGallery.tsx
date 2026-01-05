@@ -18,9 +18,9 @@ const tiktokVideos = [
   'https://www.tiktok.com/@angelinenj/video/7589334050016349443', // Gossip Love réconciliation
   'https://www.tiktok.com/@angelinenj/video/7588850210856504598', // Tirage sentimental amour
   'https://www.tiktok.com/@angelinenj/video/7588538474744007958', // 9 oracles promo Noël
-  'https://www.tiktok.com/@angelinenj/video/7588538474744007958',
-  'https://www.tiktok.com/@angelinenj/video/7588538474744007958',
-  'https://www.tiktok.com/@angelinenj/video/7588538474744007958',
+  'https://www.tiktok.com/@angelinenj/video/7588202649875614999', // Tirage NJ relation passionnelle
+  'https://www.tiktok.com/@angelinenj/video/7588202649875614999',
+  'https://www.tiktok.com/@angelinenj/video/7588202649875614999',
 ];
 
 export default function TikTokGallery() {
