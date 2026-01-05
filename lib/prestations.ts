@@ -530,6 +530,254 @@ export const prestations: Prestation[] = [
     ],
     relatedPrestations: ['tirage-sentimental', 'question-precise-domaine', 'tirage-urgence'],
   },
+  {
+    slug: 'formations',
+    title: 'Les formations',
+    subtitle: 'Apprenez les arts divinatoires et énergétiques',
+    icon: '📚',
+    badge: 'Formation',
+    shortDescription: 'Découvrez nos formations complètes pour maîtriser le pendule, les oracles et le Reiki.',
+    price: 'Voir formations',
+    format: 'Formations en ligne et supports PDF',
+    oldSiteUrl: 'https://angeline-nj.xyz/formations',
+    intro: 'Vous souhaitez développer vos compétences en arts divinatoires ou en soins énergétiques ? Découvrez nos formations complètes et accessibles pour apprendre à votre rythme.',
+    forWho: [
+      'Vous souhaitez apprendre le pendule',
+      'Vous voulez maîtriser les tirages d\'oracle',
+      'Vous désirez devenir praticien Reiki',
+      'Vous cherchez à développer vos capacités intuitives',
+    ],
+    whatYouGet: [
+      'Des formations complètes et structurées',
+      'Des supports PDF détaillés',
+      'Un accompagnement personnalisé',
+      'Des exercices pratiques',
+      'Un certificat de formation',
+    ],
+    process: [
+      {
+        step: 1,
+        title: 'Choix de la formation',
+        description: 'Consultez nos différentes formations et choisissez celle qui vous correspond.',
+      },
+      {
+        step: 2,
+        title: 'Inscription',
+        description: 'Inscrivez-vous et accédez immédiatement au contenu.',
+      },
+      {
+        step: 3,
+        title: 'Apprentissage',
+        description: 'Suivez les modules à votre rythme avec les supports fournis.',
+      },
+      {
+        step: 4,
+        title: 'Certification',
+        description: 'Recevez votre certificat une fois la formation complétée.',
+      },
+    ],
+    faq: [
+      {
+        question: 'Quelles formations proposez-vous ?',
+        answer: 'Nous proposons des formations sur le pendule, les tirages d\'oracle et le Reiki (niveaux 1, 2 et 3).',
+      },
+      {
+        question: 'Les formations sont-elles accessibles à vie ?',
+        answer: 'Oui, une fois inscrit, vous avez un accès illimité au contenu de la formation.',
+      },
+      {
+        question: 'Y a-t-il un accompagnement ?',
+        answer: 'Oui, vous pouvez me contacter pour des questions ou un accompagnement personnalisé.',
+      },
+    ],
+    relatedPrestations: ['tirage-visio', 'question-precise-domaine', 'reiki-a-distance'],
+  },
+  {
+    slug: 'tirage-video',
+    title: 'Tirage vidéo',
+    subtitle: 'Tirages vidéo personnalisés disponibles en boutique',
+    icon: '🎬',
+    badge: 'Boutique',
+    shortDescription: 'Découvrez nos tirages vidéo personnalisés disponibles dans la boutique.',
+    price: 'Voir boutique',
+    format: 'Vidéo personnalisée',
+    oldSiteUrl: 'https://angeline-nj.xyz/boutique/mes-prestations',
+    intro: 'Vous souhaitez un tirage vidéo personnalisé ? Découvrez notre sélection de tirages vidéo disponibles dans la boutique, catégorie "Mes prestations".',
+    forWho: [
+      'Vous préférez un format vidéo',
+      'Vous souhaitez conserver votre tirage',
+      'Vous voulez un tirage détaillé et complet',
+      'Vous cherchez une guidance approfondie',
+    ],
+    whatYouGet: [
+      'Une vidéo personnalisée de qualité',
+      'Un tirage complet et détaillé',
+      'Une interprétation approfondie',
+      'Un support à revoir autant de fois que nécessaire',
+      'Des conseils concrets et actionnables',
+    ],
+    process: [
+      {
+        step: 1,
+        title: 'Boutique',
+        description: 'Rendez-vous dans la boutique, catégorie "Mes prestations".',
+      },
+      {
+        step: 2,
+        title: 'Choix du tirage',
+        description: 'Sélectionnez le tirage vidéo qui correspond à vos besoins.',
+      },
+      {
+        step: 3,
+        title: 'Commande',
+        description: 'Passez commande et fournissez les informations nécessaires.',
+      },
+      {
+        step: 4,
+        title: 'Réception',
+        description: 'Recevez votre vidéo personnalisée sous 48-72h.',
+      },
+    ],
+    faq: [
+      {
+        question: 'Où trouver les tirages vidéo ?',
+        answer: 'Dans la boutique, catégorie "Mes prestations". Vous y trouverez tous les tirages vidéo disponibles.',
+      },
+      {
+        question: 'Quelle est la durée des vidéos ?',
+        answer: 'La durée varie selon le type de tirage, généralement entre 20 et 50 minutes.',
+      },
+      {
+        question: 'Puis-je télécharger la vidéo ?',
+        answer: 'Oui, vous recevez un lien de téléchargement pour conserver votre vidéo.',
+      },
+    ],
+    relatedPrestations: ['tirage-visio', 'tirage-sentimental', 'tirage-positif'],
+  },
+  {
+    slug: 'rituel-pdf',
+    title: 'Rituel PDF',
+    subtitle: 'Rituels guidés en format PDF',
+    icon: '📄',
+    badge: 'PDF',
+    shortDescription: 'Téléchargez nos rituels guidés en PDF pour pratiquer chez vous.',
+    price: '19,90€',
+    format: 'PDF téléchargeable',
+    oldSiteUrl: 'https://angeline-nj.xyz/boutique/rituels',
+    intro: 'Découvrez nos rituels guidés en format PDF, conçus pour vous accompagner dans votre pratique spirituelle. Chaque rituel est détaillé étape par étape avec les explications nécessaires.',
+    forWho: [
+      'Vous souhaitez pratiquer des rituels chez vous',
+      'Vous cherchez des guides détaillés',
+      'Vous voulez développer votre pratique spirituelle',
+      'Vous préférez un support écrit',
+    ],
+    whatYouGet: [
+      'Un PDF détaillé et illustré',
+      'Des instructions étape par étape',
+      'La liste du matériel nécessaire',
+      'Des explications sur le rituel',
+      'Un support à conserver et réutiliser',
+    ],
+    process: [
+      {
+        step: 1,
+        title: 'Boutique',
+        description: 'Rendez-vous dans la boutique, catégorie "Rituels".',
+      },
+      {
+        step: 2,
+        title: 'Choix du rituel',
+        description: 'Sélectionnez le rituel qui correspond à votre intention.',
+      },
+      {
+        step: 3,
+        title: 'Téléchargement',
+        description: 'Après achat, téléchargez immédiatement votre PDF.',
+      },
+      {
+        step: 4,
+        title: 'Pratique',
+        description: 'Suivez les instructions pour réaliser votre rituel.',
+      },
+    ],
+    faq: [
+      {
+        question: 'Combien de rituels sont disponibles ?',
+        answer: 'Nous proposons actuellement 5 rituels différents pour diverses intentions (amour, protection, prospérité, etc.).',
+      },
+      {
+        question: 'Le PDF est-il imprimable ?',
+        answer: 'Oui, vous pouvez imprimer le PDF pour une utilisation plus pratique.',
+      },
+      {
+        question: 'Ai-je besoin de matériel spécifique ?',
+        answer: 'Chaque rituel indique le matériel nécessaire. La plupart utilisent des éléments simples et accessibles.',
+      },
+    ],
+    relatedPrestations: ['tirage-positif', 'reiki-a-distance', 'formations'],
+  },
+  {
+    slug: 'rituel-video',
+    title: 'Rituel Vidéo',
+    subtitle: 'Rituels guidés en format vidéo',
+    icon: '🎥',
+    badge: 'Vidéo',
+    shortDescription: 'Suivez nos rituels guidés en vidéo pour une pratique accompagnée.',
+    price: 'Voir boutique',
+    format: 'Vidéo guidée',
+    oldSiteUrl: 'https://angeline-nj.xyz/boutique/rituels',
+    intro: 'Vous préférez être guidé en vidéo ? Découvrez nos rituels en format vidéo pour pratiquer en étant accompagné pas à pas. Disponibles dans la boutique, catégorie "Rituels".',
+    forWho: [
+      'Vous préférez un format vidéo',
+      'Vous souhaitez être guidé en direct',
+      'Vous débutez dans les rituels',
+      'Vous cherchez une pratique accompagnée',
+    ],
+    whatYouGet: [
+      'Une vidéo guidée complète',
+      'Un accompagnement pas à pas',
+      'Des explications détaillées',
+      'La possibilité de pratiquer en même temps',
+      'Un support à revoir autant de fois que nécessaire',
+    ],
+    process: [
+      {
+        step: 1,
+        title: 'Boutique',
+        description: 'Rendez-vous dans la boutique, catégorie "Rituels".',
+      },
+      {
+        step: 2,
+        title: 'Choix du rituel',
+        description: 'Sélectionnez le rituel vidéo qui correspond à votre intention.',
+      },
+      {
+        step: 3,
+        title: 'Accès',
+        description: 'Après achat, accédez immédiatement à votre vidéo.',
+      },
+      {
+        step: 4,
+        title: 'Pratique guidée',
+        description: 'Suivez la vidéo pour réaliser votre rituel en étant guidé.',
+      },
+    ],
+    faq: [
+      {
+        question: 'Quelle est la durée des vidéos ?',
+        answer: 'Les rituels vidéo durent généralement entre 15 et 30 minutes selon le type de rituel.',
+      },
+      {
+        question: 'Puis-je pratiquer en même temps que la vidéo ?',
+        answer: 'Oui, les vidéos sont conçues pour que vous puissiez pratiquer en même temps, avec des pauses adaptées.',
+      },
+      {
+        question: 'Ai-je un accès illimité ?',
+        answer: 'Oui, une fois acheté, vous pouvez revoir la vidéo autant de fois que vous le souhaitez.',
+      },
+    ],
+    relatedPrestations: ['rituel-pdf', 'formations', 'reiki-a-distance'],
+  },
 ];
 
 export function getPrestationBySlug(slug: string): Prestation | undefined {
