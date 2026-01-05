@@ -99,6 +99,14 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
         </div>
       </Section>
 
+      {prestation.slug === 'tirage-video' && (
+        <Section className="py-16">
+          <div className="container-custom max-w-7xl mx-auto">
+            <TikTokGallery />
+          </div>
+        </Section>
+      )}
+
       <Section className="py-16">
         <div className="container-custom max-w-4xl mx-auto">
           <motion.div
@@ -113,12 +121,6 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
               </h2>
               <p className="text-text-2 leading-relaxed mb-6">{prestation.intro}</p>
             </Card>
-
-            {prestation.slug === 'tirage-video' && (
-              <div className="mb-12">
-                <TikTokGallery />
-              </div>
-            )}
 
             <Card className="mb-12">
               <h2 className="font-serif text-2xl font-semibold text-text mb-6">
