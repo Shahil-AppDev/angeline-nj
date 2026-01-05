@@ -464,6 +464,72 @@ export const prestations: Prestation[] = [
     ],
     relatedPrestations: ['tirage-positif', 'question-precise-domaine', 'tirage-sentimental'],
   },
+  {
+    slug: 'tirage-visio',
+    title: 'Tirage en Visio',
+    subtitle: 'Consultation personnalisée en direct par visioconférence',
+    icon: '📹',
+    badge: 'En direct',
+    shortDescription: 'Pour un tirage personnalisé en direct, vous pouvez me contacter sur mes réseaux.',
+    price: '50€ (30min) • 70€ (45min) • 90€ (60min)',
+    format: 'Visioconférence en direct (Instagram, TikTok, Facebook)',
+    oldSiteUrl: 'https://angeline-nj.com/contact',
+    intro: 'Pour un tirage personnalisé en direct, vous pouvez me contacter sur mes différents réseaux. Une fois le Paypal effectué, nous convenons la date du rendez-vous. Le tirage peut être fait par SMS, vocaux ou visioconférence.',
+    forWho: [
+      'Vous préférez un échange en direct',
+      'Vous souhaitez poser vos questions en temps réel',
+      'Vous voulez une interaction personnalisée',
+      'Vous cherchez une guidance immédiate et interactive',
+    ],
+    whatYouGet: [
+      'Une consultation en direct par visioconférence',
+      'Un tirage personnalisé adapté à vos questions',
+      'La possibilité de poser des questions de suivi',
+      'Une guidance interactive et bienveillante',
+      'Choix de la durée selon vos besoins (30, 45 ou 60 min)',
+    ],
+    process: [
+      {
+        step: 1,
+        title: 'Contact',
+        description: 'Contactez-moi sur mes réseaux (Instagram, TikTok, Facebook) pour réserver.',
+      },
+      {
+        step: 2,
+        title: 'Paiement',
+        description: 'Effectuez le paiement via Paypal selon la durée choisie.',
+      },
+      {
+        step: 3,
+        title: 'Planification',
+        description: 'Nous convenons ensemble d\'une date et heure pour le rendez-vous.',
+      },
+      {
+        step: 4,
+        title: 'Tirage en direct',
+        description: 'Je réalise votre tirage en visioconférence, SMS ou vocaux selon votre préférence.',
+      },
+    ],
+    faq: [
+      {
+        question: 'Quelle est la différence entre les durées ?',
+        answer: '30 min pour une question ciblée, 45 min pour 2-3 questions, 60 min pour une consultation complète approfondie.',
+      },
+      {
+        question: 'Sur quelle plateforme se fait la visio ?',
+        answer: 'Nous pouvons utiliser Instagram, TikTok, Facebook ou tout autre moyen qui vous convient (SMS, vocaux).',
+      },
+      {
+        question: 'Puis-je enregistrer la séance ?',
+        answer: 'Oui, vous pouvez enregistrer la visioconférence pour la revoir plus tard.',
+      },
+      {
+        question: 'La question doit être précise ?',
+        answer: 'Oui, je souhaiterais tout savoir pour mon avenir professionnel est trop vaste. Cette question est trop vague, cette question est claire et aura donc une réponse claire. Est-ce que je vais trouver un nouveau travail prochainement, cette question est trop vaste.',
+      },
+    ],
+    relatedPrestations: ['tirage-sentimental', 'question-precise-domaine', 'tirage-urgence'],
+  },
 ];
 
 export function getPrestationBySlug(slug: string): Prestation | undefined {
