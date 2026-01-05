@@ -226,7 +226,7 @@ export const prestations: Prestation[] = [
   {
     slug: 'tirage-video',
     title: 'Tirage vidéo',
-    subtitle: 'Tirages vidéo personnalisés disponibles en boutique',
+    subtitle: 'Tirages vidéo disponibles sur mes réseaux ainsi qu\'en privée',
     icon: '🎬',
     badge: 'Boutique',
     shortDescription: 'Explore mes tirages vidéo thématiques, créés avec mes oracles.',
