@@ -56,19 +56,19 @@ export default function Navbar() {
             </span>
           </Link>
 
-          <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
+          <div className="hidden md:flex items-center space-x-2 lg:space-x-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gold font-medium transition-all relative group hover:drop-shadow-[0_0_8px_var(--gold-glow)] text-xs lg:text-sm whitespace-nowrap"
+                className="text-gold font-medium transition-all relative group hover:drop-shadow-[0_0_8px_var(--gold-glow)] text-[10px] lg:text-sm whitespace-nowrap"
                 style={{ fontFamily: 'var(--font-title)', fontWeight: 400 }}
               >
                 {link.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-gold-1 to-gold-2 group-hover:w-full transition-all duration-300 shadow-[0_0_8px_var(--gold-glow)]" />
               </Link>
             ))}
-            <Link href="/contact" className="btn-primary text-xs lg:text-sm whitespace-nowrap px-3 py-2">
+            <Link href="/contact" className="btn-primary text-[10px] lg:text-sm whitespace-nowrap px-2 py-1.5 lg:px-3 lg:py-2">
               <span>Prendre rendez-vous</span>
             </Link>
           </div>
