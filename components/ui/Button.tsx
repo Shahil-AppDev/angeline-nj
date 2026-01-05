@@ -13,8 +13,8 @@ export default function Button({
   className = '',
   ...props 
 }: ButtonProps) {
-  // RÉFÉRENCE UNIQUE: tous les variants rendent le même markup gold
-  const baseClasses = 'relative inline-flex items-center justify-center font-medium transition-all duration-300 rounded-lg overflow-hidden group bg-gradient-to-r from-primary to-primary-2 text-white hover:shadow-glow border border-primary/50';
+  // RÉFÉRENCE UNIQUE: tous les variants rendent le même markup gold (bronze→jaune)
+  const baseClasses = 'btn-unified';
   
   const sizes = {
     sm: 'px-4 py-2 text-sm',
