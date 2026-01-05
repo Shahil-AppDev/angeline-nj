@@ -105,6 +105,11 @@ export default function PrestationsPage() {
                   Voir les formations
                 </Button>
               </Link>
+              <Link href="/boutique/categorie/rituels">
+                <Button variant="primary" size="lg">
+                  Voir les rituels
+                </Button>
+              </Link>
               <Link href="/boutique">
                 <Button variant="primary" size="lg">
                   Découvrir la boutique

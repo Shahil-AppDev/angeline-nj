@@ -354,7 +354,7 @@ export const prestations: Prestation[] = [
     icon: '🎥',
     badge: 'Vidéo',
     shortDescription: 'Suivez nos rituels guidés en vidéo pour une pratique accompagnée : Protection • Attirer l\'amour • Abondance • Manifester un projet • Couper un lien • Protection & chance.',
-    price: 'Voir boutique',
+    price: '19.90€',
     format: 'Vidéo guidée',
     oldSiteUrl: 'https://angeline-nj.xyz/contact',
     intro: 'Vous préférez être guidé en vidéo ? Découvrez nos rituels en format vidéo pour pratiquer en étant accompagné pas à pas. Disponibles dans la boutique, catégorie "Rituels".',
