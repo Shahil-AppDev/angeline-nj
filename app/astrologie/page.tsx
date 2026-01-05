@@ -108,10 +108,10 @@ export default function AstrologiePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-5xl md:text-6xl font-bold text-gold mb-6 font-title">
+            <h1 className="font-bold text-gold mb-6 font-title" style={{ fontSize: 'clamp(1.75rem, 4vw, 3.5rem)' }}>
               Astrologie & Guidance Céleste
             </h1>
-            <p className="text-xl text-text-2 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-text-2 max-w-3xl mx-auto leading-relaxed" style={{ fontSize: 'clamp(1rem, 1.5vw, 1.25rem)' }}>
               Explorez les mystères des astres et découvrez ce que les étoiles révèlent sur votre chemin de vie
             </p>
           </motion.div>
