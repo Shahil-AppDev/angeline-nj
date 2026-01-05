@@ -229,7 +229,7 @@ export const prestations: Prestation[] = [
     subtitle: 'Tirages vidéo personnalisés disponibles en boutique',
     icon: '🎬',
     badge: 'Boutique',
-    shortDescription: 'Découvrez nos tirages vidéo personnalisés disponibles dans la boutique.',
+    shortDescription: 'Explore mes tirages vidéo thématiques, créés avec mes oracles.',
     price: 'Voir boutique',
     format: 'Vidéo personnalisée',
     oldSiteUrl: 'https://angeline-nj.xyz/contact',
