@@ -114,6 +114,12 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
               <p className="text-text-2 leading-relaxed mb-6">{prestation.intro}</p>
             </Card>
 
+            {prestation.slug === 'tirage-video' && (
+              <div className="mb-12">
+                <TikTokGallery />
+              </div>
+            )}
+
             <Card className="mb-12">
               <h2 className="font-serif text-2xl font-semibold text-text mb-6">
                 Pour qui ?

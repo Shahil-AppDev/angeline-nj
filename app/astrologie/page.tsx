@@ -193,12 +193,12 @@ export default function AstrologiePage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className={`glass-card p-6 hover:scale-105 transition-transform ${horoscope.featured ? 'border-primary bg-primary/5' : ''}`}>
+                <div className={`glass-card p-6 hover:scale-105 transition-transform h-full flex flex-col ${horoscope.featured ? 'border-primary bg-primary/5' : ''}`}>
                   <div className="text-5xl mb-4 text-center">{horoscope.icon}</div>
-                  <h3 className="text-xl font-semibold text-gold inline-block mb-2 font-title text-center">
+                  <h3 className="text-xl font-semibold text-gold mb-2 font-title text-center">
                     {horoscope.title}
                   </h3>
-                  <p className="text-text-2 text-sm text-center mb-4">
+                  <p className="text-text-2 text-sm text-center mb-4 flex-1">
                     {horoscope.description}
                   </p>
                   {horoscope.featured && (
