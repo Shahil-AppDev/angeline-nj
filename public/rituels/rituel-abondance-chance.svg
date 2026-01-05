@@ -72,7 +72,7 @@
   <text x="200" y="410" font-family="serif" font-size="24" font-weight="bold" 
         fill="#8B5A12" text-anchor="middle">RITUEL ABONDANCE</text>
   <text x="200" y="435" font-family="serif" font-size="24" font-weight="bold" 
-        fill="#8B5A12" text-anchor="middle">& CHANCE</text>
+        fill="#8B5A12" text-anchor="middle">&amp; CHANCE</text>
   
   <!-- Sous-titre -->
   <text x="200" y="460" font-family="serif" font-size="13" 

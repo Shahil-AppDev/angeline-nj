@@ -70,7 +70,7 @@
   <text x="200" y="405" font-family="serif" font-size="24" font-weight="bold" 
         fill="#8B5A12" text-anchor="middle">RITUEL MANIFESTATION</text>
   <text x="200" y="430" font-family="serif" font-size="24" font-weight="bold" 
-        fill="#8B5A12" text-anchor="middle">& PROJET</text>
+        fill="#8B5A12" text-anchor="middle">&amp; PROJET</text>
   
   <!-- Sous-titre -->
   <text x="200" y="460" font-family="serif" font-size="13" 
