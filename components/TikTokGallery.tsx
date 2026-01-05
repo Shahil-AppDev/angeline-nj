@@ -13,14 +13,14 @@ const tiktokVideos = [
   'https://www.tiktok.com/@angelinenj/video/7591137171902401814', // Soin énergétique bon -10€
   'https://www.tiktok.com/@angelinenj/video/7590793309333769494', // Oracle NJ édition limitée
   'https://www.tiktok.com/@angelinenj/video/7590349887003200790', // Gossip Love Aurak
-  'https://www.tiktok.com/@angelinenj/video/7590349887003200790',
-  'https://www.tiktok.com/@angelinenj/video/7590349887003200790',
-  'https://www.tiktok.com/@angelinenj/video/7590349887003200790',
-  'https://www.tiktok.com/@angelinenj/video/7590349887003200790',
-  'https://www.tiktok.com/@angelinenj/video/7590349887003200790',
-  'https://www.tiktok.com/@angelinenj/video/7590349887003200790',
-  'https://www.tiktok.com/@angelinenj/video/7590349887003200790',
-  'https://www.tiktok.com/@angelinenj/video/7590349887003200790',
+  'https://www.tiktok.com/@angelinenj/video/7590051459073314070', // Oracle Mystica 98 cartes
+  'https://www.tiktok.com/@angelinenj/video/7590051459073314070',
+  'https://www.tiktok.com/@angelinenj/video/7590051459073314070',
+  'https://www.tiktok.com/@angelinenj/video/7590051459073314070',
+  'https://www.tiktok.com/@angelinenj/video/7590051459073314070',
+  'https://www.tiktok.com/@angelinenj/video/7590051459073314070',
+  'https://www.tiktok.com/@angelinenj/video/7590051459073314070',
+  'https://www.tiktok.com/@angelinenj/video/7590051459073314070',
 ];
 
 export default function TikTokGallery() {
