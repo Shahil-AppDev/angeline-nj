@@ -41,7 +41,7 @@ export default function Navbar() {
       }`}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 md:h-18 lg:h-20">
           <Link href="/" className="flex items-center space-x-2 group">
             <Image 
               src="/brand/logo-transparent.png?v=2" 
@@ -56,7 +56,7 @@ export default function Navbar() {
             </span>
           </Link>
 
-          <div className="nav-desktop hidden md:flex items-center space-x-2 lg:space-x-6">
+          <div className="nav-desktop hidden lg:flex items-center space-x-2 lg:space-x-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -75,7 +75,7 @@ export default function Navbar() {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="nav-burger md:hidden p-3 transition-all rounded-lg hover:bg-surface"
+            className="nav-burger lg:hidden p-3 transition-all rounded-lg hover:bg-surface"
             style={{ color: '#C8B6FF' }}
             aria-label="Menu"
           >

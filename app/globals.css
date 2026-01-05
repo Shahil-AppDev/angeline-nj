@@ -913,6 +913,31 @@ a {
   }
 }
 
+/* Tablette en paysage : peu de hauteur -> header compact + burger mode */
+@media (orientation: landscape) and (max-height: 650px) {
+  .nav-desktop { 
+    display: none !important; 
+  }
+  
+  .nav-burger { 
+    display: flex !important; 
+  }
+  
+  nav.fixed, .navbar { 
+    padding-top: 10px !important; 
+    padding-bottom: 10px !important; 
+  }
+  
+  .cta-header { 
+    padding: 8px 12px !important; 
+    font-size: 12px !important; 
+  }
+  
+  .hero-scroll-indicator { 
+    display: none !important; 
+  }
+}
+
 @media (max-width: 480px) {
   h1 {
     font-size: 2rem;
