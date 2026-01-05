@@ -814,9 +814,16 @@ a {
   input[type="time"],
   input[type="text"],
   input[type="email"],
-  input[type="tel"] {
+  input[type="tel"],
+  select,
+  textarea {
     color: var(--gold-2) !important;
     font-weight: 500;
+  }
+  
+  select option {
+    color: var(--gold-2);
+    background: var(--card-bg);
   }
   
   input[type="date"]::-webkit-calendar-picker-indicator,
