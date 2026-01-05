@@ -56,7 +56,7 @@ export default function Navbar() {
             </span>
           </Link>
 
-          <div className="nav-desktop hidden xl:flex items-center space-x-2 xl:space-x-6">
+          <div className="nav-desktop hidden lg:flex items-center space-x-2 lg:space-x-4 xl:space-x-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -75,7 +75,7 @@ export default function Navbar() {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="nav-burger md:hidden p-3 transition-all rounded-lg hover:bg-surface"
+            className="nav-burger lg:hidden p-3 transition-all rounded-lg hover:bg-surface"
             style={{ color: '#C8B6FF' }}
             aria-label="Menu"
           >
@@ -105,7 +105,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden border-t border-border overflow-y-auto max-h-[calc(100vh-80px)]"
+            className="lg:hidden border-t border-border overflow-y-auto max-h-[calc(100vh-80px)]"
             style={{
               background: 'rgba(10, 5, 25, 0.85)',
               backdropFilter: 'blur(12px)',
