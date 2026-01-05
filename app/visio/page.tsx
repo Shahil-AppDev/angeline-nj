@@ -5,7 +5,6 @@ import Navbar from '@/components/Navbar';
 import Card from '@/components/ui/Card';
 import Section from '@/components/ui/Section';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 
 const visioOptions = [
   {
@@ -55,12 +54,8 @@ const visioOptions = [
 ];
 
 export default function VisioPage() {
-  const [, setSelectedVisio] = useState<string | null>(null);
-
-  const handlePayment = (visioId: string, price: number) => {
-    setSelectedVisio(visioId);
-    // Redirection vers PayPal
-    window.open(`https://www.paypal.com/paypalme/Angelinetirage/${price}`, '_blank');
+  const handlePayment = () => {
+    window.location.href = 'https://angeline-nj.xyz/contact';
   };
 
   return (
@@ -157,7 +152,7 @@ export default function VisioPage() {
                   </ul>
 
                   <button
-                    onClick={() => handlePayment(option.id, option.price)}
+                    onClick={handlePayment}
                     className="w-full bg-gold hover:bg-gold-2 text-bg font-semibold py-3 px-6 rounded-lg transition-all hover:shadow-lg"
                   >
                     Réserver maintenant
