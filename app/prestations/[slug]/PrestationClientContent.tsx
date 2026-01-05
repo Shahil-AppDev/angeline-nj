@@ -1,5 +1,6 @@
 'use client';
 
+import TikTokGallery from '@/components/TikTokGallery';
 import Button from '@/components/ui/Button';
 import Card from '@/components/ui/Card';
 import Section from '@/components/ui/Section';
@@ -176,6 +177,14 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
           </motion.div>
         </div>
       </Section>
+
+      {prestation.slug === 'tirage-video' && (
+        <Section className="py-16 border-t border-gold-2/10">
+          <div className="container-custom max-w-7xl mx-auto">
+            <TikTokGallery />
+          </div>
+        </Section>
+      )}
 
       <Section className="py-16" gradient>
         <div className="container-custom max-w-4xl mx-auto text-center">
