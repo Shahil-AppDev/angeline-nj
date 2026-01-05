@@ -196,6 +196,7 @@ export default function Home() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
+              className="text-center lg:text-left"
             >
               <h2 className="text-gold mb-6 font-title">
                 Une approche bienveillante et authentique
@@ -206,7 +207,7 @@ export default function Home() {
               <p className="text-text-2 text-lg leading-relaxed mb-8">
                 Mon approche allie intuition, écoute profonde et bienveillance pour vous offrir une guidance éclairante et porteuse de sens.
               </p>
-              <Link href="/a-propos">
+              <Link href="/a-propos" className="inline-block">
                 <Button variant="primary" className="min-w-[180px]">En savoir plus</Button>
               </Link>
             </motion.div>
