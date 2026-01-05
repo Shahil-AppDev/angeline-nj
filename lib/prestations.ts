@@ -292,7 +292,7 @@ export const prestations: Prestation[] = [
     icon: '📄',
     badge: 'PDF',
     shortDescription: 'Téléchargez nos rituels guidés en PDF pour pratiquer chez vous : Protection • Attirer l\'amour • Abondance • Manifester un projet • Couper un lien • Protection & chance.',
-    price: '7,80€',
+    price: '3,90€',
     format: 'PDF téléchargeable',
     oldSiteUrl: 'https://angeline-nj.xyz/contact',
     intro: 'Découvrez nos rituels guidés en format PDF, conçus pour vous accompagner dans votre pratique spirituelle. Chaque rituel est détaillé étape par étape avec les explications nécessaires.',
