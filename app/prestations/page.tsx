@@ -57,7 +57,7 @@ export default function PrestationsPage() {
                     </div>
                   </div>
 
-                  <p className="text-text-2 mb-6 flex-1">
+                  <p className="text-text-2 mb-6 flex-1 whitespace-pre-line">
                     {prestation.shortDescription}
                   </p>
 
