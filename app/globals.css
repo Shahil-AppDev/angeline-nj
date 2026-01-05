@@ -117,6 +117,25 @@ body {
   animation: dust-drift 50s linear infinite;
 }
 
+/* Animation shimmer pour DirectContactBanner */
+@keyframes shimmer-slide {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+.shimmer-effect {
+  animation: shimmer-slide 8s ease-in-out infinite;
+}
+
+@keyframes shimmer-glow {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; text-shadow: 0 0 12px var(--gold-glow); }
+}
+
+.shimmer-text {
+  animation: shimmer-glow 3s ease-in-out infinite;
+}
+
 /* Prefers Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   .sigil-float-1,
@@ -128,7 +147,9 @@ body {
   .card-float-3,
   .card-float-4,
   .card-float-5,
-  .dust-particle {
+  .dust-particle,
+  .shimmer-effect,
+  .shimmer-text {
     animation: none !important;
   }
   

@@ -5,7 +5,6 @@ import Navbar from '@/components/Navbar';
 import Button from '@/components/ui/Button';
 import Card from '@/components/ui/Card';
 import Section from '@/components/ui/Section';
-import { prestations } from '@/lib/prestations';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
