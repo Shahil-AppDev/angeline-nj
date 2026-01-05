@@ -68,14 +68,14 @@ export default function Navbar() {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-gold-1 to-gold-2 group-hover:w-full transition-all duration-300 shadow-[0_0_8px_var(--gold-glow)]" />
               </Link>
             ))}
-            <Link href="/contact" className="cta-header btn-primary text-[10px] xl:text-sm whitespace-nowrap px-2 py-1.5 xl:px-3 xl:py-2">
+            <Link href="/contact" className="cta-header btn-primary text-[9px] md:text-[10px] lg:text-xs xl:text-sm whitespace-nowrap px-2 py-1.5 md:px-2.5 md:py-1.5 lg:px-3 lg:py-2">
               <span>Prendre rendez-vous</span>
             </Link>
           </div>
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="nav-burger xl:hidden p-3 transition-all rounded-lg hover:bg-surface"
+            className="nav-burger md:hidden p-3 transition-all rounded-lg hover:bg-surface"
             style={{ color: '#C8B6FF' }}
             aria-label="Menu"
           >
@@ -105,7 +105,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="xl:hidden border-t border-border overflow-y-auto max-h-[calc(100vh-80px)]"
+            className="md:hidden border-t border-border overflow-y-auto max-h-[calc(100vh-80px)]"
             style={{
               background: 'rgba(10, 5, 25, 0.85)',
               backdropFilter: 'blur(12px)',
