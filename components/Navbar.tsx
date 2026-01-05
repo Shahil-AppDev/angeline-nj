@@ -51,7 +51,7 @@ export default function Navbar() {
               className="object-contain group-hover:drop-shadow-[0_0_15px_var(--gold-glow)] transition-all duration-300"
               priority
             />
-            <span className="hidden lg:block lg:text-xl font-semibold text-gold gold-underline transition-colors font-title leading-none tracking-tight self-center">
+            <span className="hidden md:block font-semibold text-gold gold-underline transition-colors font-title leading-none tracking-tight self-center" style={{ fontSize: 'clamp(0.75rem, 2vw, 1.25rem)' }}>
               ANGELINE NJ
             </span>
           </Link>
