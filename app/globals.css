@@ -808,6 +808,37 @@ a {
   .card-hover-lift:hover {
     transform: translateY(-8px);
   }
+  
+  /* Styles pour les inputs de formulaire */
+  input[type="date"],
+  input[type="time"],
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    color: var(--gold-2) !important;
+    font-weight: 500;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator,
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(60%) sepia(50%) saturate(500%) hue-rotate(10deg);
+    cursor: pointer;
+  }
+  
+  input::placeholder {
+    color: var(--gold-2) !important;
+    opacity: 0.6;
+  }
+  
+  input::-webkit-datetime-edit-text,
+  input::-webkit-datetime-edit-month-field,
+  input::-webkit-datetime-edit-day-field,
+  input::-webkit-datetime-edit-year-field,
+  input::-webkit-datetime-edit-hour-field,
+  input::-webkit-datetime-edit-minute-field,
+  input::-webkit-datetime-edit-ampm-field {
+    color: var(--gold-2);
+  }
 }
 
 @layer utilities {
