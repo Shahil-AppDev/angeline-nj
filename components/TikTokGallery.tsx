@@ -9,18 +9,18 @@ const tiktokVideos = [
   'https://www.tiktok.com/@angelinenj/video/7551813989949312278', // Le Mystica
   'https://www.tiktok.com/@angelinenj/video/7532167677985508630', // NJ Family - Mercredi Addams
   'https://www.tiktok.com/@angelinenj/video/7362513116145536288', // Oracles boutique
-  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
-  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
-  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
-  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
-  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
-  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
-  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
-  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
-  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
-  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
-  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
-  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
+  'https://www.tiktok.com/@angelinenj/video/7591482424891051286', // 2026 déclic motivation
+  'https://www.tiktok.com/@angelinenj/video/7591482424891051286',
+  'https://www.tiktok.com/@angelinenj/video/7591482424891051286',
+  'https://www.tiktok.com/@angelinenj/video/7591482424891051286',
+  'https://www.tiktok.com/@angelinenj/video/7591482424891051286',
+  'https://www.tiktok.com/@angelinenj/video/7591482424891051286',
+  'https://www.tiktok.com/@angelinenj/video/7591482424891051286',
+  'https://www.tiktok.com/@angelinenj/video/7591482424891051286',
+  'https://www.tiktok.com/@angelinenj/video/7591482424891051286',
+  'https://www.tiktok.com/@angelinenj/video/7591482424891051286',
+  'https://www.tiktok.com/@angelinenj/video/7591482424891051286',
+  'https://www.tiktok.com/@angelinenj/video/7591482424891051286',
 ];
 
 export default function TikTokGallery() {
