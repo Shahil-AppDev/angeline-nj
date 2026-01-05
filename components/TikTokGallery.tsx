@@ -11,16 +11,16 @@ const tiktokVideos = [
   'https://www.tiktok.com/@angelinenj/video/7362513116145536288', // Oracles boutique
   'https://www.tiktok.com/@angelinenj/video/7591482424891051286', // 2026 déclic motivation
   'https://www.tiktok.com/@angelinenj/video/7591137171902401814', // Soin énergétique bon -10€
-  'https://www.tiktok.com/@angelinenj/video/7591137171902401814',
-  'https://www.tiktok.com/@angelinenj/video/7591137171902401814',
-  'https://www.tiktok.com/@angelinenj/video/7591137171902401814',
-  'https://www.tiktok.com/@angelinenj/video/7591137171902401814',
-  'https://www.tiktok.com/@angelinenj/video/7591137171902401814',
-  'https://www.tiktok.com/@angelinenj/video/7591137171902401814',
-  'https://www.tiktok.com/@angelinenj/video/7591137171902401814',
-  'https://www.tiktok.com/@angelinenj/video/7591137171902401814',
-  'https://www.tiktok.com/@angelinenj/video/7591137171902401814',
-  'https://www.tiktok.com/@angelinenj/video/7591137171902401814',
+  'https://www.tiktok.com/@angelinenj/video/7590793309333769494', // Oracle NJ édition limitée
+  'https://www.tiktok.com/@angelinenj/video/7590793309333769494',
+  'https://www.tiktok.com/@angelinenj/video/7590793309333769494',
+  'https://www.tiktok.com/@angelinenj/video/7590793309333769494',
+  'https://www.tiktok.com/@angelinenj/video/7590793309333769494',
+  'https://www.tiktok.com/@angelinenj/video/7590793309333769494',
+  'https://www.tiktok.com/@angelinenj/video/7590793309333769494',
+  'https://www.tiktok.com/@angelinenj/video/7590793309333769494',
+  'https://www.tiktok.com/@angelinenj/video/7590793309333769494',
+  'https://www.tiktok.com/@angelinenj/video/7590793309333769494',
 ];
 
 export default function TikTokGallery() {
