@@ -39,25 +39,14 @@ export default function TirageCard({ title, description, icon, iconImage, href, 
             )}
           </div>
           <h3 className="font-serif text-2xl font-semibold mb-3 font-title group-hover:text-gold-1 transition-colors">
-            <span className="text-gold inline-block">{title}</span>
+            <span className="gold-halo text-gold inline-block">{title}</span>
           </h3>
-          <p className="text-text-2 leading-relaxed">
+          <p className="text-text-2 leading-relaxed mb-6">
             {description}
           </p>
-          <div className="mt-6 flex items-center text-gold-2 font-medium group-hover:text-gold-1 transition-colors">
+          <button className="btn-gold w-full">
             <span>Découvrir</span>
-            <svg
-              className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </div>
+          </button>
         </div>
       </Link>
     </motion.div>

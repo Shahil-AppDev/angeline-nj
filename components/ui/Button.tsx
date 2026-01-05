@@ -13,13 +13,8 @@ export default function Button({
   className = '',
   ...props 
 }: ButtonProps) {
-  const baseStyles = 'relative inline-flex items-center justify-center font-medium transition-all duration-300 rounded-lg overflow-hidden group';
-  
-  const variants = {
-    primary: 'bg-gradient-to-r from-primary to-primary-2 text-white hover:shadow-glow border border-primary/50',
-    secondary: 'glass-surface text-text hover:border-gold-2',
-    ghost: 'text-text-2 hover:text-text hover:bg-surface'
-  };
+  // RÉFÉRENCE UNIQUE: tous les variants rendent le même markup gold
+  const baseClasses = 'relative inline-flex items-center justify-center font-medium transition-all duration-300 rounded-lg overflow-hidden group bg-gradient-to-r from-primary to-primary-2 text-white hover:shadow-glow border border-primary/50';
   
   const sizes = {
     sm: 'px-4 py-2 text-sm',
@@ -29,13 +24,11 @@ export default function Button({
 
   return (
     <button 
-      className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`}
+      className={`${baseClasses} ${sizes[size]} ${className}`}
       {...props}
     >
       <span className="relative z-10">{children}</span>
-      {variant === 'primary' && (
-        <span className="btn-shimmer group-hover:opacity-100" />
-      )}
+      <span className="btn-shimmer group-hover:opacity-100" />
     </button>
   );
 }

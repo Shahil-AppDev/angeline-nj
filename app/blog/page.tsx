@@ -73,14 +73,19 @@ export default function BlogPage() {
                       <p className="text-text-2 mb-4 line-clamp-3 flex-1">
                         {post.metaDescription}
                       </p>
-                      <div className="flex items-center justify-between pt-4 border-t border-border">
-                        <time className="text-sm text-muted">
+                      <div className="pt-4 border-t border-border">
+                        <time className="text-sm text-muted block mb-4">
                           {new Date(post.date).toLocaleDateString('fr-FR', {
                             year: 'numeric',
                             month: 'long',
                             day: 'numeric',
                           })}
                         </time>
+                        <Link href={`/blog/${post.slug}`} className="btn-gold w-full block text-center">
+                          <span>Lire l'article</span>
+                        </Link>
+                      </div>
+                      <div className="hidden">
                         <span className="text-gold font-medium group-hover:text-gold-2 transition-colors flex items-center">
                           Lire l'article
                           <svg

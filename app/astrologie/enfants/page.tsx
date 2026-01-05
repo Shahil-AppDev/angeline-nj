@@ -303,7 +303,7 @@ export default function AstrologieEnfantsPage() {
                   <Link href="/contact" className="btn-primary soft-glow">
                     <span>Consultation Famille (55€)</span>
                   </Link>
-                  <Link href="/astrologie/theme-astral" className="btn-secondary">
+                  <Link href="/astrologie/theme-astral" className="btn-gold">
                     <span>Thème Astral Enfant</span>
                   </Link>
                 </div>

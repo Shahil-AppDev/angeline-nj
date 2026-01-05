@@ -51,7 +51,7 @@ export default function Navbar() {
               className="object-contain group-hover:drop-shadow-[0_0_15px_var(--gold-glow)] transition-all duration-300"
               priority
             />
-            <span className="text-xl font-semibold text-gold gold-underline transition-colors font-title hidden sm:inline leading-none tracking-tight self-center">
+            <span className="text-xs sm:text-sm md:text-base lg:text-xl font-semibold text-gold gold-underline transition-colors font-title leading-none tracking-tight self-center">
               ANGELINE NJ
             </span>
           </Link>
@@ -75,7 +75,8 @@ export default function Navbar() {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-3 text-gold hover:drop-shadow-[0_0_12px_var(--gold-glow)] transition-all rounded-lg hover:bg-surface"
+            className="md:hidden p-3 transition-all rounded-lg hover:bg-surface"
+            style={{ color: '#C8B6FF' }}
             aria-label="Menu"
           >
             <svg
@@ -104,7 +105,12 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden glass-surface border-t border-border"
+            className="md:hidden border-t border-border"
+            style={{
+              background: 'rgba(10, 5, 25, 0.85)',
+              backdropFilter: 'blur(12px)',
+              WebkitBackdropFilter: 'blur(12px)'
+            }}
           >
             <div className="container-custom py-6 space-y-2">
               {navLinks.map((link, index) => (

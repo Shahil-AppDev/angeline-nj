@@ -10,12 +10,6 @@ import Link from 'next/link';
 export default function SignesPage() {
   const signs: ZodiacSign[] = ['belier', 'taureau', 'gemeaux', 'cancer', 'lion', 'vierge', 'balance', 'scorpion', 'sagittaire', 'capricorne', 'verseau', 'poissons'];
 
-  const elements = {
-    feu: { color: 'text-red-400', signs: ['belier', 'lion', 'sagittaire'] },
-    terre: { color: 'text-green-400', signs: ['taureau', 'vierge', 'capricorne'] },
-    air: { color: 'text-blue-400', signs: ['gemeaux', 'balance', 'verseau'] },
-    eau: { color: 'text-cyan-400', signs: ['cancer', 'scorpion', 'poissons'] }
-  };
 
   return (
     <>
@@ -84,10 +78,10 @@ export default function SignesPage() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.05 }}
                 >
-                  <Link href={`/astrologie/signes/${sign}`} className="block glass-card p-6 hover:scale-105 transition-transform h-full">
+                  <div className="glass-card p-6 hover:scale-105 transition-transform h-full flex flex-col">
                     <div className="text-center mb-4">
                       <div className="text-6xl mb-3">{signInfo.emoji}</div>
-                      <h3 className="text-2xl font-bold text-gold mb-1 font-title">
+                      <h3 className="text-2xl font-bold text-gold inline-block mb-1 font-title">
                         {signInfo.name}
                       </h3>
                       <p className="text-text-2 text-sm mb-2">{signInfo.symbol} {signInfo.dateRange}</p>
@@ -100,13 +94,15 @@ export default function SignesPage() {
                         </span>
                       </div>
                     </div>
-                    <p className="text-text-2 text-sm text-center line-clamp-3">
+                    <p className="text-text-2 text-sm text-center line-clamp-3 flex-1">
                       {signInfo.description}
                     </p>
                     <div className="mt-4 text-center">
-                      <span className="text-primary text-sm font-semibold">En savoir plus →</span>
+                      <Link href={`/astrologie/signes/${sign}`} className="btn-gold w-full block">
+                        <span>Découvrir</span>
+                      </Link>
                     </div>
-                  </Link>
+                  </div>
                 </motion.div>
               );
             })}
@@ -132,7 +128,7 @@ export default function SignesPage() {
               <Link href="/astrologie/theme-astral" className="btn-primary soft-glow">
                 <span>Mon Thème Astral</span>
               </Link>
-              <Link href="/astrologie/compatibilite" className="btn-secondary">
+              <Link href="/astrologie/compatibilite" className="btn-gold">
                 <span>Compatibilité Amoureuse</span>
               </Link>
             </div>

@@ -75,7 +75,7 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
                 </Button>
               </a>
               <Link href="/contact" className="flex-1 sm:flex-initial">
-                <Button variant="secondary" size="lg" className="w-full sm:w-auto">
+                <Button variant="primary" size="lg" className="w-full sm:w-auto">
                   Poser une question
                 </Button>
               </Link>
@@ -224,7 +224,7 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
                       {related.shortDescription}
                     </p>
                     <Link href={`/prestations/${related.slug}`}>
-                      <Button variant="ghost" size="sm" className="w-full">
+                      <Button variant="primary" size="sm" className="w-full">
                         Découvrir
                       </Button>
                     </Link>

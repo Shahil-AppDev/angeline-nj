@@ -186,14 +186,14 @@ export default function SigneLunairePage() {
                   <Link href="/contact" className="btn-primary soft-glow">
                     <span>Guidance Émotionnelle (25€)</span>
                   </Link>
-                  <Link href="/boutique/pierres" className="btn-secondary">
+                  <Link href="/boutique/pierres" className="btn-gold">
                     <span>Pierres Lunaires</span>
                   </Link>
                 </div>
               </div>
 
               <div className="text-center">
-                <button onClick={resetForm} className="btn-secondary">
+                <button onClick={resetForm} className="btn-gold">
                   <span>Nouveau calcul</span>
                 </button>
               </div>

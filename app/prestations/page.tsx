@@ -67,7 +67,7 @@ export default function PrestationsPage() {
                     </div>
                     <div className="flex gap-2 w-full sm:w-auto">
                       <Link href={`/prestations/${prestation.slug}`}>
-                        <Button variant="secondary" size="sm">
+                        <Button variant="primary" size="sm">
                           Découvrir
                         </Button>
                       </Link>
@@ -101,7 +101,7 @@ export default function PrestationsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/formations">
-                <Button variant="secondary" size="lg">
+                <Button variant="primary" size="lg">
                   Voir les formations
                 </Button>
               </Link>

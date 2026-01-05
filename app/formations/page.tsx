@@ -4,7 +4,6 @@ import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import productsData from '@/data/products.json';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const formationProducts = productsData.filter(p => 
@@ -76,7 +75,7 @@ export default function FormationsPage() {
         </div>
       </section>
 
-      <section className="section-padding dark-mystic-bg">
+      <section className="section-padding">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

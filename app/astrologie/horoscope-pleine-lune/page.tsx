@@ -105,7 +105,7 @@ export default function HoroscopePleineLunePage() {
               <Link href="/contact" className="btn-primary soft-glow">
                 <span>Guidance Pleine Lune (35€)</span>
               </Link>
-              <Link href="/boutique/bougies" className="btn-secondary">
+              <Link href="/boutique/bougies" className="btn-gold">
                 <span>Bougies Rituelles</span>
               </Link>
             </div>

@@ -129,13 +129,13 @@ export default function CalendrierLunairePage() {
             className="glass-card p-6 mb-8"
           >
             <div className="flex items-center justify-between mb-6">
-              <button onClick={previousMonth} className="btn-secondary">
+              <button onClick={previousMonth} className="btn-gold">
                 <span>← Mois précédent</span>
               </button>
               <h2 className="text-2xl font-bold text-gold font-title">
                 {monthNames[currentDate.getMonth()]} {currentDate.getFullYear()}
               </h2>
-              <button onClick={nextMonth} className="btn-secondary">
+              <button onClick={nextMonth} className="btn-gold">
                 <span>Mois suivant →</span>
               </button>
             </div>
@@ -194,7 +194,7 @@ export default function CalendrierLunairePage() {
               <Link href="/contact" className="btn-primary soft-glow">
                 <span>Guidance Lunaire (35€)</span>
               </Link>
-              <Link href="/boutique/bougies" className="btn-secondary">
+              <Link href="/boutique/bougies" className="btn-gold">
                 <span>Bougies Rituelles</span>
               </Link>
             </div>

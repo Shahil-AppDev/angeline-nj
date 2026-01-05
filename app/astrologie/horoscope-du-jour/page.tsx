@@ -136,14 +136,14 @@ export default function HoroscopeDuJourPage() {
                   <Link href="/contact" className="btn-primary soft-glow">
                     <span>Tirage du Jour (15€)</span>
                   </Link>
-                  <Link href="/boutique" className="btn-secondary">
+                  <Link href="/boutique" className="btn-gold">
                     <span>Bougies & Pierres</span>
                   </Link>
                 </div>
               </div>
 
               <div className="text-center">
-                <button onClick={() => setSelectedSign(null)} className="btn-secondary">
+                <button onClick={() => setSelectedSign(null)} className="btn-gold">
                   <span>Voir tous les signes</span>
                 </button>
               </div>

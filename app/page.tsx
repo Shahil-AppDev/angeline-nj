@@ -95,7 +95,7 @@ export default function Home() {
                   </Button>
                 </Link>
                 <Link href="/tirages" className="w-full sm:w-auto">
-                  <Button variant="secondary" size="lg" className="w-full">
+                  <Button variant="primary" size="lg" className="w-full btn-gold">
                     Découvrir les tirages
                   </Button>
                 </Link>
@@ -224,7 +224,7 @@ export default function Home() {
                     <span className="text-2xl">🌙</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gold mb-2 font-title">
+                    <h3 className="text-xl font-semibold text-gold inline-block mb-2 font-title">
                       Écoute bienveillante
                     </h3>
                     <p className="text-text-2">
@@ -238,7 +238,7 @@ export default function Home() {
                     <span className="text-2xl">✨</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gold mb-2 font-title">
+                    <h3 className="text-xl font-semibold text-gold inline-block mb-2 font-title">
                       Guidance personnalisée
                     </h3>
                     <p className="text-text-2">
@@ -252,7 +252,7 @@ export default function Home() {
                     <span className="text-2xl">💜</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gold mb-2 font-title">
+                    <h3 className="text-xl font-semibold text-gold inline-block mb-2 font-title">
                       Approche éthique
                     </h3>
                     <p className="text-text-2">
@@ -307,7 +307,7 @@ export default function Home() {
                   </div>
                   <div className="space-y-2">
                     <Link href={`/prestations/${prestation.slug}`} className="block">
-                      <Button variant="ghost" size="sm" className="w-full">
+                      <Button variant="primary" size="sm" className="w-full">
                         Découvrir
                       </Button>
                     </Link>
@@ -334,12 +334,12 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/formations">
-                <Button variant="secondary" size="lg">
+                <Button variant="primary" size="lg" className="btn-gold">
                   Voir les formations
                 </Button>
               </Link>
               <Link href="/boutique">
-                <Button variant="primary" size="lg">
+                <Button variant="primary" size="lg" className="btn-gold">
                   Découvrir la boutique
                 </Button>
               </Link>

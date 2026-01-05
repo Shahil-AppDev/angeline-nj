@@ -124,7 +124,7 @@ export default function Horoscope2026Page() {
               <Link href="/contact" className="btn-primary soft-glow">
                 <span>Tirage Annuel 2026 (65€)</span>
               </Link>
-              <Link href="/astrologie/theme-astral" className="btn-secondary">
+              <Link href="/astrologie/theme-astral" className="btn-gold">
                 <span>Mon Thème Astral</span>
               </Link>
             </div>

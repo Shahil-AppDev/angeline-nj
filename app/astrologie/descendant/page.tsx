@@ -329,14 +329,14 @@ export default function DescendantPage() {
                   <Link href="/contact" className="btn-primary soft-glow">
                     <span>Consultation Relationnelle (40€)</span>
                   </Link>
-                  <Link href="/astrologie/compatibilite" className="btn-secondary">
+                  <Link href="/astrologie/compatibilite" className="btn-gold">
                     <span>Test de Compatibilité</span>
                   </Link>
                 </div>
               </div>
 
               <div className="text-center">
-                <button onClick={resetForm} className="btn-secondary">
+                <button onClick={resetForm} className="btn-gold">
                   <span>Nouveau calcul</span>
                 </button>
               </div>

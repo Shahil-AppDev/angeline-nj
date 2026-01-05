@@ -1,23 +1,23 @@
-# Script de déploiement automatique pour angeline-nj.xyz
-# Exécute toutes les commandes SSH en une seule session
+﻿# Script de dÃ©ploiement automatique pour angeline-nj.xyz
+# ExÃ©cute toutes les commandes SSH en une seule session
 
 $SERVER = "root@77.42.34.90"
 
-Write-Host "🚀 DÉPLOIEMENT ANGELINE-NJ.XYZ" -ForegroundColor Cyan
+Write-Host "ðŸš€ DÃ‰PLOIEMENT ANGELINE-NJ.XYZ" -ForegroundColor Cyan
 Write-Host "======================================" -ForegroundColor Cyan
 
-# Commandes à exécuter sur le serveur en une seule session SSH
+# Commandes Ã  exÃ©cuter sur le serveur en une seule session SSH
 $commands = @"
-echo '📦 Installation des dépendances...'
+echo 'ðŸ“¦ Installation des dÃ©pendances...'
 cd /var/www/angeline-nj.xyz
 npm install
 
 echo ''
-echo '🔨 Build du projet Next.js...'
+echo 'ðŸ”¨ Build du projet Next.js...'
 npm run build
 
 echo ''
-echo '⚙️ Création du fichier ecosystem.config.js pour PM2...'
+echo 'âš™ï¸ CrÃ©ation du fichier ecosystem.config.js pour PM2...'
 cat > ecosystem.config.js << 'EOFPM2'
 module.exports = {
   apps: [
@@ -41,12 +41,12 @@ module.exports = {
 EOFPM2
 
 echo ''
-echo '🚀 Démarrage de l application avec PM2...'
+echo 'ðŸš€ DÃ©marrage de l application avec PM2...'
 pm2 start ecosystem.config.js
 pm2 save
 
 echo ''
-echo '🌐 Configuration Nginx...'
+echo 'ðŸŒ Configuration Nginx...'
 cat > /etc/nginx/sites-available/angeline-nj.xyz << 'EOFNGINX'
 server {
     listen 80;
@@ -67,54 +67,55 @@ server {
 EOFNGINX
 
 echo ''
-echo '🔗 Activation du site Nginx...'
+echo 'ðŸ”— Activation du site Nginx...'
 ln -sf /etc/nginx/sites-available/angeline-nj.xyz /etc/nginx/sites-enabled/
 
 echo ''
-echo '🔍 Test de la configuration Nginx...'
+echo 'ðŸ” Test de la configuration Nginx...'
 nginx -t
 
 echo ''
-echo '🔄 Rechargement de Nginx...'
+echo 'ðŸ”„ Rechargement de Nginx...'
 systemctl reload nginx
 
 echo ''
-echo '📊 Statut PM2:'
+echo 'ðŸ“Š Statut PM2:'
 pm2 status
 
 echo ''
-echo '✅ DÉPLOIEMENT TERMINÉ'
+echo 'âœ… DÃ‰PLOIEMENT TERMINÃ‰'
 echo '========================================'
 echo ''
-echo '🌐 Prochaines étapes:'
-echo '1. Configurer le DNS: angeline-nj.xyz → 77.42.34.90'
+echo 'ðŸŒ Prochaines Ã©tapes:'
+echo '1. Configurer le DNS: angeline-nj.xyz â†’ 77.42.34.90'
 echo '2. Installer le certificat SSL:'
 echo '   ssh root@77.42.34.90'
 echo '   certbot --nginx -d angeline-nj.xyz -d www.angeline-nj.xyz'
-echo '3. Tester: http://77.42.34.90:4000 (puis https://angeline-nj.xyz après SSL)'
+echo '3. Tester: http://77.42.34.90:4000 (puis https://angeline-nj.xyz aprÃ¨s SSL)'
 echo ''
-echo '📝 Commandes utiles:'
+echo 'ðŸ“ Commandes utiles:'
 echo '   pm2 logs angeline-nj    # Voir les logs'
-echo '   pm2 restart angeline-nj # Redémarrer'
+echo '   pm2 restart angeline-nj # RedÃ©marrer'
 echo '   pm2 monit               # Monitoring'
 "@
 
-Write-Host "`n🔐 Entrez votre passphrase SSH (une seule fois):" -ForegroundColor Yellow
+Write-Host "`nðŸ” Entrez votre passphrase SSH (une seule fois):" -ForegroundColor Yellow
 ssh $SERVER $commands
 
 if ($LASTEXITCODE -eq 0) {
-    Write-Host "`n✅ DÉPLOIEMENT RÉUSSI!" -ForegroundColor Green
-    Write-Host "`n📋 RÉSUMÉ:" -ForegroundColor Cyan
-    Write-Host "- Application déployée sur le port 4000" -ForegroundColor White
-    Write-Host "- PM2 configuré et démarré" -ForegroundColor White
-    Write-Host "- Nginx configuré pour angeline-nj.xyz" -ForegroundColor White
-    Write-Host "`n⚠️ N'oubliez pas:" -ForegroundColor Yellow
+    Write-Host "`nâœ… DÃ‰PLOIEMENT RÃ‰USSI!" -ForegroundColor Green
+    Write-Host "`nðŸ“‹ RÃ‰SUMÃ‰:" -ForegroundColor Cyan
+    Write-Host "- Application dÃ©ployÃ©e sur le port 4000" -ForegroundColor White
+    Write-Host "- PM2 configurÃ© et dÃ©marrÃ©" -ForegroundColor White
+    Write-Host "- Nginx configurÃ© pour angeline-nj.xyz" -ForegroundColor White
+    Write-Host "`nâš ï¸ N'oubliez pas:" -ForegroundColor Yellow
     Write-Host "1. Configurer le DNS" -ForegroundColor White
     Write-Host "2. Installer le certificat SSL" -ForegroundColor White
 }
 else {
-    Write-Host "`n❌ ERREUR LORS DU DÉPLOIEMENT" -ForegroundColor Red
-    Write-Host "Vérifiez les logs ci-dessus pour plus de détails" -ForegroundColor Yellow
+    Write-Host "`nâŒ ERREUR LORS DU DÃ‰PLOIEMENT" -ForegroundColor Red
+    Write-Host "VÃ©rifiez les logs ci-dessus pour plus de dÃ©tails" -ForegroundColor Yellow
     Exit 1
 }
+
 

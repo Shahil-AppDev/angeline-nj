@@ -193,20 +193,23 @@ export default function AstrologiePage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <Link href={horoscope.href} className={`block glass-card p-6 hover:scale-105 transition-transform ${horoscope.featured ? 'border-primary bg-primary/5' : ''}`}>
+                <div className={`glass-card p-6 hover:scale-105 transition-transform ${horoscope.featured ? 'border-primary bg-primary/5' : ''}`}>
                   <div className="text-5xl mb-4 text-center">{horoscope.icon}</div>
-                  <h3 className="text-xl font-semibold text-gold mb-2 font-title text-center">
+                  <h3 className="text-xl font-semibold text-gold inline-block mb-2 font-title text-center">
                     {horoscope.title}
                   </h3>
-                  <p className="text-text-2 text-sm text-center">
+                  <p className="text-text-2 text-sm text-center mb-4">
                     {horoscope.description}
                   </p>
                   {horoscope.featured && (
-                    <div className="mt-3 text-center">
+                    <div className="mb-3 text-center">
                       <span className="px-3 py-1 bg-primary/20 rounded-full text-primary text-xs font-semibold">NOUVEAU</span>
                     </div>
                   )}
-                </Link>
+                  <Link href={horoscope.href} className="btn-gold w-full block text-center">
+                    <span>Découvrir</span>
+                  </Link>
+                </div>
               </motion.div>
             ))}
           </div>
@@ -220,20 +223,23 @@ export default function AstrologiePage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <Link href={guide.href} className={`block glass-card p-8 hover:scale-105 transition-transform ${guide.featured ? 'border-primary bg-primary/5' : ''}`}>
+                <div className={`glass-card p-8 hover:scale-105 transition-transform ${guide.featured ? 'border-primary bg-primary/5' : ''}`}>
                   <div className="text-6xl mb-4 text-center">{guide.icon}</div>
-                  <h3 className="text-2xl font-semibold text-gold mb-2 font-title text-center">
+                  <h3 className="text-2xl font-semibold text-gold inline-block mb-2 font-title text-center">
                     {guide.title}
                   </h3>
-                  <p className="text-text-2 text-center">
+                  <p className="text-text-2 text-center mb-6">
                     {guide.description}
                   </p>
                   {guide.featured && (
-                    <div className="mt-4 text-center">
+                    <div className="mb-4 text-center">
                       <span className="px-3 py-1 bg-primary/20 rounded-full text-primary text-xs font-semibold">NOUVEAU</span>
                     </div>
                   )}
-                </Link>
+                  <Link href={guide.href} className="btn-gold w-full block text-center">
+                    <span>Découvrir</span>
+                  </Link>
+                </div>
               </motion.div>
             ))}
           </div>
@@ -258,7 +264,7 @@ export default function AstrologiePage() {
               <Link href="/abonnement" className="btn-primary soft-glow">
                 <span>Abonnements Spirituels</span>
               </Link>
-              <Link href="/contact" className="btn-secondary">
+              <Link href="/contact" className="btn-gold">
                 <span>Tirage Personnalisé</span>
               </Link>
             </div>

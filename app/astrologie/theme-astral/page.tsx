@@ -230,14 +230,14 @@ export default function ThemeAstralPage() {
                   <Link href="/contact" className="btn-primary soft-glow">
                     <span>Guidance Complète (45€)</span>
                   </Link>
-                  <Link href="/astrologie" className="btn-secondary">
+                  <Link href="/astrologie" className="btn-gold">
                     <span>Autres calculateurs</span>
                   </Link>
                 </div>
               </div>
 
               <div className="text-center">
-                <button onClick={resetForm} className="btn-secondary">
+                <button onClick={resetForm} className="btn-gold">
                   <span>Nouveau thème</span>
                 </button>
               </div>

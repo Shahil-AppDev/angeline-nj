@@ -151,8 +151,8 @@ body {
   --text: #F4EEFF;
   --muted: rgba(244, 238, 255, 0.70);
   
-  --gold-1: #F7E7A1;
-  --gold-2: #D6A84A;
+  --gold-1: #E6C66A;
+  --gold-2: #CAA44A;
   --gold-3: #8B5A12;
   --gold-glow: rgba(246, 201, 90, 0.25);
   
@@ -210,6 +210,10 @@ body {
   --blur-md: 16px;
   --blur-lg: 24px;
   --blur-xl: 32px;
+  
+  /* GOLD TEXT OUTLINE - Pour lisibilité sur fond lilas */
+  --gold-soft-outline: rgba(0, 0, 0, 0.28);
+  --gold-soft-outline-2: rgba(0, 0, 0, 0.18);
 }
 
 /* KEYFRAMES - DARK MYSTIC ANIMATIONS */
@@ -261,6 +265,25 @@ body {
   100% { background-position: 200% center; }
 }
 
+/* BUTTON SHIMMER EFFECT */
+.btn-shimmer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    transparent 0%,
+    transparent 40%,
+    rgba(255, 223, 128, 0.3) 50%,
+    transparent 60%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  animation: shimmer 2s linear infinite;
+  pointer-events: none;
+}
+
 /* UTILITY CLASSES - DARK MYSTIC GOLD */
 
 .text-gold-1 {
@@ -288,16 +311,55 @@ body {
 }
 
 .btn-ghost {
-  background: transparent;
-  border: 1px solid var(--border);
-  color: var(--text);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1rem;
+  color: #FFFFFF;
+  background: linear-gradient(to right, var(--primary), var(--primary-2));
+  border: 1px solid rgba(214, 168, 74, 0.5);
+  border-radius: var(--radius-md);
+  cursor: pointer;
   transition: all 0.3s ease;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .btn-ghost:hover {
-  background: var(--surface);
-  border-color: var(--gold-2);
-  color: var(--gold-1);
+  box-shadow: 0 0 20px rgba(214, 168, 74, 0.4);
+}
+
+.btn-ghost span {
+  position: relative;
+  z-index: 10;
+}
+
+.btn-ghost::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    transparent 0%,
+    transparent 40%,
+    rgba(255, 223, 128, 0.3) 50%,
+    transparent 60%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  animation: shimmer 2s linear infinite;
+  pointer-events: none;
+}
+
+.btn-ghost:hover::after {
+  opacity: 1;
 }
 
 /* .glass-card moved to @layer components - see line ~450 */
@@ -376,13 +438,29 @@ a {
 @layer components {
   /* GOLD PREMIUM EFFECTS */
   .text-gold {
-    background: linear-gradient(90deg, var(--gold-1), var(--gold-2), var(--gold-1));
-    background-size: 200% auto;
+    color: transparent;
+    background: linear-gradient(
+      110deg,
+      #B08A2E 0%,
+      #F0D27A 18%,
+      #E0B84F 35%,
+      #F5DC8A 50%,
+      #E0B84F 65%,
+      #B08A2E 100%
+    );
+    background-size: 300% 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-shadow: 0 0 16px var(--gold-glow);
-    animation: shimmer 3s linear infinite;
+    animation: shimmer 3.5s ease-in-out infinite;
+  }
+  
+  /* Fallback pour navigateurs qui ne supportent pas background-clip */
+  @supports not (background-clip: text) {
+    .text-gold {
+      color: var(--gold-1);
+      background: none;
+    }
   }
   
   .gold-underline {
@@ -406,20 +484,8 @@ a {
   }
   
   .btn-gold {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 2rem;
-    font-family: var(--font-body);
-    font-weight: 600;
-    font-size: 1rem;
-    color: var(--bg);
-    background: linear-gradient(135deg, var(--gold-1), var(--gold-2));
-    border: none;
-    border-radius: var(--radius-md);
+    border: 1px solid rgba(246, 201, 90, 0.4);
     box-shadow: 0 4px 16px var(--gold-glow);
-    cursor: pointer;
-    transition: all 0.3s ease;
   }
   
   .btn-gold:hover {
@@ -442,21 +508,36 @@ a {
   }
   
   .glass-card {
-    background: var(--card-bg) !important;
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+    position: relative;
+    background: transparent !important;
     border: 1px solid rgba(139, 92, 246, 0.15);
     border-radius: var(--radius-md);
     box-shadow: 0 4px 16px rgba(139, 92, 246, 0.12);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    isolation: isolate;
     /* Safari iOS fix */
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     will-change: transform;
   }
   
+  /* Fond lilas sur toute la carte (sauf zone titre) */
+  .glass-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--card-bg);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    z-index: 0;
+    pointer-events: none;
+  }
+  
   .glass-card,
   .glass-card * {
+    position: relative;
+    z-index: 1;
     color: var(--card-text);
   }
   
@@ -466,7 +547,12 @@ a {
   .glass-card h4,
   .glass-card h5,
   .glass-card h6 {
-    color: var(--gold-2);
+    color: var(--card-text);
+  }
+  
+  /* Sauf si c'est du texte OR animé */
+  .glass-card .text-gold {
+    color: inherit;
   }
   
   .glass-card p,
@@ -479,6 +565,70 @@ a {
     box-shadow: 0 8px 32px rgba(139, 92, 246, 0.2), 0 0 20px rgba(197, 184, 232, 0.3);
     border-color: rgba(139, 92, 246, 0.3);
   }
+  
+  /* SURCHARGE pour textes OR sur fond LILAS uniquement (bronze + outline) */
+  .glass-card .text-gold.inline-block,
+  .glass-card .text-gold {
+    /* Palette BRONZE pour lisibilité sur fond lilas */
+    background: linear-gradient(90deg, #9B7520, #B8860B, #D4AF37, #B8860B, #9B7520);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* Soft outline pour lisibilité */
+    -webkit-text-stroke: 0.35px rgba(0, 0, 0, 0.30);
+    text-shadow:
+      0 1px 2px var(--gold-soft-outline-2),
+      0 0 6px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Mobile: 0 stroke, juste un soft edge */
+  @media (max-width: 640px) {
+    .glass-card .text-gold.inline-block,
+    .glass-card .text-gold {
+      -webkit-text-stroke: 0px transparent;
+      text-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.20),
+        0 0 5px rgba(0, 0, 0, 0.10);
+    }
+  }
+  
+  /* Tablet */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .glass-card .text-gold.inline-block,
+    .glass-card .text-gold {
+      -webkit-text-stroke: 0.25px rgba(0, 0, 0, 0.28);
+      text-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.18),
+        0 0 6px rgba(0, 0, 0, 0.10);
+    }
+  }
+  
+  /* Desktop */
+  @media (min-width: 1025px) {
+    .glass-card .text-gold.inline-block,
+    .glass-card .text-gold {
+      -webkit-text-stroke: 0.35px rgba(0, 0, 0, 0.30);
+      text-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.20),
+        0 0 7px rgba(0, 0, 0, 0.12);
+    }
+  }
+  
+  /* Fallback no stroke support */
+  @supports not (-webkit-text-stroke: 1px black) {
+    .glass-card .text-gold.inline-block,
+    .glass-card .text-gold {
+      text-shadow:
+        0.6px 0 rgba(0, 0, 0, 0.22),
+        -0.6px 0 rgba(0, 0, 0, 0.22),
+        0 0.6px rgba(0, 0, 0, 0.22),
+        0 -0.6px rgba(0, 0, 0, 0.22),
+        0 1px 2px rgba(0, 0, 0, 0.18),
+        0 0 6px rgba(0, 0, 0, 0.10);
+    }
+  }
+  
   
   .glass-surface {
     background: var(--card-bg) !important;
@@ -601,60 +751,107 @@ a {
   }
   
   .btn-primary {
+    position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 1rem 2rem;
     font-family: var(--font-body);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1rem;
     color: #FFFFFF;
-    background: linear-gradient(135deg, var(--primary), var(--primary-2));
-    border: none;
+    background: linear-gradient(to right, var(--primary), var(--primary-2));
+    border: 1px solid rgba(214, 168, 74, 0.5);
     border-radius: var(--radius-md);
-    box-shadow: var(--shadow-md), 0 0 20px var(--glow);
     cursor: pointer;
     transition: all 0.3s ease;
-    white-space: nowrap;
     overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
   }
   
   .btn-primary:hover {
-    background: linear-gradient(135deg, var(--primary-2), var(--primary));
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg), 0 0 30px var(--glow);
+    box-shadow: 0 0 20px rgba(214, 168, 74, 0.4);
   }
   
   .btn-primary span {
     position: relative;
-    z-index: 1;
+    z-index: 10;
+  }
+  
+  .btn-primary::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      110deg,
+      transparent 0%,
+      transparent 40%,
+      rgba(255, 223, 128, 0.3) 50%,
+      transparent 60%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    animation: shimmer 2s linear infinite;
+    pointer-events: none;
+  }
+  
+  .btn-primary:hover::after {
+    opacity: 1;
   }
   
   .btn-secondary {
+    position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 1rem 2rem;
-    background: transparent;
-    color: var(--text);
-    font-weight: 600;
-    border: 2px solid var(--border-2);
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background: linear-gradient(to right, var(--primary), var(--primary-2));
+    border: 1px solid rgba(214, 168, 74, 0.5);
     border-radius: var(--radius-md);
-    text-decoration: none;
-    transition: all 0.3s ease;
     cursor: pointer;
-    white-space: nowrap;
+    transition: all 0.3s ease;
     overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
   }
   
   .btn-secondary:hover {
-    background: var(--surface-2);
-    border-color: var(--primary);
-    color: var(--primary);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 0 20px rgba(214, 168, 74, 0.4);
+  }
+  
+  .btn-secondary span {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .btn-secondary::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      110deg,
+      transparent 0%,
+      transparent 40%,
+      rgba(255, 223, 128, 0.3) 50%,
+      transparent 60%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    animation: shimmer 2s linear infinite;
+    pointer-events: none;
+  }
+  
+  .btn-secondary:hover::after {
+    opacity: 1;
   }
   
   .section-padding {

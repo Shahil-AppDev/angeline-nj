@@ -168,7 +168,7 @@ export default function CompatibilitePage() {
                   <Link href="/contact" className="btn-primary soft-glow">
                     <span>Tirage de Couple (35€)</span>
                   </Link>
-                  <Link href="/boutique/bougies" className="btn-secondary">
+                  <Link href="/boutique/bougies" className="btn-gold">
                     <span>Bougies d'Amour</span>
                   </Link>
                 </div>

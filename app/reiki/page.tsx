@@ -354,7 +354,7 @@ export default function ReikiPage() {
                 <Link href="/contact" className="btn-primary soft-glow">
                   <span>Prendre rendez-vous</span>
                 </Link>
-                <Link href="/boutique" className="btn-secondary">
+                <Link href="/boutique" className="btn-gold">
                   <span>Voir les pierres & encens</span>
                 </Link>
               </div>

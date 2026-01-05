@@ -57,7 +57,7 @@ export default function AProposPage() {
                 href="https://www.tiktok.com/@angelinenj?_r=1&_t=ZN-92jl0gNLqDO"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary inline-flex items-center space-x-2"
+                className="btn-gold inline-flex items-center space-x-2"
               >
                 <span>Mon TikTok</span>
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -68,7 +68,7 @@ export default function AProposPage() {
                 href="https://www.instagram.com/reiki.by.angie?igsh=MXMxMGNtejZhN3QxbA=="
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary inline-flex items-center space-x-2"
+                className="btn-gold inline-flex items-center space-x-2"
               >
                 <span>Mon Instagram</span>
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -79,7 +79,7 @@ export default function AProposPage() {
                 href="https://youtube.com/@angelinenj-j7z?si=csJ4O1SUYl2SOX0K"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary inline-flex items-center space-x-2"
+                className="btn-gold inline-flex items-center space-x-2"
               >
                 <span>Mon YouTube</span>
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -90,7 +90,7 @@ export default function AProposPage() {
                 href="https://www.facebook.com/share/1AdgYgoytY/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary inline-flex items-center space-x-2"
+                className="btn-gold inline-flex items-center space-x-2"
               >
                 <span>Mon Facebook</span>
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -136,8 +136,8 @@ export default function AProposPage() {
               <p className="text-text-2 leading-relaxed mb-4">
                 Donne de nouvelles perspectives, d'inspiration et d'espoir. La cartomancie vous aide à clarifier vos situations et à trouver guidance.
               </p>
-              <Link href="/tirages" className="text-gold-2 hover:text-gold-1 font-medium">
-                En savoir plus →
+              <Link href="/tirages" className="btn-gold inline-block">
+                <span>En savoir plus</span>
               </Link>
             </motion.div>
 
@@ -155,8 +155,8 @@ export default function AProposPage() {
               <p className="text-text-2 leading-relaxed mb-4">
                 Donne un regain d'énergie, lutte contre le stress et la dépression. Renforce la confiance en soi et favorise la guérison.
               </p>
-              <Link href="/reiki" className="text-gold-2 hover:text-gold-1 font-medium">
-                En savoir plus →
+              <Link href="/reiki" className="btn-gold inline-block">
+                <span>En savoir plus</span>
               </Link>
             </motion.div>
           </div>

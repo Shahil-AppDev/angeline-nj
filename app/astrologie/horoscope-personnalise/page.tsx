@@ -279,7 +279,7 @@ export default function HoroscopePersonnalisePage() {
                   <Link href="/abonnement" className="btn-primary soft-glow">
                     <span>Abonnez-vous</span>
                   </Link>
-                  <button onClick={resetForm} className="btn-secondary">
+                  <button onClick={resetForm} className="btn-gold">
                     <span>Nouvelle guidance</span>
                   </button>
                 </div>

@@ -33,8 +33,8 @@ export default function TestimonialCard({ name, text, rating, delay = 0 }: Testi
       <p className="text-text-2 italic leading-relaxed mb-4">
         &ldquo;{text}&rdquo;
       </p>
-      <p className="font-semibold text-gold font-title">
-        {name}
+      <p className="font-semibold font-title">
+        <span className="gold-halo text-gold">{name}</span>
       </p>
     </motion.div>
   );

@@ -189,14 +189,14 @@ export default function AscendantPage() {
                   <Link href="/contact" className="btn-primary soft-glow">
                     <span>Tirage Personnalisé (25€)</span>
                   </Link>
-                  <Link href="/boutique" className="btn-secondary">
+                  <Link href="/boutique" className="btn-gold">
                     <span>Pierres & Bougies</span>
                   </Link>
                 </div>
               </div>
 
               <div className="text-center">
-                <button onClick={resetForm} className="btn-secondary">
+                <button onClick={resetForm} className="btn-gold">
                   <span>Nouveau calcul</span>
                 </button>
               </div>

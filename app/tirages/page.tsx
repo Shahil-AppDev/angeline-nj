@@ -114,8 +114,8 @@ export default function TiragesPage() {
                 className="glass-card p-8"
               >
                 <div className="text-5xl mb-4">{benefice.icon}</div>
-                <h3 className="text-2xl font-semibold text-gold mb-3 font-title">
-                  {benefice.title}
+                <h3 className="text-2xl font-semibold mb-3 font-title">
+                  <span className="gold-halo text-gold">{benefice.title}</span>
                 </h3>
                 <p className="text-text-2 leading-relaxed">
                   {benefice.description}
@@ -144,8 +144,8 @@ export default function TiragesPage() {
                 La réponse à votre question est envoyée <strong>SOUS maximum 48 heures</strong>.
               </p>
               
-              <h3 className="font-serif text-2xl text-gold font-title mb-4">
-                Modalités
+              <h3 className="font-serif text-2xl font-title mb-4">
+                <span className="gold-halo text-gold">Modalités</span>
               </h3>
               <p className="text-text-2 leading-relaxed mb-6">
                 Je l'envoie par mail ou sur Instagram en fonction de votre préférence (laissez moi un message sur mon Instagram @reiki.by.angie).
@@ -158,8 +158,8 @@ export default function TiragesPage() {
                 <li>la mort</li>
               </ul>
               
-              <h3 className="font-serif text-2xl text-gold font-title mb-4">
-                La question doit être précise !
+              <h3 className="font-serif text-2xl font-title mb-4">
+                <span className="gold-halo text-gold">La question doit être précise !</span>
               </h3>
               <div className="bg-surface p-6 rounded-lg mb-4">
                 <p className="text-text-2 mb-2">
@@ -180,11 +180,11 @@ export default function TiragesPage() {
             </div>
 
             <div className="text-center">
-              <a 
+              <a
                 href="https://www.tiktok.com/@angelinenj"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary inline-flex items-center space-x-2 mb-4"
+                className="btn-gold inline-flex items-center space-x-2 mb-4"
               >
                 <span>Mon TikTok : @angelinenj</span>
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -198,7 +198,7 @@ export default function TiragesPage() {
                 <Link href="/contact" className="btn-primary soft-glow">
                   <span>Commander un tirage en vidéo</span>
                 </Link>
-                <Link href="/boutique" className="btn-secondary">
+                <Link href="/boutique" className="btn-gold">
                   <span>Découvrir mes oracles</span>
                 </Link>
               </div>
