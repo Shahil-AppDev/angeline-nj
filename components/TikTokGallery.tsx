@@ -20,7 +20,7 @@ const tiktokVideos = [
   'https://www.tiktok.com/@angelinenj/video/7588538474744007958', // 9 oracles promo Noël
   'https://www.tiktok.com/@angelinenj/video/7588202649875614999', // Tirage NJ relation passionnelle
   'https://www.tiktok.com/@angelinenj/video/7587755349562772758', // Retour ex message
-  'https://www.tiktok.com/@angelinenj/video/7587755349562772758',
+  'https://www.tiktok.com/@angelinenj/video/7519537787499056406', // Oracle Alena - Il pense à toi
 ];
 
 export default function TikTokGallery() {
