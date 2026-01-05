@@ -33,7 +33,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Le praticien canalise et transmet l\'énergie par visualisation pour activer le processus naturel de guérison.',
     price: '40€',
     format: 'Soin à distance avec compte-rendu',
-    oldSiteUrl: 'https://angeline-nj.xyz/contact',
+    oldSiteUrl: 'https://angeline-nj.xyz/produit/reiki-a-distance',
     intro: 'Le Reiki à distance est une méthode de soin énergétique puissante qui transcende les barrières physiques. Le praticien canalise l\'énergie universelle et la transmet par visualisation pour activer votre processus naturel de guérison, où que vous soyez.',
     forWho: [
       'Vous ressentez un déséquilibre énergétique',
