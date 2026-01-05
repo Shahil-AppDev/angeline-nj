@@ -56,7 +56,7 @@ export default function Navbar() {
             </span>
           </Link>
 
-          <div className="hidden md:flex items-center space-x-2 lg:space-x-6">
+          <div className="nav-desktop hidden md:flex items-center space-x-2 lg:space-x-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -68,14 +68,14 @@ export default function Navbar() {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-gold-1 to-gold-2 group-hover:w-full transition-all duration-300 shadow-[0_0_8px_var(--gold-glow)]" />
               </Link>
             ))}
-            <Link href="/contact" className="btn-primary text-[10px] lg:text-sm whitespace-nowrap px-2 py-1.5 lg:px-3 lg:py-2">
+            <Link href="/contact" className="cta-header btn-primary text-[10px] lg:text-sm whitespace-nowrap px-2 py-1.5 lg:px-3 lg:py-2">
               <span>Prendre rendez-vous</span>
             </Link>
           </div>
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-3 transition-all rounded-lg hover:bg-surface"
+            className="nav-burger md:hidden p-3 transition-all rounded-lg hover:bg-surface"
             style={{ color: '#C8B6FF' }}
             aria-label="Menu"
           >

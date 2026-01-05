@@ -69,7 +69,7 @@ export default function Home() {
     <>
       <Navbar />
       
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[calc(100svh-72px)] flex items-center py-10 md:py-12 overflow-hidden">
         <StarfieldBackground />
         <AuroraGlow />
         
@@ -81,10 +81,10 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="text-center lg:text-left"
             >
-              <h1 className="text-gold mb-6 font-title">
+              <h1 className="font-title text-gold text-center lg:text-left mb-6 max-w-[18ch] sm:max-w-[22ch] lg:max-w-[28ch] mx-auto lg:mx-0 leading-[1.08] tracking-tight" style={{ fontSize: 'clamp(28px, 3.6vw, 54px)' }}>
                 Guidance Spirituelle & Soins Énergétiques : Éclairez votre Chemin avec Angeline NJ
               </h1>
-              <p className="text-lg md:text-xl text-text-2 mb-8 leading-relaxed">
+              <p className="text-text-2 text-center lg:text-left mb-8 leading-relaxed max-w-[60ch] mx-auto lg:mx-0 mt-4" style={{ fontSize: 'clamp(14px, 1.6vw, 18px)' }}>
                 Bienvenue dans l’univers d’Angeline NJ, un sanctuaire dédié à l’éveil spirituel, à la cartomancie et aux soins énergétiques par le Reiki à distance.
               </p>
               
@@ -141,7 +141,7 @@ export default function Home() {
         </div>
         
         <motion.div
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10"
+          className="hero-scroll-indicator absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10"
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
         >
