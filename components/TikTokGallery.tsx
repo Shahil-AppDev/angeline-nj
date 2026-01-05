@@ -3,23 +3,24 @@
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 
-// Liste des 15 dernières vidéos TikTok (à remplacer par les vraies URLs)
+// Liste des 15 dernières vidéos TikTok
+// IMPORTANT: Remplace ces URLs par tes 15 dernières vidéos TikTok
 const tiktokVideos = [
-  'https://www.tiktok.com/@angelinenj/video/1',
-  'https://www.tiktok.com/@angelinenj/video/2',
-  'https://www.tiktok.com/@angelinenj/video/3',
-  'https://www.tiktok.com/@angelinenj/video/4',
-  'https://www.tiktok.com/@angelinenj/video/5',
-  'https://www.tiktok.com/@angelinenj/video/6',
-  'https://www.tiktok.com/@angelinenj/video/7',
-  'https://www.tiktok.com/@angelinenj/video/8',
-  'https://www.tiktok.com/@angelinenj/video/9',
-  'https://www.tiktok.com/@angelinenj/video/10',
-  'https://www.tiktok.com/@angelinenj/video/11',
-  'https://www.tiktok.com/@angelinenj/video/12',
-  'https://www.tiktok.com/@angelinenj/video/13',
-  'https://www.tiktok.com/@angelinenj/video/14',
-  'https://www.tiktok.com/@angelinenj/video/15',
+  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
+  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
+  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
+  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
+  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
+  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
+  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
+  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
+  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
+  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
+  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
+  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
+  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
+  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
+  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
 ];
 
 export default function TikTokGallery() {
