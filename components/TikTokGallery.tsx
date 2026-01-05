@@ -6,21 +6,21 @@ import { useEffect } from 'react';
 // Liste des 15 dernières vidéos TikTok
 // IMPORTANT: Remplace ces URLs par tes 15 dernières vidéos TikTok
 const tiktokVideos = [
-  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
-  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
-  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
-  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
-  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
-  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
-  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
-  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
-  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
-  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
-  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
-  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
-  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
-  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
-  'https://www.tiktok.com/@angelinenj/video/7551813989949312278',
+  'https://www.tiktok.com/@angelinenj/video/7551813989949312278', // Le Mystica
+  'https://www.tiktok.com/@angelinenj/video/7532167677985508630', // NJ Family - Mercredi Addams
+  'https://www.tiktok.com/@angelinenj/video/7362513116145536288', // Oracles boutique
+  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
+  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
+  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
+  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
+  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
+  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
+  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
+  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
+  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
+  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
+  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
+  'https://www.tiktok.com/@angelinenj/video/7362513116145536288',
 ];
 
 export default function TikTokGallery() {
