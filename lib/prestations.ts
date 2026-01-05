@@ -102,7 +102,7 @@ export const prestations: Prestation[] = [
     icon: '📹',
     badge: 'En direct',
     shortDescription: 'Pour un tirage en direct (audio ou visio), contacte-moi sur mes réseaux.',
-    price: '50€ • 30min\n70€ • 45min\n90€ • 60min',
+    price: '30 minutes • 50€\n45 minutes • 70€\n60 minutes • 90€',
     format: 'Visioconférence en direct (Instagram, TikTok, Facebook)',
     oldSiteUrl: 'https://angeline-nj.xyz/contact',
     intro: 'Pour un tirage en direct (audio ou visio), contacte-moi sur mes réseaux. Une fois le Paypal effectué, nous convenons la date du rendez-vous. Le tirage peut être fait par SMS, vocaux ou visioconférence.',

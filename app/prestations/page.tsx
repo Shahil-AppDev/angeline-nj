@@ -63,7 +63,7 @@ export default function PrestationsPage() {
 
                   <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-4 border-t border-border">
                     <div className="text-text-2 text-sm">
-                      <div className="font-semibold text-primary text-lg">{prestation.price}</div>
+                      <div className="font-semibold text-primary text-lg whitespace-pre-line">{prestation.price}</div>
                     </div>
                     <div className="flex gap-2 w-full sm:w-auto">
                       <Link href={`/prestations/${prestation.slug}`}>
