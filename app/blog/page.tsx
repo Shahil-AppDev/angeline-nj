@@ -21,10 +21,10 @@ export default function BlogPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-5xl md:text-6xl font-bold text-gold mb-6 font-title">
+            <h1 className="font-bold text-gold mb-6 font-title" style={{ fontSize: 'clamp(1.75rem, 4vw, 3.5rem)' }}>
               Blog & Guidance
             </h1>
-            <p className="text-xl text-text-2 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-text-2 max-w-3xl mx-auto leading-relaxed" style={{ fontSize: 'clamp(1rem, 1.5vw, 1.25rem)' }}>
               Découvrez nos articles experts sur la cartomancie, le Reiki et la spiritualité pour éclairer votre chemin quotidien.
             </p>
           </motion.div>
@@ -33,7 +33,7 @@ export default function BlogPage() {
 
       <Section className="py-16">
         <div className="container-custom max-w-5xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {blogPosts.map((post, index) => (
               <motion.article
                 key={post.slug}
@@ -56,7 +56,7 @@ export default function BlogPage() {
                         post.cover
                       )}
                     </div>
-                    <div className="p-6 flex flex-col flex-1">
+                    <div className="p-4 sm:p-6 flex flex-col flex-1">
                       <div className="flex flex-wrap gap-2 mb-3">
                         {post.tags.map((tag) => (
                           <span
@@ -67,7 +67,7 @@ export default function BlogPage() {
                           </span>
                         ))}
                       </div>
-                      <h2 className="text-2xl font-semibold text-gold mb-3 group-hover:text-gold-1 transition-colors font-title">
+                      <h2 className="font-semibold text-gold mb-3 group-hover:text-gold-1 transition-colors font-title" style={{ fontSize: 'clamp(1.125rem, 2vw, 1.5rem)' }}>
                         {post.title}
                       </h2>
                       <p className="text-text-2 mb-4 line-clamp-3 flex-1">
