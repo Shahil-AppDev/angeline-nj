@@ -6,13 +6,10 @@
 /* Safari iOS Optimizations */
 html {
   -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  -webkit-overflow-scrolling: touch;
 }
 
 /* ============================================
@@ -820,10 +817,16 @@ a {
   
   .text-balance {
     /* Fallback pour navigateurs anciens */
-    text-wrap: balance;
+    word-wrap: break-word;
   }
   
-  @supports not (text-wrap: balance) {
+  @supports (text-wrap: balance) {
+    .text-balance {
+      text-wrap: balance;
+    }
+  }
+  
+  @supports (text-wrap: pretty) and (not (text-wrap: balance)) {
     .text-balance {
       text-wrap: pretty;
     }

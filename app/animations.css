@@ -317,6 +317,56 @@
   animation: float-gentle 11s ease-in-out infinite 3s;
 }
 
+.floating-sigil-6 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 2.8rem;
+  height: 2.8rem;
+  opacity: 0.14;
+  animation: float-gentle-alt 13s ease-in-out infinite 4s;
+}
+
+.floating-sigil-7 {
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  width: 3.2rem;
+  height: 3.2rem;
+  opacity: 0.17;
+  animation: float-gentle 10s ease-in-out infinite 1.5s;
+}
+
+.floating-sigil-8 {
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  width: 2.6rem;
+  height: 2.6rem;
+  opacity: 0.13;
+  animation: float-gentle-alt 14s ease-in-out infinite 2.5s;
+}
+
+.floating-sigil-9 {
+  position: absolute;
+  bottom: 40%;
+  left: 8%;
+  width: 3.3rem;
+  height: 3.3rem;
+  opacity: 0.15;
+  animation: float-gentle 9.5s ease-in-out infinite 0.5s;
+}
+
+.floating-sigil-10 {
+  position: absolute;
+  top: 35%;
+  right: 40%;
+  width: 2.9rem;
+  height: 2.9rem;
+  opacity: 0.14;
+  animation: float-gentle-alt 11.5s ease-in-out infinite 3.5s;
+}
+
 @keyframes float-gentle {
   0%, 100% {
     transform: translate(0, 0) rotate(0deg);

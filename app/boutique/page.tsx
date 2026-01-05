@@ -14,7 +14,8 @@ const categories = [
     id: cat.slug,
     label: cat.name,
     count: cat.count
-  }))
+  })),
+  { id: 'rituels', label: 'Rituels', count: 5 }
 ];
 
 const products = productsData;

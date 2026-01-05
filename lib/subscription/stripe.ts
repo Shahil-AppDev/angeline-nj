@@ -24,7 +24,7 @@ export const subscriptionPlans: SubscriptionPlan[] = [
   {
     id: 'abonnement-guidance',
     name: 'Abonnement Guidance',
-    price: 19.90,
+    price: 7.80,
     interval: 'month',
     features: [
       '1 prestation par mois : tirage de cartes ou soin énergétique Reiki',
