@@ -33,7 +33,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Obtenez une réponse oui/non à votre question précise (hors domaine sentimental).',
     price: '10€',
     format: 'Réponse écrite ou audio envoyée sous 24h',
-    oldSiteUrl: 'https://angeline-nj.com/produit/tirage-question-precise-hors-sentimentale-oui-non/',
+    oldSiteUrl: 'https://angeline-nj.xyz/contact',
     intro: 'Vous avez besoin d\'une réponse rapide et claire à une question précise ? Ce tirage vous apporte une guidance directe sous forme de oui/non avec une brève explication.',
     forWho: [
       'Vous avez une question simple nécessitant une réponse claire',
@@ -95,7 +95,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Découvrez les énergies et conseils pour votre semaine.',
     price: '15€',
     format: 'Réponse écrite ou audio envoyée sous 24h',
-    oldSiteUrl: 'https://angeline-nj.com/produit/question-sur-une-semaine/',
+    oldSiteUrl: 'https://angeline-nj.xyz/contact',
     intro: 'Vous souhaitez connaître les énergies de votre semaine à venir ? Ce tirage vous donne une vision claire des jours qui arrivent avec des conseils pour chaque période.',
     forWho: [
       'Vous voulez anticiper votre semaine',
@@ -156,7 +156,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Obtenez une réponse détaillée sur une question dans le domaine de votre choix.',
     price: '25€',
     format: 'Vidéo ou audio personnalisé envoyé sous 48h',
-    oldSiteUrl: 'https://angeline-nj.com/produit/question-precise-domaine-de-votre-choix-hors-sentimentale/',
+    oldSiteUrl: 'https://angeline-nj.xyz/contact',
     intro: 'Vous avez une question précise sur un domaine particulier (travail, finances, spiritualité, famille, projets...) ? Ce tirage vous apporte une réponse approfondie et des conseils concrets. Exclusions : santé et mort.',
     forWho: [
       'Vous avez une question précise sur un domaine spécifique',
@@ -217,7 +217,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Obtenez des réponses claires sur votre vie amoureuse et sentimentale.',
     price: '30€',
     format: 'Vidéo personnalisée envoyée sous 48h',
-    oldSiteUrl: 'https://angeline-nj.com/produit/tirage-sentimental/',
+    oldSiteUrl: 'https://angeline-nj.xyz/contact',
     intro: 'Vous vous posez des questions sur votre relation, un amour naissant ou votre avenir sentimental ? Le tirage sentimental vous apporte des réponses claires et bienveillantes.',
     forWho: [
       'Vous traversez une période de doute dans votre couple',
@@ -278,7 +278,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Un tirage centré sur le positif, les opportunités et les solutions.',
     price: '30€',
     format: 'Vidéo personnalisée envoyée sous 48h',
-    oldSiteUrl: 'https://angeline-nj.com/produit/tirage-positif/',
+    oldSiteUrl: 'https://angeline-nj.xyz/contact',
     intro: 'Vous souhaitez vous concentrer sur les aspects positifs de votre vie et les opportunités à venir ? Le tirage positif met en lumière vos forces, vos talents et les énergies favorables.',
     forWho: [
       'Vous traversez une période difficile et cherchez de l\'espoir',
@@ -340,7 +340,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Obtenez une réponse rapide et complète en cas de situation urgente.',
     price: '80€',
     format: 'Vidéo personnalisée envoyée sous 24h maximum',
-    oldSiteUrl: 'https://angeline-nj.com/produit/tirage-en-urgence/',
+    oldSiteUrl: 'https://angeline-nj.xyz/contact',
     intro: 'Vous faites face à une situation urgente nécessitant une guidance rapide ? Le tirage en urgence vous apporte une réponse complète et prioritaire sous 24h maximum.',
     forWho: [
       'Vous devez prendre une décision importante rapidement',
@@ -402,7 +402,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Le praticien canalise et transmet l\'énergie par visualisation pour activer le processus naturel de guérison.',
     price: '40€',
     format: 'Soin à distance avec compte-rendu',
-    oldSiteUrl: 'https://angeline-nj.com/produit/reiki-a-distance/',
+    oldSiteUrl: 'https://angeline-nj.xyz/contact',
     intro: 'Le Reiki à distance est une méthode de soin énergétique puissante qui transcende les barrières physiques. Le praticien canalise l\'énergie universelle et la transmet par visualisation pour activer votre processus naturel de guérison, où que vous soyez.',
     forWho: [
       'Vous ressentez un déséquilibre énergétique',
@@ -473,7 +473,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Pour un tirage personnalisé en direct, vous pouvez me contacter sur mes réseaux.',
     price: '50€ (30min) • 70€ (45min) • 90€ (60min)',
     format: 'Visioconférence en direct (Instagram, TikTok, Facebook)',
-    oldSiteUrl: 'https://angeline-nj.com/contact',
+    oldSiteUrl: 'https://angeline-nj.xyz/contact',
     intro: 'Pour un tirage personnalisé en direct, vous pouvez me contacter sur mes différents réseaux. Une fois le Paypal effectué, nous convenons la date du rendez-vous. Le tirage peut être fait par SMS, vocaux ou visioconférence.',
     forWho: [
       'Vous préférez un échange en direct',
@@ -539,7 +539,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Découvrez nos formations complètes pour maîtriser le pendule, les oracles et le Reiki.',
     price: 'Voir formations',
     format: 'Formations en ligne et supports PDF',
-    oldSiteUrl: 'https://angeline-nj.xyz/formations',
+    oldSiteUrl: 'https://angeline-nj.xyz/contact',
     intro: 'Vous souhaitez développer vos compétences en arts divinatoires ou en soins énergétiques ? Découvrez nos formations complètes et accessibles pour apprendre à votre rythme.',
     forWho: [
       'Vous souhaitez apprendre le pendule',
@@ -601,7 +601,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Découvrez nos tirages vidéo personnalisés disponibles dans la boutique.',
     price: 'Voir boutique',
     format: 'Vidéo personnalisée',
-    oldSiteUrl: 'https://angeline-nj.xyz/boutique/mes-prestations',
+    oldSiteUrl: 'https://angeline-nj.xyz/contact',
     intro: 'Vous souhaitez un tirage vidéo personnalisé ? Découvrez notre sélection de tirages vidéo disponibles dans la boutique, catégorie "Mes prestations".',
     forWho: [
       'Vous préférez un format vidéo',
@@ -663,7 +663,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Téléchargez nos rituels guidés en PDF pour pratiquer chez vous.',
     price: '19,90€',
     format: 'PDF téléchargeable',
-    oldSiteUrl: 'https://angeline-nj.xyz/boutique/rituels',
+    oldSiteUrl: 'https://angeline-nj.xyz/contact',
     intro: 'Découvrez nos rituels guidés en format PDF, conçus pour vous accompagner dans votre pratique spirituelle. Chaque rituel est détaillé étape par étape avec les explications nécessaires.',
     forWho: [
       'Vous souhaitez pratiquer des rituels chez vous',
@@ -725,7 +725,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Suivez nos rituels guidés en vidéo pour une pratique accompagnée.',
     price: 'Voir boutique',
     format: 'Vidéo guidée',
-    oldSiteUrl: 'https://angeline-nj.xyz/boutique/rituels',
+    oldSiteUrl: 'https://angeline-nj.xyz/contact',
     intro: 'Vous préférez être guidé en vidéo ? Découvrez nos rituels en format vidéo pour pratiquer en étant accompagné pas à pas. Disponibles dans la boutique, catégorie "Rituels".',
     forWho: [
       'Vous préférez un format vidéo',
