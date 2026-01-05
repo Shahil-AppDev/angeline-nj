@@ -71,9 +71,9 @@ export default function BoutiquePage() {
 
             <div className="flex flex-wrap gap-2 sm:gap-3 justify-center">
               {categories.map((cat) => (
-                <button
+                <Link
                   key={cat.id}
-                  onClick={() => setSelectedCategory(cat.id)}
+                  href={cat.id === 'tous' ? '/boutique' : `/boutique/${cat.id}`}
                   className={`px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-medium transition-all text-sm sm:text-base ${
                     selectedCategory === cat.id
                       ? 'bg-gold-2 text-white shadow-md'
@@ -82,7 +82,7 @@ export default function BoutiquePage() {
                 >
                   <span className="hidden sm:inline">{cat.label} ({cat.count})</span>
                   <span className="sm:hidden">{cat.label}</span>
-                </button>
+                </Link>
               ))}
             </div>
           </motion.div>
