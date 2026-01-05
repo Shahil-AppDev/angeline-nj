@@ -88,14 +88,14 @@ export default function Home() {
                 Bienvenue dans l’univers d’Angeline NJ, un sanctuaire dédié à l’éveil spirituel, à la cartomancie et aux soins énergétiques par le Reiki à distance.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 mb-6">
+              <div className="flex flex-col sm:flex-row gap-4 mb-6 justify-center lg:justify-start">
                 <Link href="/prendre-rdv" className="w-full sm:w-auto">
-                  <Button variant="primary" size="lg" className="w-full">
+                  <Button variant="primary" size="lg" className="w-full sm:w-auto sm:min-w-[200px]">
                     Prendre rendez-vous
                   </Button>
                 </Link>
                 <Link href="/tirages" className="w-full sm:w-auto">
-                  <Button variant="primary" size="lg" className="w-full btn-gold">
+                  <Button variant="primary" size="lg" className="w-full sm:w-auto sm:min-w-[200px]">
                     Découvrir les tirages
                   </Button>
                 </Link>
@@ -207,7 +207,7 @@ export default function Home() {
                 Mon approche allie intuition, écoute profonde et bienveillance pour vous offrir une guidance éclairante et porteuse de sens.
               </p>
               <Link href="/a-propos">
-                <Button variant="primary">En savoir plus</Button>
+                <Button variant="primary" className="min-w-[180px]">En savoir plus</Button>
               </Link>
             </motion.div>
 
@@ -307,12 +307,12 @@ export default function Home() {
                   </div>
                   <div className="space-y-2">
                     <Link href={`/prestations/${prestation.slug}`} className="block">
-                      <Button variant="primary" size="sm" className="w-full">
+                      <Button variant="primary" size="sm" className="w-full min-w-[140px]">
                         Découvrir
                       </Button>
                     </Link>
                     <a href={siteConfig.rdv.url} target="_blank" rel="noopener noreferrer" className="block">
-                      <Button variant="primary" size="sm" className="w-full">
+                      <Button variant="primary" size="sm" className="w-full min-w-[140px]">
                         Prendre RDV
                       </Button>
                     </a>
@@ -334,12 +334,12 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/formations">
-                <Button variant="primary" size="lg" className="btn-gold">
+                <Button variant="primary" size="lg" className="w-full sm:w-auto sm:min-w-[200px]">
                   Voir les formations
                 </Button>
               </Link>
               <Link href="/boutique">
-                <Button variant="primary" size="lg" className="btn-gold">
+                <Button variant="primary" size="lg" className="w-full sm:w-auto sm:min-w-[200px]">
                   Découvrir la boutique
                 </Button>
               </Link>
