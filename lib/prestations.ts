@@ -103,8 +103,8 @@ export const prestations: Prestation[] = [
     badge: 'En direct',
     shortDescription: 'Pour un tirage en direct (audio ou visio), contacte-moi sur mes réseaux.',
     price: '30 minutes • 50€\n45 minutes • 70€\n60 minutes • 90€',
-    format: 'Visioconférence en direct (Instagram, TikTok, Facebook)',
-    oldSiteUrl: 'https://angeline-nj.xyz/contact',
+    format: 'Visioconférence en direct',
+    oldSiteUrl: 'https://angeline-nj.xyz/boutique/mes-prestations',
     intro: 'Pour un tirage en direct (audio ou visio), contacte-moi sur mes réseaux. Une fois le Paypal effectué, nous convenons la date du rendez-vous. Le tirage peut être fait par SMS, vocaux ou visioconférence.',
     forWho: [
       'Vous préférez un échange en direct',
@@ -170,7 +170,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Découvrez nos formations complètes pour maîtriser le pendule, les oracles et le Reiki.',
     price: 'Voir formations',
     format: 'Formations en ligne et supports PDF',
-    oldSiteUrl: 'https://angeline-nj.xyz/contact',
+    oldSiteUrl: 'https://angeline-nj.xyz/formations',
     intro: 'Vous souhaitez développer vos compétences en arts divinatoires ou en soins énergétiques ? Découvrez nos formations complètes et accessibles pour apprendre à votre rythme.',
     forWho: [
       'Vous souhaitez apprendre le pendule',
@@ -231,8 +231,8 @@ export const prestations: Prestation[] = [
     badge: 'Boutique',
     shortDescription: 'Explore mes tirages vidéo thématiques, créés avec mes oracles.',
     price: 'Voir boutique',
-    format: 'Vidéo personnalisée',
-    oldSiteUrl: 'https://angeline-nj.xyz/contact',
+    format: 'Vidéos thématiques',
+    oldSiteUrl: 'https://angeline-nj.xyz/boutique/mes-prestations',
     intro: 'Vous souhaitez un tirage vidéo personnalisé ? Découvrez notre sélection de tirages vidéo disponibles dans la boutique, catégorie "Mes prestations".',
     forWho: [
       'Vous préférez un format vidéo',
@@ -294,7 +294,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Téléchargez nos rituels guidés en PDF pour pratiquer chez vous :\n• Protection\n• Attirer l\'amour\n• Abondance\n• Manifester un projet\n• Couper un lien\n• Protection & chance',
     price: '3,90€',
     format: 'PDF téléchargeable',
-    oldSiteUrl: 'https://angeline-nj.xyz/contact',
+    oldSiteUrl: 'https://angeline-nj.xyz/boutique/rituels',
     intro: 'Découvrez nos rituels guidés en format PDF, conçus pour vous accompagner dans votre pratique spirituelle. Chaque rituel est détaillé étape par étape avec les explications nécessaires.',
     forWho: [
       'Vous souhaitez pratiquer des rituels chez vous',
@@ -356,7 +356,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Suivez nos rituels guidés en vidéo pour une pratique accompagnée :\n• Protection\n• Attirer l\'amour\n• Abondance\n• Manifester un projet\n• Couper un lien\n• Protection & chance',
     price: '19.90€',
     format: 'Vidéo guidée',
-    oldSiteUrl: 'https://angeline-nj.xyz/contact',
+    oldSiteUrl: 'https://angeline-nj.xyz/boutique/rituels',
     intro: 'Vous préférez être guidé en vidéo ? Découvrez nos rituels en format vidéo pour pratiquer en étant accompagné pas à pas. Disponibles dans la boutique, catégorie "Rituels".',
     forWho: [
       'Vous préférez un format vidéo',
