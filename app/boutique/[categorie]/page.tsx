@@ -54,7 +54,7 @@ export default function CategoryPage({ params }: { params: { categorie: string }
         </div>
       </section>
 
-      <section className="section-padding dark-mystic-bg">
+      <section className="section-padding">
         <div className="container-custom">
           {products.length === 0 ? (
             <div className="text-center py-16">

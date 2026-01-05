@@ -86,7 +86,7 @@ export default function TiragesPage() {
         </div>
       </section>
 
-      <section className="section-padding dark-mystic-bg">
+      <section className="section-padding">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

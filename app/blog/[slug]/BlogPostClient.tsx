@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 export default function BlogPostClient({ post, relatedPosts }: { post: BlogPost, relatedPosts: BlogPost[] }) {
   return (
-    <article className="dark-mystic-bg min-h-screen">
+    <article className="min-h-screen">
       <Section className="pt-32 pb-16">
         <div className="container-custom max-w-4xl">
           <motion.div

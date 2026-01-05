@@ -76,7 +76,7 @@ export default function ReikiPage() {
         </div>
       </section>
 
-      <section className="section-padding dark-mystic-bg">
+      <section className="section-padding">
         <div className="container-custom max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -246,7 +246,7 @@ export default function ReikiPage() {
         </div>
       </section>
 
-      <section className="section-padding dark-mystic-bg">
+      <section className="section-padding">
         <div className="container-custom max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

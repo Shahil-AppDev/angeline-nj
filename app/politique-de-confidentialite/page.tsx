@@ -19,7 +19,7 @@ export default function PolitiqueConfidentialitePage() {
         </div>
       </section>
 
-      <section className="section-padding dark-mystic-bg">
+      <section className="section-padding">
         <div className="container-custom max-w-4xl prose prose-mystic">
           <p className="text-text-2 mb-6">
             Dernière mise à jour : {new Date().toLocaleDateString('fr-FR')}

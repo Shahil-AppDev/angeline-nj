@@ -40,7 +40,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
     <>
       <Navbar />
       
-      <section className="pt-32 pb-16 dark-mystic-bg min-h-screen">
+      <section className="pt-32 pb-16 min-h-screen">
         <div className="container-custom">
           <Link 
             href="/boutique" 

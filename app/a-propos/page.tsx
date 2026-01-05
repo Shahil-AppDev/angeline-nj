@@ -27,7 +27,7 @@ export default function AProposPage() {
         </div>
       </section>
 
-      <section className="section-padding dark-mystic-bg">
+      <section className="section-padding">
         <div className="container-custom max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -163,7 +163,7 @@ export default function AProposPage() {
         </div>
       </section>
 
-      <section className="section-padding dark-mystic-bg">
+      <section className="section-padding">
         <div className="container-custom max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -171,9 +171,8 @@ export default function AProposPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-serif text-3xl text-gold font-title mb-6">
-              Ma pratique
-            </h2>
+            <h2 className="font-serif text-3xl text-gold font-title mb-8 text-center">
+              Ma formation et mon parcours           </h2>
             <p className="text-text-2 text-lg leading-relaxed mb-6">
               Je travaille principalement avec mes oracles divinatoires personnalisés, 
               que je choisis en fonction de votre question et de votre énergie du moment.
@@ -214,7 +213,7 @@ export default function AProposPage() {
         </div>
       </section>
 
-      <section className="section-padding dark-mystic-bg text-center">
+      <section className="section-padding text-center">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

@@ -8,7 +8,7 @@ export default function CGVPage() {
     <>
       <Navbar />
       
-      <section className="section-padding pt-32 dark-mystic-bg">
+      <section className="section-padding pt-32">
         <div className="container-custom max-w-4xl text-center">
           <h1 className="font-serif text-gold font-title mb-6">
             Conditions Générales de Vente
@@ -19,7 +19,7 @@ export default function CGVPage() {
         </div>
       </section>
 
-      <section className="section-padding dark-mystic-bg">
+      <section className="section-padding">
         <div className="container-custom max-w-4xl prose prose-mystic">
           <h2 className="font-serif text-2xl text-gold font-title mb-4">Article 1 - Objet</h2>
           <p className="text-text-2 mb-6">

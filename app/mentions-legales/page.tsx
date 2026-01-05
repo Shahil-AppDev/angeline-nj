@@ -19,7 +19,7 @@ export default function MentionsLegalesPage() {
         </div>
       </section>
 
-      <section className="section-padding dark-mystic-bg">
+      <section className="section-padding">
         <div className="container-custom max-w-4xl prose prose-mystic">
           <h2 className="font-serif text-2xl text-gold font-title mb-4">Éditeur du site</h2>
           <p className="text-text-2 mb-6">
