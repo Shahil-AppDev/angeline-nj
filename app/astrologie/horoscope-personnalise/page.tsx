@@ -125,7 +125,7 @@ export default function HoroscopePersonnalisePage() {
                 </div>
 
                 <div>
-                  <label htmlFor="sign" className="block text-text mb-2 font-semibold">
+                  <label htmlFor="sign" className="block text-gray-800 mb-2 font-semibold">
                     Votre signe astrologique *
                   </label>
                   <select
@@ -143,7 +143,7 @@ export default function HoroscopePersonnalisePage() {
                 </div>
 
                 <div>
-                  <label htmlFor="name" className="block text-text mb-2 font-semibold">
+                  <label htmlFor="name" className="block text-gray-800 mb-2 font-semibold">
                     Votre prénom (optionnel)
                   </label>
                   <input
@@ -157,7 +157,7 @@ export default function HoroscopePersonnalisePage() {
                 </div>
 
                 <div>
-                  <label htmlFor="birthDate" className="block text-text mb-2 font-semibold">
+                  <label htmlFor="birthDate" className="block text-gray-800 mb-2 font-semibold">
                     Date de naissance (optionnel)
                   </label>
                   <input
@@ -171,7 +171,7 @@ export default function HoroscopePersonnalisePage() {
 
                 {formData.type === 'personalized' && (
                   <div>
-                    <label htmlFor="question" className="block text-text mb-2 font-semibold">
+                    <label htmlFor="question" className="block text-gray-800 mb-2 font-semibold">
                       Votre question ou situation (optionnel)
                     </label>
                     <textarea

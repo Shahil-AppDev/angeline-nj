@@ -163,7 +163,7 @@ export default function AstrologieEnfantsPage() {
             
             <div className="space-y-6">
               <div>
-                <label htmlFor="childName" className="block text-text mb-2 font-semibold">
+                <label htmlFor="childName" className="block text-gray-800 mb-2 font-semibold">
                   Prénom de l'enfant (optionnel)
                 </label>
                 <input
@@ -177,7 +177,7 @@ export default function AstrologieEnfantsPage() {
               </div>
 
               <div>
-                <label htmlFor="birthDate" className="block text-text mb-2 font-semibold">
+                <label htmlFor="birthDate" className="block text-gray-800 mb-2 font-semibold">
                   Date de naissance *
                 </label>
                 <input
