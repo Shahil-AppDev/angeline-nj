@@ -62,7 +62,7 @@ export default function CompatibilitePage() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div>
-                <label htmlFor="sign1" className="block text-text mb-3 font-semibold text-center">
+                <label htmlFor="sign1" className="block text-gray-800 mb-2 font-semibold text-center">
                   Votre signe
                 </label>
                 <select
@@ -80,7 +80,7 @@ export default function CompatibilitePage() {
               </div>
 
               <div>
-                <label htmlFor="sign2" className="block text-text mb-3 font-semibold text-center">
+                <label htmlFor="sign2" className="block text-gray-800 mb-2 font-semibold text-center">
                   Signe de votre partenaire
                 </label>
                 <select

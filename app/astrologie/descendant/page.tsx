@@ -193,7 +193,7 @@ export default function DescendantPage() {
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="date" className="block text-text mb-2 font-semibold">
+                  <label htmlFor="date" className="block text-gray-800 mb-2 font-semibold">
                     Date de naissance *
                   </label>
                   <input
@@ -207,7 +207,7 @@ export default function DescendantPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="time" className="block text-text mb-2 font-semibold">
+                  <label htmlFor="time" className="block text-gray-800 mb-2 font-semibold">
                     Heure de naissance *
                   </label>
                   <input
@@ -221,7 +221,7 @@ export default function DescendantPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="city" className="block text-text mb-2 font-semibold">
+                  <label htmlFor="city" className="block text-gray-800 mb-2 font-semibold">
                     Ville de naissance *
                   </label>
                   <input
