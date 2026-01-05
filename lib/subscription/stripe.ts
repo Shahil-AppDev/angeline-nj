@@ -27,8 +27,7 @@ export const subscriptionPlans: SubscriptionPlan[] = [
     price: 19.90,
     interval: 'month',
     features: [
-      '1 prestation par mois',
-      'Tirage de cartes ou soin énergétique Reiki',
+      '1 prestation par mois : tirage de cartes ou soin énergétique Reiki',
       'Astro personnalisé chaque jour',
       'Hors prestation urgente'
     ],
