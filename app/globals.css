@@ -817,13 +817,23 @@ a {
   input[type="tel"],
   select,
   textarea {
-    color: var(--gold-2) !important;
-    font-weight: 500;
+    color: var(--gold-1) !important;
+    font-weight: 600;
+  }
+  
+  select {
+    color: var(--gold-1) !important;
+    font-weight: 600;
   }
   
   select option {
-    color: var(--gold-2);
+    color: var(--gold-1) !important;
     background: var(--card-bg);
+    font-weight: 600;
+  }
+  
+  .text-text {
+    color: var(--gold-1) !important;
   }
   
   input[type="date"]::-webkit-calendar-picker-indicator,
