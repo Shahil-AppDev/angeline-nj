@@ -105,7 +105,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="xl:hidden border-t border-border"
+            className="xl:hidden border-t border-border overflow-y-auto max-h-[calc(100vh-80px)]"
             style={{
               background: 'rgba(10, 5, 25, 0.85)',
               backdropFilter: 'blur(12px)',
