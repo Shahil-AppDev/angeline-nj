@@ -20,34 +20,39 @@ const formations = [
     title: 'Formation Pendule',
     icon: '🔮',
     description: 'Découvrez l\'art de la maîtrise du pendule : développez votre intuition, affinez votre ressenti, et laissez-vous guider par l\'énergie invisible qui vous entoure.',
+    fullDescription: 'Souvent perçu comme mystérieux, le pendule est en réalité une extension de notre propre intuition. Cet atelier pratique vous enseigne comment choisir votre pendule, comment le purifier et surtout comment formuler vos questions pour obtenir des réponses fiables. Nous explorons ensemble la radiesthésie moderne pour que vous puissiez utiliser cet outil pour tester la vitalité d\'un lieu, choisir vos pierres de lithothérapie ou obtenir des éclairages sur vos choix de vie.',
     slug: 'formation-pendule',
     level: 'Débutant',
   },
   {
-    title: 'Formation Oracles Divinatoires',
+    title: 'Module Cartomancie',
     icon: '/carte-1.png',
-    description: 'Maîtrisez l\'art divinatoire de lire les cartes. Apprenez à interpréter vos oracles avec clarté et à poser les bonnes questions pour des réponses précises.',
+    description: 'Devenez maître dans l\'art de lire les oracles. Les cartes vous attirent, mais vous ne savez pas par où commencer ? Ce module est fait pour vous.',
+    fullDescription: 'Ici, on va à l\'essentiel, avec des explications simples, des techniques accessibles et des exercices pratiques qui vous feront rapidement parler le langage des cartes. Vous allez apprendre comment fonctionne un oracle, les bases pour interpréter les cartes et obtenir des messages clairs et percutants, des techniques simples pour poser les bonnes questions, et des tirages incontournables pour explorer vos intuitions.',
     slug: 'formation-oracles-divinatoires',
     level: 'Tous niveaux',
   },
   {
     title: 'Reiki Module 1',
     icon: '✨',
-    description: 'Plongez dans l\'univers du Reiki avec ce module d\'initiation complet ! Découvrez l\'histoire de cette pratique ancestrale, apprenez à canaliser l\'énergie universelle et réalignez vos chakras.',
+    description: 'Les Fondations du Reiki – Découvrez le Pouvoir Caché entre Vos Mains. C\'est ici que tout commence : l\'éveil de votre capacité à canaliser l\'énergie Reiki.',
+    fullDescription: 'Vous le ressentez, n\'est-ce pas ? Cet appel à explorer quelque chose de plus grand, à connecter avec l\'énergie qui vous entoure ? Le Module 1 est votre point de départ. Vous allez apprendre l\'histoire fascinante du Reiki, les symboles dès le début pour harmoniser vos énergies, les auto-soins Reiki pour équilibrer vos chakras, l\'initiation à l\'énergie universelle, et les techniques de base pour soigner les autres.',
     slug: 'module-reiki-1',
     level: 'Niveau 1',
   },
   {
     title: 'Reiki Module 2',
     icon: '🌟',
-    description: 'Approfondissez votre pratique avec le module de Reiki 2 ! Découvrez comment transmettre l\'énergie à distance, même au-delà du temps et de l\'espace.',
+    description: 'Déployez Votre Puissance Énergétique et Agissez à Distance ! Débloquez des outils puissants pour amplifier votre pratique et envoyer de l\'énergie où que vous soyez.',
+    fullDescription: 'Avec ce Module 2, vous allez apprendre à envoyer de l\'énergie à distance pour soigner vos proches où qu\'ils soient, découvrir les symboles avancés du Reiki (Raku, symbole à distance), devenir un(e) guérisseur(se) universel(le) pour soigner les animaux, les plantes et même la Terre, développer votre intuition pour capter des messages, et créer un bouclier énergétique puissant.',
     slug: 'reiki-module-2',
     level: 'Niveau 2',
   },
   {
     title: 'Reiki Module 3',
     icon: '💫',
-    description: 'Atteignez l\'excellence avec le module de Reiki 3, dédié à la maîtrise ! Apprenez à incarner pleinement le rôle de maître Reiki et transmettez cette énergie sacrée.',
+    description: 'Maîtrise Reiki – Réveillez le maître qui sommeille en vous ! C\'est le couronnement de votre parcours, la clé pour accéder à une toute nouvelle dimension.',
+    fullDescription: 'Vous avez exploré les bases, vous avez dompté les énergies, et maintenant, il est temps de devenir maître Reiki. Vous allez découvrir les secrets du Dai Ko Myo (le symbole de maîtrise), l\'art de l\'initiation pour transmettre le Reiki à d\'autres avec puissance et précision, et perfectionner votre pratique avec des techniques avancées pour vous démarquer en tant que praticien(ne).',
     slug: 'reiki-module-3',
     level: 'Niveau 3',
   },
@@ -106,7 +111,7 @@ export default function FormationsPage() {
             </div>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="space-y-16">
             {formations.map((formation, index) => {
               const product = formationProducts.find(p => p.slug === formation.slug);
               
@@ -117,54 +122,63 @@ export default function FormationsPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="glass-card p-6 group hover:border-gold-2 transition-all"
+                  className="glass-card p-8 hover:border-gold-2 transition-all"
                 >
-                  <div className="mb-4 text-center flex justify-center">
-                    {formation.icon.startsWith('/') ? (
-                      <img src={formation.icon} alt={formation.title} className="w-16 h-16 object-contain" />
-                    ) : (
-                      <div className="text-6xl">{formation.icon}</div>
-                    )}
-                  </div>
-                  
-                  <div className="mb-3">
-                    <span className="inline-block px-3 py-1 bg-gold-2/20 text-gold-2 text-sm rounded-full">
-                      {formation.level}
-                    </span>
-                  </div>
-
-                  <h3 className="font-serif text-2xl font-semibold text-gold font-title mb-3">
-                    {formation.title}
-                  </h3>
-                  
-                  <p className="text-text-2 mb-6 leading-relaxed">
-                    {formation.description}
-                  </p>
-
-                  {product && (
-                    <div className="mb-6 p-4 bg-surface rounded-lg">
-                      <div className="flex items-center justify-between">
-                        <span className="text-sm text-muted">Prix</span>
-                        <div className="flex flex-col items-end">
-                          {product.on_sale && product.regular_price && (
-                            <span className="text-sm text-muted line-through">
-                              {product.regular_price.toFixed(2)}€
-                            </span>
-                          )}
-                          <span className="text-2xl font-bold text-gold">
-                            {product.price.toFixed(2)}€
-                          </span>
-                        </div>
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div className="lg:col-span-1 text-center lg:text-left">
+                      <div className="mb-4 flex justify-center lg:justify-start">
+                        {formation.icon.startsWith('/') ? (
+                          <img src={formation.icon} alt={formation.title} className="w-20 h-20 object-contain" />
+                        ) : (
+                          <div className="text-7xl">{formation.icon}</div>
+                        )}
                       </div>
+                      
+                      <div className="mb-4">
+                        <span className="inline-block px-4 py-2 bg-gold-2/20 text-gold-2 text-sm rounded-full font-semibold">
+                          {formation.level}
+                        </span>
+                      </div>
+
+                      <h3 className="font-serif text-3xl font-bold text-gold font-title mb-4">
+                        {formation.title}
+                      </h3>
+
+                      {product && (
+                        <div className="mb-6 p-4 bg-surface/50 rounded-lg">
+                          <div className="text-center">
+                            {product.on_sale && product.regular_price && (
+                              <span className="block text-sm text-muted line-through mb-1">
+                                {product.regular_price.toFixed(2)}€
+                              </span>
+                            )}
+                            <span className="block text-3xl font-bold text-gold">
+                              {product.price.toFixed(2)}€
+                            </span>
+                          </div>
+                        </div>
+                      )}
+                      
+                      <Link 
+                        href={product ? `/produit/${formation.slug}` : '/boutique'}
+                        className="btn-primary w-full text-center"
+                      >
+                        <span>Commander</span>
+                      </Link>
                     </div>
-                  )}
-                  
-                  <Link 
-                    href={product ? `/produit/${formation.slug}` : '/boutique'}
-                    className="btn-primary w-full text-center"
-                  >
-                    <span>En savoir plus</span>
-                  </Link>
+
+                    <div className="lg:col-span-2">
+                      <p className="text-text-2 text-lg mb-6 leading-relaxed">
+                        {formation.description}
+                      </p>
+                      
+                      <div className="h-px bg-gold-2/20 my-6"></div>
+                      
+                      <p className="text-text-2 leading-relaxed">
+                        {formation.fullDescription}
+                      </p>
+                    </div>
+                  </div>
                 </motion.div>
               );
             })}
