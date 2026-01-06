@@ -85,7 +85,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
 
             <div className="flex flex-col">
               <div className="mb-4">
-                <span className="inline-block px-3 py-1 bg-gold-2/20 text-gold-2 text-sm rounded-full">
+                <span className="inline-block px-3 py-1 bg-gold-2/20 text-amber-800 text-sm rounded-full font-semibold">
                   {product.category_name}
                 </span>
               </div>
