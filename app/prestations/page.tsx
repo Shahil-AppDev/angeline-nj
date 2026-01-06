@@ -66,11 +66,6 @@ export default function PrestationsPage() {
                       <div className="font-semibold text-primary text-lg whitespace-pre-line">{prestation.price}</div>
                     </div>
                     <div className="flex gap-2 w-full sm:w-auto">
-                      <Link href={`/prestations/${prestation.slug}`}>
-                        <Button variant="primary" size="sm">
-                          Découvrir
-                        </Button>
-                      </Link>
                       <a href={prestation.oldSiteUrl} target="_blank" rel="noopener noreferrer">
                         <Button variant="primary" size="sm">
                           Commander
