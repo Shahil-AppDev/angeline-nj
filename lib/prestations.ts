@@ -106,7 +106,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Pour un tirage en direct (audio ou visio), contacte-moi sur mes réseaux.',
     price: '30 minutes • 50€\n45 minutes • 70€\n60 minutes • 90€',
     format: 'Visioconférence en direct',
-    oldSiteUrl: 'https://angeline-nj.com/contact',
+    oldSiteUrl: 'https://angeline-nj.com/boutique/mes-prestations',
     intro: 'Pour un tirage en direct (audio ou visio), contacte-moi sur mes réseaux. Une fois le Paypal effectué, nous convenons la date du rendez-vous. Le tirage peut être fait par SMS, vocaux ou visioconférence.',
     forWho: [
       'Vous préférez un échange en direct',
