@@ -69,7 +69,7 @@ export default function CompatibilitePage() {
                   id="sign1"
                   value={sign1}
                   onChange={(e) => setSign1(e.target.value as ZodiacSign)}
-                  className="w-full px-4 py-3 bg-surface border border-border rounded-lg text-text focus:border-primary focus:outline-none text-center"
+                  className="w-full px-4 py-3 bg-surface border border-border rounded-lg text-gray-900 focus:border-primary focus:outline-none text-center"
                 >
                   {signs.map(sign => (
                     <option key={sign} value={sign}>
@@ -87,7 +87,7 @@ export default function CompatibilitePage() {
                   id="sign2"
                   value={sign2}
                   onChange={(e) => setSign2(e.target.value as ZodiacSign)}
-                  className="w-full px-4 py-3 bg-surface border border-border rounded-lg text-text focus:border-primary focus:outline-none text-center"
+                  className="w-full px-4 py-3 bg-surface border border-border rounded-lg text-gray-900 focus:border-primary focus:outline-none text-center"
                 >
                   {signs.map(sign => (
                     <option key={sign} value={sign}>

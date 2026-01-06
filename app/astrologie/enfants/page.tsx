@@ -172,7 +172,7 @@ export default function AstrologieEnfantsPage() {
                   value={childName}
                   onChange={(e) => setChildName(e.target.value)}
                   placeholder="Emma, Lucas..."
-                  className="w-full px-4 py-3 bg-surface border border-border rounded-lg text-text focus:border-primary focus:outline-none"
+                  className="w-full px-4 py-3 bg-surface border border-border rounded-lg text-gray-900 focus:border-primary focus:outline-none"
                 />
               </div>
 
@@ -186,7 +186,7 @@ export default function AstrologieEnfantsPage() {
                   required
                   value={birthDate}
                   onChange={(e) => setBirthDate(e.target.value)}
-                  className="w-full px-4 py-3 bg-surface border border-border rounded-lg text-text focus:border-primary focus:outline-none"
+                  className="w-full px-4 py-3 bg-surface border border-border rounded-lg text-gray-900 focus:border-primary focus:outline-none"
                 />
               </div>
 

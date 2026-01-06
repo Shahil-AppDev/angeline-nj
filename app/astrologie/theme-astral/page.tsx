@@ -103,7 +103,7 @@ export default function ThemeAstralPage() {
                     required
                     value={formData.date}
                     onChange={(e) => setFormData({...formData, date: e.target.value})}
-                    className="w-full px-4 py-3 bg-surface border border-border rounded-lg text-text focus:border-primary focus:outline-none"
+                    className="w-full px-4 py-3 bg-surface border border-border rounded-lg text-gray-900 focus:border-primary focus:outline-none"
                   />
                 </div>
 
@@ -117,7 +117,7 @@ export default function ThemeAstralPage() {
                     required
                     value={formData.time}
                     onChange={(e) => setFormData({...formData, time: e.target.value})}
-                    className="w-full px-4 py-3 bg-surface border border-border rounded-lg text-text focus:border-primary focus:outline-none"
+                    className="w-full px-4 py-3 bg-surface border border-border rounded-lg text-gray-900 focus:border-primary focus:outline-none"
                   />
                 </div>
 
@@ -132,7 +132,7 @@ export default function ThemeAstralPage() {
                     value={formData.city}
                     onChange={(e) => setFormData({...formData, city: e.target.value})}
                     placeholder="Paris, France"
-                    className="w-full px-4 py-3 bg-surface border border-border rounded-lg text-text focus:border-primary focus:outline-none"
+                    className="w-full px-4 py-3 bg-surface border border-border rounded-lg text-gray-900 focus:border-primary focus:outline-none"
                   />
                 </div>
 
