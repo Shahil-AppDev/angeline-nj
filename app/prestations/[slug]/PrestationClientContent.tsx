@@ -82,11 +82,11 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
               </Link>
             </div>
 
-            <Card className="bg-gold/5 border-gold/20">
+            <Card className="bg-amber-700/5 border-amber-700/20">
               <div className="flex items-start gap-3">
                 <span className="text-2xl">💡</span>
                 <div className="flex-1 text-sm text-text-2">
-                  <p className="font-semibold text-gold mb-2">Comment commander {isReiki ? 'ce soin' : 'ce tirage'} ?</p>
+                  <p className="font-semibold text-amber-700 mb-2">Comment commander {isReiki ? 'ce soin' : 'ce tirage'} ?</p>
                   <p className="leading-relaxed">
                     Après avoir cliqué sur "Commander", vous serez redirigé vers le formulaire de commande. 
                     <strong className="text-text"> Pensez à bien détailler {isReiki ? 'votre intention et situation' : 'votre question ou situation'} dans la case prévue à cet effet</strong> - plus vos informations sont précises, plus {isReiki ? 'le soin sera adapté' : 'votre tirage sera personnalisé et pertinent'}. 
@@ -116,14 +116,14 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
             transition={{ duration: 0.6 }}
           >
             <Card className="mb-12">
-              <h2 className="font-serif text-2xl font-semibold text-text mb-4">
+              <h2 className="font-serif text-2xl font-semibold text-amber-700 mb-4">
                 Pourquoi choisir {isReiki ? 'ce soin' : 'ce tirage'} ?
               </h2>
               <p className="text-text-2 leading-relaxed mb-6">{prestation.intro}</p>
             </Card>
 
             <Card className="mb-12">
-              <h2 className="font-serif text-2xl font-semibold text-text mb-6">
+              <h2 className="font-serif text-2xl font-semibold text-amber-700 mb-6">
                 Pour qui ?
               </h2>
               <ul className="space-y-3">
@@ -137,7 +137,7 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
             </Card>
 
             <Card className="mb-12">
-              <h2 className="font-serif text-2xl font-semibold text-text mb-6">
+              <h2 className="font-serif text-2xl font-semibold text-amber-700 mb-6">
                 Ce que vous obtiendrez
               </h2>
               <ul className="space-y-3">
@@ -151,7 +151,7 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
             </Card>
 
             <Card className="mb-12">
-              <h2 className="font-serif text-2xl font-semibold text-text mb-8">
+              <h2 className="font-serif text-2xl font-semibold text-amber-700 mb-8">
                 Déroulement
               </h2>
               <div className="space-y-6">
@@ -161,7 +161,7 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
                       {step.step}
                     </div>
                     <div className="flex-1">
-                      <h3 className="font-semibold text-text mb-2">{step.title}</h3>
+                      <h3 className="font-semibold text-amber-700 mb-2">{step.title}</h3>
                       <p className="text-text-2">{step.description}</p>
                     </div>
                   </div>
@@ -170,13 +170,13 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
             </Card>
 
             <Card className="mb-12">
-              <h2 className="font-serif text-2xl font-semibold text-text mb-6">
+              <h2 className="font-serif text-2xl font-semibold text-amber-700 mb-6">
                 Questions fréquentes
               </h2>
               <div className="space-y-6">
                 {prestation.faq.map((item, index) => (
                   <div key={index}>
-                    <h3 className="font-semibold text-text mb-2">{item.question}</h3>
+                    <h3 className="font-semibold text-amber-700 mb-2">{item.question}</h3>
                     <p className="text-text-2">{item.answer}</p>
                   </div>
                 ))}
