@@ -103,16 +103,17 @@ Write-Host "`n🔐 Connexion SSH au serveur..." -ForegroundColor Yellow
 ssh $SERVER $commands
 
 if ($LASTEXITCODE -eq 0) {
-    Write-Host "`n✅ DEPLOIEMENT REUSSI!" -ForegroundColor Green
-    Write-Host "`n📋 RESUME:" -ForegroundColor Cyan
-    Write-Host "- Application deployee sur le port 4000" -ForegroundColor White
-    Write-Host "- PM2 configure et demarre" -ForegroundColor White
-    Write-Host "- Nginx configure pour angeline-nj.xyz" -ForegroundColor White
-    Write-Host "`n⚠️ N'oubliez pas:" -ForegroundColor Yellow
-    Write-Host "1. Configurer le DNS" -ForegroundColor White
-    Write-Host "2. Installer le certificat SSL" -ForegroundColor White
-} else {
-    Write-Host "`n❌ ERREUR LORS DU DEPLOIEMENT" -ForegroundColor Red
-    Write-Host "Verifiez les logs ci-dessus pour plus de details" -ForegroundColor Yellow
-    Exit 1
+  Write-Host "`n✅ DEPLOIEMENT REUSSI!" -ForegroundColor Green
+  Write-Host "`n📋 RESUME:" -ForegroundColor Cyan
+  Write-Host "- Application deployee sur le port 4000" -ForegroundColor White
+  Write-Host "- PM2 configure et demarre" -ForegroundColor White
+  Write-Host "- Nginx configure pour angeline-nj.xyz" -ForegroundColor White
+  Write-Host "`n⚠️ N'oubliez pas:" -ForegroundColor Yellow
+  Write-Host "1. Configurer le DNS" -ForegroundColor White
+  Write-Host "2. Installer le certificat SSL" -ForegroundColor White
+}
+else {
+  Write-Host "`n❌ ERREUR LORS DU DEPLOIEMENT" -ForegroundColor Red
+  Write-Host "Verifiez les logs ci-dessus pour plus de details" -ForegroundColor Yellow
+  Exit 1
 }
