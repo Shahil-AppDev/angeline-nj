@@ -135,7 +135,7 @@ export default function FormationsPage() {
                       </div>
                       
                       <div className="mb-4">
-                        <span className="inline-block px-4 py-2 bg-gold-2/20 text-gold-2 text-sm rounded-full font-semibold">
+                        <span className="inline-block px-4 py-2 bg-amber-700/30 text-amber-900 text-sm rounded-full font-semibold">
                           {formation.level}
                         </span>
                       </div>
