@@ -33,7 +33,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Le praticien canalise et transmet l\'énergie par visualisation pour activer le processus naturel de guérison.',
     price: '40€',
     format: 'Soin à distance avec compte-rendu',
-    oldSiteUrl: 'https://angeline-nj.xyz/produit/reiki-a-distance',
+    oldSiteUrl: 'https://angeline-nj.com/produit/reiki-a-distance/',
     intro: 'Le Reiki est une forme de thérapie alternative qui provient du Japon. Il s\'agit d\'une pratique spirituelle qui utilise une technique dite de « soins par imposition des mains » pour transférer une forme d\'énergie universelle de l\'agent thérapeutique (praticien de Reiki) au patient, dans le but de soutenir la capacité de guérison naturelle du corps et de promouvoir le bien-être global.',
     forWho: [
       'Vous souhaitez améliorer votre bien-être physique et émotionnel',
@@ -106,7 +106,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Pour un tirage en direct (audio ou visio), contacte-moi sur mes réseaux.',
     price: '30 minutes • 50€\n45 minutes • 70€\n60 minutes • 90€',
     format: 'Visioconférence en direct',
-    oldSiteUrl: 'https://angeline-nj.xyz/contact',
+    oldSiteUrl: 'https://angeline-nj.com/contact',
     intro: 'Pour un tirage en direct (audio ou visio), contacte-moi sur mes réseaux. Une fois le Paypal effectué, nous convenons la date du rendez-vous. Le tirage peut être fait par SMS, vocaux ou visioconférence.',
     forWho: [
       'Vous préférez un échange en direct',
@@ -172,7 +172,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Découvrez nos formations complètes pour maîtriser le pendule, les oracles et le Reiki.',
     price: 'Voir formations',
     format: 'Formations en ligne et supports PDF',
-    oldSiteUrl: 'https://angeline-nj.xyz/formations',
+    oldSiteUrl: 'https://angeline-nj.com/formations',
     intro: 'Vous souhaitez développer vos compétences en arts divinatoires ou en soins énergétiques ? Découvrez nos formations complètes et accessibles pour apprendre à votre rythme.',
     forWho: [
       'Vous souhaitez apprendre le pendule',
@@ -234,7 +234,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Explore mes tirages vidéo thématiques, créés avec mes oracles.',
     price: 'Voir boutique',
     format: 'Vidéos thématiques',
-    oldSiteUrl: 'https://angeline-nj.xyz/boutique/mes-prestations',
+    oldSiteUrl: 'https://angeline-nj.com/boutique/mes-prestations',
     intro: 'Vous souhaitez un tirage vidéo personnalisé ? Découvrez notre sélection de tirages vidéo disponibles dans la boutique, catégorie "Mes prestations".',
     forWho: [
       'Vous préférez un format vidéo',
@@ -296,7 +296,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Téléchargez nos rituels guidés en PDF pour pratiquer chez vous :\n• Protection\n• Attirer l\'amour\n• Abondance et chance\n• Manifester un projet\n• Couper un lien',
     price: '3,90€',
     format: 'PDF téléchargeable',
-    oldSiteUrl: 'https://angeline-nj.xyz/boutique/rituels',
+    oldSiteUrl: 'https://angeline-nj.com/boutique/rituels',
     intro: 'Chaque rituel au format PDF est téléchargeable immédiatement et contient un accompagnement complet pour réaliser un rituel simple, efficace, avec toute la protection et l\'énergie nécessaires. L\'avantage de ce format est de pouvoir le refaire autant de fois que nécessaire, selon vos besoins.',
     forWho: [
       'Vous souhaitez pratiquer des rituels en autonomie',
@@ -358,7 +358,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Suivez nos rituels guidés en vidéo pour une pratique accompagnée :\n• Protection\n• Attirer l\'amour\n• Abondance et chance\n• Manifester un projet\n• Couper un lien',
     price: '19.90€',
     format: 'Vidéo guidée',
-    oldSiteUrl: 'https://angeline-nj.xyz/boutique/rituels',
+    oldSiteUrl: 'https://angeline-nj.com/boutique/rituels',
     intro: 'Chaque rituel est réalisé pour vous et personnalisé à votre intention, puis transmis avec un témoignage visuel de son activation. La vidéo vous est envoyée sous 48 heures.',
     forWho: [
       'Vous souhaitez qu\'un rituel soit réalisé pour vous',

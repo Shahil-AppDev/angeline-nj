@@ -30,7 +30,6 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
   const relatedPrestations = getRelatedPrestations(prestation.slug, prestation.relatedPrestations || []);
   const isReiki = prestation.slug.includes('reiki');
   const isRituel = prestation.slug.includes('rituel');
-  const isRituelVideo = prestation.slug === 'rituel-video';
   const isFormation = prestation.slug.includes('formation');
   
   // Déterminer le type de prestation pour adapter le texte
@@ -41,26 +40,8 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
     return 'ce tirage';
   };
   
-  const getDetailText = () => {
-    if (isReiki) return 'votre intention et situation';
-    if (isRituel) return 'votre intention pour le rituel';
-    if (isFormation) return 'vos objectifs d\'apprentissage';
-    return 'votre question ou situation';
-  };
   
-  const getResultText = () => {
-    if (isReiki) return 'le soin sera adapté';
-    if (isRituel) return 'le rituel sera plus efficace';
-    if (isFormation) return 'la formation sera mieux adaptée à vos besoins';
-    return 'votre tirage sera personnalisé et pertinent';
-  };
   
-  const getDeliveryText = () => {
-    if (isReiki) return 'un email avec les instructions';
-    if (isRituel) return 'votre PDF par email immédiatement';
-    if (isFormation) return 'accès immédiat à la formation';
-    return 'votre vidéo par email sous ' + (prestation.format.includes('24h') ? '24h' : '48h') + ' maximum';
-  };
 
   return (
     <>
@@ -144,15 +125,33 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
                 <span className="text-2xl">💡</span>
                 <div className="glass-card p-6 border-gold-2/30">
                   <p className="font-semibold text-amber-700 mb-2">Comment commander {getPrestationType()} ?</p>
-                  {isRituelPDF ? (
+                  {prestation.slug === 'rituel-pdf' ? (
                     <p className="leading-relaxed">
-                      Après avoir cliqué sur "Commander", vous arriverez sur la page produit. Choisissez le rituel qui vous convient, effectuez le paiement, et le PDF sera téléchargeable immédiatement. Vous pouvez alors le télécharger et commencer votre rituel.
+                      Après avoir cliqué sur "Commander", vous serez redirigé vers la page Rituels. Vous y trouverez 5 rituels PDF disponibles à 3,90€ chacun : Rituel d'Amour, Rituel de Protection, Rituel Abondance et Chance, Rituel pour Couper un Lien, Rituel de Manifestation de Projet. Sélectionnez le rituel qui correspond à votre intention, effectuez le paiement sécurisé, et téléchargez immédiatement votre guide complet en PDF. Chaque rituel contient toutes les instructions détaillées étape par étape pour le réaliser chez vous. Vous pourrez le réutiliser autant de fois que nécessaire.
+                    </p>
+                  ) : prestation.slug === 'formations' ? (
+                    <p className="leading-relaxed">
+                      Après avoir cliqué sur "Commander", vous serez redirigé vers la page Formations où vous trouverez toutes les formations disponibles : Formation Pendule (49€), Formation Oracle (49€), Reiki Module 1, 2 et 3. Sélectionnez la formation qui vous intéresse, effectuez le paiement sécurisé, et recevez un accès immédiat à tous les supports (vidéos explicatives, PDF téléchargeables, exercices pratiques). Un certificat de formation vous sera délivré à la fin du parcours.
+                    </p>
+                  ) : prestation.slug === 'tirage-visio' ? (
+                    <p className="leading-relaxed">
+                      Après avoir cliqué sur "Commander", vous serez redirigé vers la page de contact. Contactez-moi sur mes réseaux (Instagram, TikTok, Facebook) pour vérifier ma disponibilité et choisir votre durée : 30 minutes (50€), 45 minutes (70€) ou 60 minutes (90€). Une fois le paiement Paypal effectué, nous conviendrons ensemble d'une date et heure pour le rendez-vous. Le tirage se fait en direct par visioconférence, SMS ou vocaux selon votre préférence.
+                    </p>
+                  ) : prestation.slug === 'reiki-a-distance' ? (
+                    <p className="leading-relaxed">
+                      Après avoir cliqué sur "Commander", vous serez redirigé vers la page produit du Reiki à distance (40€). Effectuez le paiement sécurisé, puis vous recevrez un email avec un formulaire à remplir : photo récente sans filtre, date de naissance et votre intention pour le soin. Nous conviendrons ensuite ensemble d'une date et heure pour la séance. Une fois le soin réalisé, vous recevrez un compte-rendu détaillé avec mes ressentis et conseils personnalisés.
+                    </p>
+                  ) : prestation.slug === 'tirage-video' ? (
+                    <p className="leading-relaxed">
+                      Après avoir cliqué sur "Commander", vous serez redirigé vers la boutique catégorie "Mes prestations". Vous y trouverez plusieurs types de tirages vidéo : Tirage en urgence (80€), Tirage sentimental (30€), Tirage positif (30€), Question précise sur un domaine (25€), Question simple (10€), Question sur une semaine (15€). Sélectionnez le tirage qui correspond à vos besoins, et lors de la validation de commande, <strong className="text-amber-700">pensez à bien détailler votre question précise, les prénoms et âges dans l'espace "Informations complémentaires" (notes de commande)</strong>. Vous recevrez votre vidéo personnalisée sous 48 heures maximum.
+                    </p>
+                  ) : prestation.slug === 'rituel-video' ? (
+                    <p className="leading-relaxed">
+                      Après avoir cliqué sur "Commander", vous serez redirigé vers la page Rituels. Vous y trouverez 5 rituels vidéo disponibles à 19,90€ chacun : Rituel d'Amour, Rituel de Protection, Rituel Abondance et Chance, Rituel pour Couper un Lien, Rituel de Manifestation de Projet. Choisissez le rituel qui correspond à votre intention, et lors de la validation de commande, <strong className="text-amber-700">pensez à bien détailler votre intention pour le rituel dans l'espace "Informations complémentaires" (notes de commande)</strong> - plus vos informations sont précises, plus le rituel sera efficace. Une fois le paiement effectué, vous recevrez votre vidéo personnalisée sous 48 heures maximum.
                     </p>
                   ) : (
                     <p className="leading-relaxed">
-                      Après avoir cliqué sur "Commander", vous serez redirigé vers le formulaire de commande. 
-                      <strong className="text-amber-700"> Pensez à bien détailler {getDetailText()} dans la case prévue à cet effet</strong> - plus vos informations sont précises, plus {getResultText()}. 
-                      Une fois le paiement effectué, vous recevrez {getDeliveryText()}.
+                      Cliquez sur "Commander" pour accéder à la page produit. Suivez les instructions de commande et effectuez le paiement sécurisé. Vous recevrez ensuite toutes les informations nécessaires par email.
                     </p>
                   )}
                 </div>
