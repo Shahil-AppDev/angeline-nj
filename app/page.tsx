@@ -219,44 +219,44 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="relative"
             >
-              <div className="glass-card p-4 sm:p-6 md:p-8 space-y-4 sm:space-y-6 overflow-hidden">
-                <div className="flex items-start space-x-3 sm:space-x-4">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gold-2/20 flex items-center justify-center flex-shrink-0">
-                    <span className="text-xl sm:text-2xl">🌙</span>
+              <div className="glass-card p-6 sm:p-8 md:p-10 space-y-6 sm:space-y-8">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-4 text-center sm:text-left">
+                  <div className="w-14 h-14 sm:w-12 sm:h-12 rounded-full bg-gold-2/20 flex items-center justify-center flex-shrink-0">
+                    <span className="text-3xl sm:text-2xl">🌙</span>
                   </div>
-                  <div className="flex-1 min-w-0">
-                    <h3 className="text-lg sm:text-xl font-semibold text-gold mb-1 sm:mb-2 font-title">
+                  <div className="flex-1">
+                    <h3 className="text-xl sm:text-xl font-semibold text-gold mb-2 font-title">
                       Écoute bienveillante
                     </h3>
-                    <p className="text-text-2 text-sm sm:text-base">
+                    <p className="text-text-2 text-base sm:text-base leading-relaxed">
                       Un espace sécurisé où vous pouvez vous exprimer librement
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-3 sm:space-x-4">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gold-2/20 flex items-center justify-center flex-shrink-0">
-                    <span className="text-xl sm:text-2xl">✨</span>
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-4 text-center sm:text-left">
+                  <div className="w-14 h-14 sm:w-12 sm:h-12 rounded-full bg-gold-2/20 flex items-center justify-center flex-shrink-0">
+                    <span className="text-3xl sm:text-2xl">✨</span>
                   </div>
-                  <div className="flex-1 min-w-0">
-                    <h3 className="text-lg sm:text-xl font-semibold text-gold mb-1 sm:mb-2 font-title">
+                  <div className="flex-1">
+                    <h3 className="text-xl sm:text-xl font-semibold text-gold mb-2 font-title">
                       Guidance personnalisée
                     </h3>
-                    <p className="text-text-2 text-sm sm:text-base">
+                    <p className="text-text-2 text-base sm:text-base leading-relaxed">
                       Chaque tirage est unique et adapté à votre situation
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-3 sm:space-x-4">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gold-2/20 flex items-center justify-center flex-shrink-0">
-                    <span className="text-xl sm:text-2xl">💜</span>
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-4 text-center sm:text-left">
+                  <div className="w-14 h-14 sm:w-12 sm:h-12 rounded-full bg-gold-2/20 flex items-center justify-center flex-shrink-0">
+                    <span className="text-3xl sm:text-2xl">💜</span>
                   </div>
-                  <div className="flex-1 min-w-0">
-                    <h3 className="text-lg sm:text-xl font-semibold text-gold mb-1 sm:mb-2 font-title">
+                  <div className="flex-1">
+                    <h3 className="text-xl sm:text-xl font-semibold text-gold mb-2 font-title">
                       Approche éthique
                     </h3>
-                    <p className="text-text-2 text-sm sm:text-base">
+                    <p className="text-text-2 text-base sm:text-base leading-relaxed">
                       Respect, confidentialité et bienveillance au cœur de ma pratique
                     </p>
                   </div>
