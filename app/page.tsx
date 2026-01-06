@@ -219,44 +219,44 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="relative"
             >
-              <div className="glass-card p-8 space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 rounded-full bg-gold-2/20 flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl">🌙</span>
+              <div className="glass-card p-4 sm:p-6 md:p-8 space-y-4 sm:space-y-6 overflow-hidden">
+                <div className="flex items-start space-x-3 sm:space-x-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gold-2/20 flex items-center justify-center flex-shrink-0">
+                    <span className="text-xl sm:text-2xl">🌙</span>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gold inline-block mb-2 font-title">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl font-semibold text-gold mb-1 sm:mb-2 font-title">
                       Écoute bienveillante
                     </h3>
-                    <p className="text-text-2">
+                    <p className="text-text-2 text-sm sm:text-base">
                       Un espace sécurisé où vous pouvez vous exprimer librement
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 rounded-full bg-gold-2/20 flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl">✨</span>
+                <div className="flex items-start space-x-3 sm:space-x-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gold-2/20 flex items-center justify-center flex-shrink-0">
+                    <span className="text-xl sm:text-2xl">✨</span>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gold inline-block mb-2 font-title">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl font-semibold text-gold mb-1 sm:mb-2 font-title">
                       Guidance personnalisée
                     </h3>
-                    <p className="text-text-2">
+                    <p className="text-text-2 text-sm sm:text-base">
                       Chaque tirage est unique et adapté à votre situation
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 rounded-full bg-gold-2/20 flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl">💜</span>
+                <div className="flex items-start space-x-3 sm:space-x-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gold-2/20 flex items-center justify-center flex-shrink-0">
+                    <span className="text-xl sm:text-2xl">💜</span>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gold inline-block mb-2 font-title">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl font-semibold text-gold mb-1 sm:mb-2 font-title">
                       Approche éthique
                     </h3>
-                    <p className="text-text-2">
+                    <p className="text-text-2 text-sm sm:text-base">
                       Respect, confidentialité et bienveillance au cœur de ma pratique
                     </p>
                   </div>
