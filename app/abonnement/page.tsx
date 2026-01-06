@@ -72,7 +72,7 @@ export default function AbonnementPage() {
                   className={`glass-card p-8 relative ${isPopular ? 'border-2 border-primary' : ''}`}
                 >
                   {isPopular && (
-                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                    <div className="absolute -top-2 left-1/2 transform -translate-x-1/2">
                       <span className="px-4 py-1 bg-primary rounded-full text-white text-sm font-semibold">
                         ⭐ POPULAIRE
                       </span>
