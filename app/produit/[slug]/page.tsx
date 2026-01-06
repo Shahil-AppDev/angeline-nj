@@ -137,9 +137,9 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
-                  href={product.source_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={isRituel ? '/contact' : product.source_url}
+                  target={isRituel ? '_self' : '_blank'}
+                  rel={isRituel ? '' : 'noopener noreferrer'}
                   className="btn-primary flex-1 text-center"
                 >
                   <span>Acheter</span>
