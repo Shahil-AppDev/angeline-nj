@@ -296,7 +296,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Téléchargez nos rituels guidés en PDF pour pratiquer chez vous :\n• Protection\n• Attirer l\'amour\n• Abondance et chance\n• Manifester un projet\n• Couper un lien',
     price: '3,90€',
     format: 'PDF téléchargeable',
-    oldSiteUrl: 'https://angeline-nj.com/contact',
+    oldSiteUrl: 'https://angeline-nj.com/boutique/rituels',
     intro: 'Chaque rituel au format PDF est téléchargeable immédiatement et contient un accompagnement complet pour réaliser un rituel simple, efficace, avec toute la protection et l\'énergie nécessaires. L\'avantage de ce format est de pouvoir le refaire autant de fois que nécessaire, selon vos besoins.',
     forWho: [
       'Vous souhaitez pratiquer des rituels en autonomie',
@@ -358,7 +358,7 @@ export const prestations: Prestation[] = [
     shortDescription: 'Suivez nos rituels guidés en vidéo pour une pratique accompagnée :\n• Protection\n• Attirer l\'amour\n• Abondance et chance\n• Manifester un projet\n• Couper un lien',
     price: '19.90€',
     format: 'Vidéo guidée',
-    oldSiteUrl: 'https://angeline-nj.com/contact',
+    oldSiteUrl: 'https://angeline-nj.com/boutique/rituels',
     intro: 'Chaque rituel est réalisé pour vous et personnalisé à votre intention, puis transmis avec un témoignage visuel de son activation. La vidéo vous est envoyée sous 48 heures.',
     forWho: [
       'Vous souhaitez qu\'un rituel soit réalisé pour vous',
