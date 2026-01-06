@@ -38,6 +38,8 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
   
   const isDigital = product.is_digital || product.category === 'rituels';
   const isRituel = product.category === 'rituels';
+  const isRituelPDF = isRituel && product.category_name === 'Rituel PDF';
+  const isRituelVideo = isRituel && product.category_name === 'Rituel Vidéo';
   
   // Récupérer les autres produits de la même catégorie
   const relatedProducts = isRituel 
@@ -168,11 +170,33 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                         Supports vidéo et PDF téléchargeables
                       </li>
                     </>
-                  ) : isDigital ? (
+                  ) : isRituelPDF ? (
                     <>
                       <li className="flex items-center gap-2">
                         <span className="text-gold">✓</span>
                         Format PDF
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-gold">✓</span>
+                        Paiement sécurisé
+                      </li>
+                    </>
+                  ) : isRituelVideo ? (
+                    <>
+                      <li className="flex items-center gap-2">
+                        <span className="text-gold">✓</span>
+                        Format vidéo livrée sous 48h
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-gold">✓</span>
+                        Paiement sécurisé
+                      </li>
+                    </>
+                  ) : isDigital ? (
+                    <>
+                      <li className="flex items-center gap-2">
+                        <span className="text-gold">✓</span>
+                        Produit numérique
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="text-gold">✓</span>
