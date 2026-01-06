@@ -96,7 +96,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
 
               {product.description && (
                 <div 
-                  className="prose prose-invert max-w-none mb-8 text-text-2"
+                  className="mb-8 text-text-2 whitespace-pre-line leading-relaxed"
                   dangerouslySetInnerHTML={{ __html: product.description }}
                 />
               )}
