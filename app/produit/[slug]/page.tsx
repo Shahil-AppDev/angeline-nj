@@ -35,6 +35,8 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                       product.category === 'pendule' || 
                       product.category === 'formation-tirage-oracle' ||
                       product.title.toLowerCase().includes('formation');
+  
+  const isDigital = product.is_digital || product.category === 'rituels';
 
   return (
     <>
@@ -154,6 +156,17 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                       <li className="flex items-center gap-2">
                         <span className="text-gold">✓</span>
                         Supports vidéo et PDF téléchargeables
+                      </li>
+                    </>
+                  ) : isDigital ? (
+                    <>
+                      <li className="flex items-center gap-2">
+                        <span className="text-gold">✓</span>
+                        Format PDF
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-gold">✓</span>
+                        Paiement sécurisé
                       </li>
                     </>
                   ) : (
