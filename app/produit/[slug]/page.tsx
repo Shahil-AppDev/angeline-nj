@@ -40,6 +40,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
   const isRituel = product.category === 'rituels';
   const isRituelPDF = isRituel && product.category_name === 'Rituel PDF';
   const isRituelVideo = isRituel && product.category_name === 'Rituel Vidéo';
+  const isReiki = product.slug === 'reiki-a-distance';
   
   // Récupérer les autres produits de la même catégorie
   const relatedProducts = isRituel 
@@ -190,6 +191,21 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                       <li className="flex items-center gap-2">
                         <span className="text-gold">✓</span>
                         Paiement sécurisé
+                      </li>
+                    </>
+                  ) : isReiki ? (
+                    <>
+                      <li className="flex items-center gap-2">
+                        <span className="text-gold">✓</span>
+                        Séance à distance de 45 minutes
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-gold">✓</span>
+                        Réservation par email après paiement
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-gold">✓</span>
+                        Compte-rendu détaillé envoyé
                       </li>
                     </>
                   ) : isDigital ? (
