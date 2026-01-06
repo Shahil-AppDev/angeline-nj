@@ -1021,3 +1021,17 @@ a {
     padding: var(--spacing-lg) var(--spacing-sm);
   }
 }
+
+/* Force black text color for form inputs */
+input[type="date"],
+input[type="time"],
+input[type="text"],
+input[type="email"],
+select {
+  color: #111827 !important;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.5);
+}
