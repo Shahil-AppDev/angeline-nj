@@ -30,6 +30,7 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
   const relatedPrestations = getRelatedPrestations(prestation.slug, prestation.relatedPrestations || []);
   const isReiki = prestation.slug.includes('reiki');
   const isRituel = prestation.slug.includes('rituel');
+  const isRituelVideo = prestation.slug === 'rituel-video';
   const isFormation = prestation.slug.includes('formation');
   
   // Déterminer le type de prestation pour adapter le texte
@@ -141,13 +142,19 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
             <Card className="bg-amber-700/5 border-amber-700/20">
               <div className="flex items-start gap-3">
                 <span className="text-2xl">💡</span>
-                <div className="flex-1 text-sm text-text-2">
+                <div className="glass-card p-6 border-gold-2/30">
                   <p className="font-semibold text-amber-700 mb-2">Comment commander {getPrestationType()} ?</p>
-                  <p className="leading-relaxed">
-                    Après avoir cliqué sur "Commander", vous serez redirigé vers le formulaire de commande. 
-                    <strong className="text-amber-700"> Pensez à bien détailler {getDetailText()} dans la case prévue à cet effet</strong> - plus vos informations sont précises, plus {getResultText()}. 
-                    Une fois le paiement effectué, vous recevrez {getDeliveryText()}.
-                  </p>
+                  {isRituelPDF ? (
+                    <p className="leading-relaxed">
+                      Après avoir cliqué sur "Commander", vous arriverez sur la page produit. Choisissez le rituel qui vous convient, effectuez le paiement, et le PDF sera téléchargeable immédiatement. Vous pouvez alors le télécharger et commencer votre rituel.
+                    </p>
+                  ) : (
+                    <p className="leading-relaxed">
+                      Après avoir cliqué sur "Commander", vous serez redirigé vers le formulaire de commande. 
+                      <strong className="text-amber-700"> Pensez à bien détailler {getDetailText()} dans la case prévue à cet effet</strong> - plus vos informations sont précises, plus {getResultText()}. 
+                      Une fois le paiement effectué, vous recevrez {getDeliveryText()}.
+                    </p>
+                  )}
                 </div>
               </div>
             </Card>
