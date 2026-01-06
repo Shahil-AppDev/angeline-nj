@@ -239,10 +239,6 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                     <>
                       <li className="flex items-center gap-2">
                         <span className="text-gold">✓</span>
-                        Livraison rapide sous 48h
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="text-gold">✓</span>
                         Paiement sécurisé
                       </li>
                       <li className="flex items-center gap-2">
