@@ -37,6 +37,16 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                       product.title.toLowerCase().includes('formation');
   
   const isDigital = product.is_digital || product.category === 'rituels';
+  const isRituel = product.category === 'rituels';
+  
+  // Récupérer les autres produits de la même catégorie
+  const relatedProducts = isRituel 
+    ? productsData.filter(p => p.category === 'rituels' && p.slug !== product.slug).slice(0, 4)
+    : [];
+  
+  // Déterminer le lien de retour selon la catégorie
+  const backLink = isRituel ? '/boutique/rituels' : '/boutique';
+  const backText = isRituel ? 'Retour aux rituels' : 'Retour à la boutique';
 
   return (
     <>
@@ -45,10 +55,10 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
       <section className="pt-32 pb-16 min-h-screen">
         <div className="container-custom">
           <Link 
-            href="/boutique" 
+            href={backLink}
             className="inline-flex items-center text-gold hover:text-gold-2 mb-8 transition-colors"
           >
-            ← Retour à la boutique
+            ← {backText}
           </Link>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -189,6 +199,51 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
               </div>
             </div>
           </div>
+
+          {/* Section Autres Rituels */}
+          {isRituel && relatedProducts.length > 0 && (
+            <div className="mt-16">
+              <h2 className="font-serif text-3xl font-bold text-gold font-title mb-8 text-center">
+                Autres rituels
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {relatedProducts.map((relatedProduct) => (
+                  <Link
+                    key={relatedProduct.slug}
+                    href={`/produit/${relatedProduct.slug}`}
+                    className="group glass-card hover:border-gold-2/50 transition-all duration-300"
+                  >
+                    <div className="aspect-square bg-surface rounded-lg overflow-hidden relative mb-4">
+                      {relatedProduct.image ? (
+                        <NextImage
+                          src={relatedProduct.image}
+                          alt={relatedProduct.title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-300"
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        />
+                      ) : (
+                        <div className="w-full h-full bg-gradient-to-br from-gold-3/20 to-gold-2/20 flex items-center justify-center">
+                          <span className="text-6xl">✨</span>
+                        </div>
+                      )}
+                    </div>
+                    <div className="p-4">
+                      <span className="inline-block px-2 py-1 bg-gold-2/20 text-gold-2 text-xs rounded-full mb-2">
+                        {relatedProduct.category_name}
+                      </span>
+                      <h3 className="font-serif text-lg font-semibold text-gold mb-2 group-hover:text-gold-2 transition-colors">
+                        {relatedProduct.title}
+                      </h3>
+                      <p className="text-2xl font-bold text-gold">
+                        {relatedProduct.price.toFixed(2)}€
+                      </p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
