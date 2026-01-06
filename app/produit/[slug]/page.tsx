@@ -201,11 +201,11 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="text-gold">✓</span>
-                        Réservation par email après paiement
+                        Réservation sur mes réseaux après paiement
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="text-gold">✓</span>
-                        Compte-rendu détaillé envoyé
+                        Paiement sécurisé
                       </li>
                     </>
                   ) : isDigital ? (
