@@ -58,14 +58,39 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
                   </span>
                 </div>
                 <p className="text-xl text-text-2 mb-4">{prestation.subtitle}</p>
-                <div className="flex items-center gap-6 text-text-2">
-                  <div>
-                    <span className="font-semibold text-primary text-2xl">{prestation.price}</span>
+                
+                {prestation.slug === 'tirage-visio' ? (
+                  <div className="space-y-3 mb-4">
+                    <div className="flex items-center gap-3">
+                      <div className="glass-card px-4 py-2 border-gold-2/30">
+                        <span className="text-gold-2 font-semibold">30 min</span>
+                        <span className="text-gold text-xl font-bold ml-2">50€</span>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="glass-card px-4 py-2 border-gold-2/30">
+                        <span className="text-gold-2 font-semibold">45 min</span>
+                        <span className="text-gold text-xl font-bold ml-2">70€</span>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="glass-card px-4 py-2 border-gold-2/30">
+                        <span className="text-gold-2 font-semibold">60 min</span>
+                        <span className="text-gold text-xl font-bold ml-2">90€</span>
+                      </div>
+                    </div>
+                    <div className="text-sm text-text-2 mt-2">{prestation.format}</div>
                   </div>
-                  <div className="text-sm">
-                    <div>{prestation.format}</div>
+                ) : (
+                  <div className="flex items-center gap-6 text-text-2">
+                    <div>
+                      <span className="font-semibold text-primary text-2xl">{prestation.price}</span>
+                    </div>
+                    <div className="text-sm">
+                      <div>{prestation.format}</div>
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             </div>
 
@@ -89,7 +114,7 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
                   <p className="font-semibold text-amber-700 mb-2">Comment commander {isReiki ? 'ce soin' : 'ce tirage'} ?</p>
                   <p className="leading-relaxed">
                     Après avoir cliqué sur "Commander", vous serez redirigé vers le formulaire de commande. 
-                    <strong className="text-text"> Pensez à bien détailler {isReiki ? 'votre intention et situation' : 'votre question ou situation'} dans la case prévue à cet effet</strong> - plus vos informations sont précises, plus {isReiki ? 'le soin sera adapté' : 'votre tirage sera personnalisé et pertinent'}. 
+                    <strong className="text-amber-700"> Pensez à bien détailler {isReiki ? 'votre intention et situation' : 'votre question ou situation'} dans la case prévue à cet effet</strong> - plus vos informations sont précises, plus {isReiki ? 'le soin sera adapté' : 'votre tirage sera personnalisé et pertinent'}. 
                     Une fois le paiement effectué, vous recevrez {isReiki ? 'un email avec les instructions' : 'votre vidéo par email sous ' + (prestation.format.includes('24h') ? '24h' : '48h') + ' maximum'}.
                   </p>
                 </div>
