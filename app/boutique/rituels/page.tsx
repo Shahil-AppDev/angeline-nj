@@ -84,10 +84,10 @@ export default function RituelsPage() {
                             {product.price.toFixed(2)}€
                           </span>
                           <Link 
-                            href={`/produit/${product.slug}`}
+                            href="/contact"
                             className="btn-primary group text-sm py-2 px-6"
                           >
-                            <span>Voir</span>
+                            <span>Acheter</span>
                             <span className="btn-shimmer"></span>
                           </Link>
                         </div>
@@ -148,10 +148,10 @@ export default function RituelsPage() {
                             {product.price.toFixed(2)}€
                           </span>
                           <Link 
-                            href={`/produit/${product.slug}`}
+                            href="/contact"
                             className="btn-primary group text-sm py-2 px-6"
                           >
-                            <span>Voir</span>
+                            <span>Acheter</span>
                             <span className="btn-shimmer"></span>
                           </Link>
                         </div>
