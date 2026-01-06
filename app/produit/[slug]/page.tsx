@@ -129,10 +129,10 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                   <span>Acheter</span>
                 </a>
                 <Link 
-                  href="/contact"
+                  href="/blog"
                   className="btn-gold flex-1 text-center"
                 >
-                  <span>Poser une question</span>
+                  <span>Consulter le blog</span>
                 </Link>
               </div>
 

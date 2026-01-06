@@ -75,9 +75,9 @@ export default function PrestationClientContent({ prestation }: { prestation: Pr
                   Commander
                 </Button>
               </a>
-              <Link href="/contact" className="flex-1 sm:flex-initial">
+              <Link href="/blog" className="flex-1 sm:flex-initial">
                 <Button variant="primary" size="lg" className="w-full sm:w-auto">
-                  Poser une question
+                  Consulter le blog
                 </Button>
               </Link>
             </div>
