@@ -156,7 +156,22 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                   Informations
                 </h3>
                 <ul className="space-y-2 text-text-2">
-                  {isFormation ? (
+                  {isMesPrestations ? (
+                    <>
+                      <li className="flex items-center gap-2">
+                        <span className="text-gold">✓</span>
+                        Vidéo livrée sous 48h maximum
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-gold">✓</span>
+                        Prestation 100% à distance
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-gold">✓</span>
+                        Paiement sécurisé
+                      </li>
+                    </>
+                  ) : isFormation ? (
                     <>
                       <li className="flex items-center gap-2">
                         <span className="text-gold">✓</span>
