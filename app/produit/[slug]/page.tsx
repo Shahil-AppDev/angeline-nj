@@ -41,6 +41,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
   const isRituelPDF = isRituel && product.category_name === 'Rituel PDF';
   const isRituelVideo = isRituel && product.category_name === 'Rituel Vidéo';
   const isReiki = product.slug === 'reiki-a-distance';
+  const isMesPrestations = product.category === 'mes-prestations';
   
   // Récupérer les autres produits de la même catégorie
   const relatedProducts = isRituel 
