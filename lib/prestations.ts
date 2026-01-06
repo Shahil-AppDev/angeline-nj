@@ -34,19 +34,21 @@ export const prestations: Prestation[] = [
     price: '40€',
     format: 'Soin à distance avec compte-rendu',
     oldSiteUrl: 'https://angeline-nj.xyz/produit/reiki-a-distance',
-    intro: 'Le Reiki à distance est une méthode de soin énergétique puissante qui transcende les barrières physiques. Le praticien canalise l\'énergie universelle et la transmet par visualisation pour activer votre processus naturel de guérison, où que vous soyez.',
+    intro: 'Le Reiki est une forme de thérapie alternative qui provient du Japon. Il s\'agit d\'une pratique spirituelle qui utilise une technique dite de « soins par imposition des mains » pour transférer une forme d\'énergie universelle de l\'agent thérapeutique (praticien de Reiki) au patient, dans le but de soutenir la capacité de guérison naturelle du corps et de promouvoir le bien-être global.',
     forWho: [
-      'Vous ressentez un déséquilibre énergétique',
-      'Vous traversez une période de stress ou d\'anxiété',
-      'Vous souhaitez un soin de bien-être global',
-      'Vous cherchez à harmoniser votre corps et votre esprit',
+      'Vous souhaitez améliorer votre bien-être physique et émotionnel',
+      'Vous cherchez à équilibrer votre énergie vitale (chi ou qi)',
+      'Vous traversez une période de stress ou de dépression',
+      'Vous souhaitez améliorer votre sommeil et votre concentration',
     ],
     whatYouGet: [
-      'Un soin énergétique complet à distance',
-      'Rééquilibrage de vos centres énergétiques',
-      'Un compte-rendu détaillé du soin',
-      'Conseils personnalisés pour votre bien-être',
-      'Suivi après le soin',
+      'Augmentation de la confiance en soi',
+      'Regain d\'énergie, lutte contre le stress et la dépression',
+      'Amélioration du sommeil et réduction des dépendances',
+      'Relaxation et amélioration de la concentration',
+      'Soulagement des douleurs et accélération de la guérison',
+      'Amélioration de la digestion',
+      'Sentiment de paix et d\'équilibre',
     ],
     process: [
       {
@@ -77,8 +79,8 @@ export const prestations: Prestation[] = [
     ],
     faq: [
       {
-        question: 'Comment fonctionne le Reiki à distance ?',
-        answer: 'Le Reiki transcende l\'espace et le temps. Le praticien se connecte à votre énergie par visualisation et intention, permettant une transmission efficace de l\'énergie de guérison.',
+        question: 'À quoi sert le Reiki ?',
+        answer: 'Le Reiki est utilisé pour améliorer le bien-être physique et émotionnel. Il aide à équilibrer l\'énergie vitale d\'une personne, souvent appelée « chi » ou « qi », qui peut être déséquilibrée ou bloquée en raison du stress, de la maladie ou des blessures.',
       },
       {
         question: 'Que dois-je faire pendant le soin ?',
