@@ -142,7 +142,7 @@ export default function AstrologiePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`glass-card p-8 hover:scale-105 transition-transform ${tool.featured ? 'border-2 border-primary bg-primary/5' : ''}`}
+                className={`glass-card p-8 hover:scale-105 transition-transform flex flex-col ${tool.featured ? 'border-2 border-primary bg-primary/5' : ''}`}
               >
                 {tool.featured && (
                   <div className="text-center mb-2">
@@ -153,12 +153,12 @@ export default function AstrologiePage() {
                 <h3 className="text-2xl font-semibold text-gold mb-3 font-title text-center">
                   {tool.title}
                 </h3>
-                <p className="text-text-2 mb-6 text-center">
+                <p className="text-text-2 mb-6 text-center flex-1">
                   {tool.description}
                 </p>
                 <Link 
                   href={tool.href}
-                  className="btn-primary w-full text-center block"
+                  className="btn-primary w-full text-center block mt-auto"
                 >
                   <span>{tool.cta}</span>
                 </Link>
@@ -206,7 +206,7 @@ export default function AstrologiePage() {
                       <span className="px-3 py-1 bg-primary/20 rounded-full text-primary text-xs font-semibold">NOUVEAU</span>
                     </div>
                   )}
-                  <Link href={horoscope.href} className="btn-gold w-full block text-center">
+                  <Link href={horoscope.href} className="btn-gold w-full block text-center mt-auto">
                     <span>Découvrir</span>
                   </Link>
                 </div>
@@ -223,12 +223,12 @@ export default function AstrologiePage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className={`glass-card p-8 hover:scale-105 transition-transform ${guide.featured ? 'border-primary bg-primary/5' : ''}`}>
+                <div className={`glass-card p-8 hover:scale-105 transition-transform flex flex-col h-full ${guide.featured ? 'border-primary bg-primary/5' : ''}`}>
                   <div className="text-6xl mb-4 text-center">{guide.icon}</div>
-                  <h3 className="text-2xl font-semibold text-gold inline-block mb-2 font-title text-center">
+                  <h3 className="text-2xl font-semibold text-gold mb-2 font-title text-center">
                     {guide.title}
                   </h3>
-                  <p className="text-text-2 text-center mb-6">
+                  <p className="text-text-2 text-center mb-6 flex-1">
                     {guide.description}
                   </p>
                   {guide.featured && (
@@ -236,7 +236,7 @@ export default function AstrologiePage() {
                       <span className="px-3 py-1 bg-primary/20 rounded-full text-primary text-xs font-semibold">NOUVEAU</span>
                     </div>
                   )}
-                  <Link href={guide.href} className="btn-gold w-full block text-center">
+                  <Link href={guide.href} className="btn-gold w-full block text-center mt-auto">
                     <span>Découvrir</span>
                   </Link>
                 </div>
