@@ -95,7 +95,7 @@ export default function BoutiquePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="glass-card p-6 group"
+                className="glass-card p-6 group flex flex-col h-full"
               >
                 <div className="aspect-square bg-surface rounded-lg mb-4 flex items-center justify-center overflow-hidden">
                   {product.thumbnail ? (
@@ -115,11 +115,11 @@ export default function BoutiquePage() {
                   {product.title}
                 </h3>
                 
-                <p className="text-text-2 text-sm mb-4 line-clamp-2">
+                <p className="text-text-2 text-sm mb-4 line-clamp-2 flex-1">
                   {product.description || product.category_name}
                 </p>
                 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between mt-auto">
                   <div className="flex flex-col">
                     {product.on_sale && product.regular_price && (
                       <span className="text-sm text-muted line-through">
