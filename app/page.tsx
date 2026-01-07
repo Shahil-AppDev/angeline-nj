@@ -98,10 +98,10 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="text-center lg:text-left"
             >
-              <h1 className="font-title text-gold text-center lg:text-left mb-6 max-w-[18ch] sm:max-w-[22ch] lg:max-w-[28ch] mx-auto lg:mx-0 leading-[1.08] tracking-tight" style={{ fontSize: 'clamp(28px, 3.6vw, 54px)' }}>
+              <h1 className="font-title text-gold text-center lg:text-left mb-6 max-w-[18ch] sm:max-w-[22ch] lg:max-w-[28ch] mx-auto lg:mx-0 leading-[1.08] tracking-tight text-[clamp(28px,3.6vw,54px)]">
                 Guidance Spirituelle & Soins Énergétiques : Éclairez votre Chemin avec Angeline NJ
               </h1>
-              <p className="text-text-2 text-center lg:text-left mb-8 leading-relaxed max-w-[60ch] mx-auto lg:mx-0 mt-4" style={{ fontSize: 'clamp(14px, 1.6vw, 18px)' }}>
+              <p className="text-text-2 text-center lg:text-left mb-8 leading-relaxed max-w-[60ch] mx-auto lg:mx-0 mt-4 text-[clamp(14px,1.6vw,18px)]">
                 Bienvenue dans l’univers d’Angeline NJ, un sanctuaire dédié à l’éveil spirituel, à la cartomancie et aux soins énergétiques par le Reiki à distance.
               </p>
               

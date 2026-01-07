@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://angeline-nj.fr/sitemap.xml
+Sitemap: https://angeline-nj.xyz/sitemap.xml
