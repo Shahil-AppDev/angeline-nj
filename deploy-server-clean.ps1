@@ -105,17 +105,17 @@ ssh $SERVER $commands
 if ($LASTEXITCODE -eq 0) {
     Write-Host "`nâœ… DÃ‰PLOIEMENT RÃ‰USSI!" -ForegroundColor Green
     Write-Host "`nðŸ“‹ RÃ‰SUMÃ‰:" -ForegroundColor Cyan
-    Write-Host "- Application dÃ©ployÃ©e sur le port 4000" -ForegroundColor White
-    Write-Host "- PM2 configurÃ© et dÃ©marrÃ©" -ForegroundColor White
-    Write-Host "- Nginx configurÃ© pour angeline-nj.xyz" -ForegroundColor White
-    Write-Host "`nâš ï¸ N'oubliez pas:" -ForegroundColor Yellow
-    Write-Host "1. Configurer le DNS" -ForegroundColor White
-    Write-Host "2. Installer le certificat SSL" -ForegroundColor White
+Write-Host "- Application dÃ©ployÃ©e sur le port 4000" -ForegroundColor White
+Write-Host "- PM2 configurÃ© et dÃ©marrÃ©" -ForegroundColor White
+Write-Host "- Nginx configurÃ© pour angeline-nj.xyz" -ForegroundColor White
+Write-Host "`nâš ï¸ N'oubliez pas:" -ForegroundColor Yellow
+Write-Host "1. Configurer le DNS" -ForegroundColor White
+Write-Host "2. Installer le certificat SSL" -ForegroundColor White
 }
 else {
-    Write-Host "`nâŒ ERREUR LORS DU DÃ‰PLOIEMENT" -ForegroundColor Red
-    Write-Host "VÃ©rifiez les logs ci-dessus pour plus de dÃ©tails" -ForegroundColor Yellow
-    Exit 1
+  Write-Host "`nâŒ ERREUR LORS DU DÃ‰PLOIEMENT" -ForegroundColor Red
+  Write-Host "VÃ©rifiez les logs ci-dessus pour plus de dÃ©tails" -ForegroundColor Yellow
+  Exit 1
 }
 
 
