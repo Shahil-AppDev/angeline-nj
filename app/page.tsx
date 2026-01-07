@@ -1,8 +1,8 @@
 'use client';
 
 import Footer from '@/components/Footer';
-import Navbar from '@/components/Navbar';
 import JsonLd from '@/components/JsonLd';
+import Navbar from '@/components/Navbar';
 import TestimonialCard from '@/components/TestimonialCard';
 import TirageCard from '@/components/TirageCard';
 import AuroraGlow from '@/components/background/AuroraGlow';
@@ -147,6 +147,7 @@ export default function Home() {
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 400px"
                       priority
+                      loading="eager"
                     />
                   </motion.div>
                   <p className="text-center text-muted text-sm mt-6">Tirages personnalisés</p>
