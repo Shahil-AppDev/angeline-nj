@@ -194,13 +194,14 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
             {services.map((service, index) => (
-              <TirageCard
-                key={service.href}
-                {...service}
-                delay={index * 0.1}
-              />
+              <div key={service.href} className="flex">
+                <TirageCard
+                  {...service}
+                  delay={index * 0.1}
+                />
+              </div>
             ))}
           </div>
         </div>

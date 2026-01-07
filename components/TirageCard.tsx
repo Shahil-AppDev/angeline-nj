@@ -20,9 +20,10 @@ export default function TirageCard({ title, description, icon, iconImage, href, 
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay }}
+      className="h-full w-full"
     >
-      <Link href={href} className="block group">
-        <div className="glass-card card-hover-lift p-8 h-full flex flex-col">
+      <Link href={href} className="block group h-full">
+        <div className="glass-card card-hover-lift p-8 h-full flex flex-col min-h-[400px]">
           <div className="mb-4 group-hover:scale-110 transition-transform duration-300">
             {iconImage ? (
               <div className="w-20 h-20 relative rounded-lg overflow-hidden">
@@ -41,12 +42,14 @@ export default function TirageCard({ title, description, icon, iconImage, href, 
           <h3 className="font-serif text-2xl font-semibold mb-3 font-title group-hover:text-gold-1 transition-colors">
             <span className="gold-halo text-gold inline-block">{title}</span>
           </h3>
-          <p className="text-text-2 leading-relaxed mb-6 flex-grow">
+          <p className="text-text-2 leading-relaxed mb-6 flex-1">
             {description}
           </p>
-          <button className="btn-gold w-full mt-auto">
-            <span>Découvrir</span>
-          </button>
+          <div className="mt-auto pt-4">
+            <button className="btn-gold w-full">
+              <span>Découvrir</span>
+            </button>
+          </div>
         </div>
       </Link>
     </motion.div>
