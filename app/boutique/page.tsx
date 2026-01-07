@@ -65,7 +65,7 @@ export default function BoutiquePage() {
                 L'ésotérisme moderne ne consiste pas à accumuler des objets, mais à choisir des alliés qui résonnent avec votre âme. Que vous cherchiez un <strong>oracle</strong> pour vos tirages matinaux, une <strong>pierre de lithothérapie</strong> pour apaiser votre anxiété, ou de l'<strong>encens naturel</strong> pour purifier votre intérieur, vous trouverez ici des produits authentiques. Ma boutique est le reflet de ma propre pratique : exigeante, lumineuse et ancrée dans le respect de la nature et des traditions sacrées.
               </p>
               <p className="p-4 bg-surface/50 rounded-lg border border-gold-2/20">
-                <strong>Votre confiance est ma priorité.</strong> Chaque commande est préparée par mes soins avec une attention particulière. Les produits sont purifiés énergétiquement avant envoi et emballés avec des matériaux respectueux de l'environnement dès que possible. Je m'engage sur la qualité et l'authenticité de chaque cristal et de chaque accessoire proposé.
+                <strong>Votre confiance est ma priorité.</strong> Chaque commande est préparée par mes soins avec une attention particulière. Les produits sont purifiés énergétiquement avant envoi et emballés avec des matériaux respectueux de l'environnement. Je m'engage sur la qualité et l'authenticité de chaque cristal et de chaque accessoire proposé.
               </p>
             </div>
 

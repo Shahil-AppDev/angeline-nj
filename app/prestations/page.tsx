@@ -68,7 +68,7 @@ export default function PrestationsPage() {
                     <div className="flex gap-2 w-full sm:w-auto">
                       <a href={prestation.oldSiteUrl} target="_blank" rel="noopener noreferrer">
                         <Button variant="primary" size="sm">
-                          Commander
+                          Découvrir
                         </Button>
                       </a>
                     </div>
