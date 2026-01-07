@@ -2,6 +2,7 @@
 
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
+import JsonLd from '@/components/JsonLd';
 import TestimonialCard from '@/components/TestimonialCard';
 import TirageCard from '@/components/TirageCard';
 import AuroraGlow from '@/components/background/AuroraGlow';
@@ -65,8 +66,24 @@ const testimonials = [
 ];
 
 export default function Home() {
+  const organizationData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Angeline NJ",
+    "url": "https://angeline-nj.xyz",
+    "logo": "https://angeline-nj.xyz/icon.png",
+    "description": "Cartomancie, Voyance & Reiki à Distance avec Angeline NJ.",
+    "sameAs": [
+      "https://www.tiktok.com/@angelinenj",
+      "https://www.instagram.com/reiki.by.angie",
+      "https://youtube.com/@angelinenj-j7z",
+      "https://www.facebook.com/share/1AdgYgoytY/"
+    ]
+  };
+
   return (
     <>
+      <JsonLd data={organizationData} />
       <Navbar />
       
       <section className="relative min-h-[calc(100svh-72px)] flex items-center py-10 md:py-12 overflow-hidden">
