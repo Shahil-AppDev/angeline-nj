@@ -11,6 +11,7 @@ const navLinks = [
   { href: '/astrologie', label: 'Astrologie' },
   { href: '/formations', label: 'Formations' },
   { href: '/blog', label: 'Blog' },
+  { href: '/boutique/rituels', label: 'Rituels' },
   { href: '/boutique', label: 'Boutique' },
   { href: '/a-propos', label: 'À propos' },
   { href: '/contact', label: 'Contact' },
