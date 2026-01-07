@@ -57,17 +57,17 @@ export default function PrestationsPage() {
                     </div>
                   </div>
 
-                  <p className="text-text-2 mb-6 flex-1 whitespace-pre-line">
+                  <p className="text-text-2 mb-6 flex-grow whitespace-pre-line">
                     {prestation.shortDescription}
                   </p>
 
-                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-4 border-t border-border">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-4 border-t border-border mt-auto">
                     <div className="text-text-2 text-sm">
                       <div className="font-semibold text-primary text-lg whitespace-pre-line">{prestation.price}</div>
                     </div>
                     <div className="flex gap-2 w-full sm:w-auto">
-                      <a href={prestation.oldSiteUrl} target="_blank" rel="noopener noreferrer">
-                        <Button variant="primary" size="sm">
+                      <a href={prestation.oldSiteUrl} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                        <Button variant="primary" size="sm" className="w-full sm:w-auto">
                           Découvrir
                         </Button>
                       </a>

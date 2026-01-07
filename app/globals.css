@@ -783,6 +783,19 @@ a {
     opacity: 1;
   }
   
+  /* Alignement uniforme des boutons dans les cartes */
+  .btn-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: auto;
+    width: 100%;
+  }
+  
+  .btn-card-container > * {
+    width: 100%;
+  }
+  
   
   .section-padding {
     padding: var(--spacing-2xl) var(--spacing-md);
