@@ -1,5 +1,6 @@
 'use client';
 
+import JsonLd from '@/components/JsonLd';
 import Card from '@/components/ui/Card';
 import Section from '@/components/ui/Section';
 import { BlogPost } from '@/data/blog';
@@ -7,8 +8,23 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 export default function BlogPostClient({ post, relatedPosts }: { post: BlogPost, relatedPosts: BlogPost[] }) {
+  const faqSection = post.sections.find(s => s.type === 'faq');
+  const faqData = faqSection && faqSection.type === 'faq' ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqSection.value.map(item => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    }))
+  } : null;
+
   return (
     <article className="min-h-screen">
+      {faqData && <JsonLd data={faqData} />}
       <Section className="pt-32 pb-16">
         <div className="container-custom max-w-4xl">
           <motion.div

@@ -24,8 +24,8 @@ export async function sendNotificationEmail(booking: BookingEmailData) {
   
   try {
     await resend.emails.send({
-      from: 'Réservations <reservations@angeline-nj.fr>',
-      to: process.env.ADMIN_EMAIL || 'contact@angeline-nj.fr',
+      from: 'Réservations <reservations@angeline-nj.xyz>',
+      to: process.env.ADMIN_EMAIL || 'contact@angeline-nj.xyz',
       subject: `Nouvelle réservation - ${booking.prestation.title}`,
       html: emailHtml,
     });
@@ -104,8 +104,8 @@ function generateConfirmationEmailHTML(booking: BookingEmailData): string {
         
         <div class="footer">
           <p>Angeline NJ - Guidance Spirituelle & Soins Énergétiques</p>
-          <p>📧 contact@angeline-nj.fr | 📱 +33 1 23 45 67 89</p>
-          <p><a href="https://angeline-nj.fr">www.angeline-nj.fr</a></p>
+          <p>📧 contact@angeline-nj.xyz | 📱 +33 1 23 45 67 89</p>
+          <p><a href="https://angeline-nj.xyz">www.angeline-nj.xyz</a></p>
         </div>
       </div>
     </body>

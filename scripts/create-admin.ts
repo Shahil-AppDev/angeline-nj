@@ -8,7 +8,7 @@ async function main() {
 
   // ⚠️ CHANGEZ CES VALEURS AVANT D'EXÉCUTER LE SCRIPT
   const adminData = {
-    email: 'admin@angeline-nj.fr',
+    email: 'admin@angeline-nj.xyz',
     password: 'ChangeMotDePasse123!', // ⚠️ CHANGEZ CE MOT DE PASSE
     name: 'Angeline',
   };

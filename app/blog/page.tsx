@@ -21,10 +21,10 @@ export default function BlogPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="font-bold text-gold mb-6 font-title" style={{ fontSize: 'clamp(1.75rem, 4vw, 3.5rem)' }}>
+            <h1 className="responsive-h1 font-bold text-gold mb-6 font-title">
               Blog & Guidance
             </h1>
-            <p className="text-text-2 max-w-3xl mx-auto leading-relaxed" style={{ fontSize: 'clamp(1rem, 1.5vw, 1.25rem)' }}>
+            <p className="responsive-text-lg text-text-2 max-w-3xl mx-auto leading-relaxed">
               Découvrez nos articles experts sur la cartomancie, le Reiki et la spiritualité pour éclairer votre chemin quotidien.
             </p>
           </motion.div>
@@ -44,16 +44,16 @@ export default function BlogPage() {
                 <Link href={`/blog/${post.slug}`} className="block group h-full">
                   <Card hover className="h-full overflow-hidden flex flex-col">
                     <div className="aspect-video bg-gradient-to-br from-gold-3/20 to-gold-2/20 flex items-center justify-center text-6xl border-b border-border relative overflow-hidden">
-                      {post.cover.startsWith('/') ? (
+                      {post.cover.startsWith('/') || post.cover.startsWith('http') ? (
                         <NextImage
                           src={post.cover}
-                          alt={post.title}
+                          alt={post.imageAlt || post.title}
                           fill
                           className="object-cover"
                           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         />
                       ) : (
-                        post.cover
+                        <span role="img" aria-label={post.imageAlt || post.title}>{post.cover}</span>
                       )}
                     </div>
                     <div className="p-4 sm:p-6 flex flex-col flex-1">
@@ -67,7 +67,7 @@ export default function BlogPage() {
                           </span>
                         ))}
                       </div>
-                      <h2 className="font-semibold text-gold mb-3 group-hover:text-gold-1 transition-colors font-title" style={{ fontSize: 'clamp(1.125rem, 2vw, 1.5rem)' }}>
+                      <h2 className="responsive-h4 font-semibold text-gold mb-3 group-hover:text-gold-1 transition-colors font-title">
                         {post.title}
                       </h2>
                       <p className="text-text-2 mb-4 line-clamp-3 flex-1">

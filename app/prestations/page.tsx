@@ -21,10 +21,10 @@ export default function PrestationsPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="font-bold text-gold mb-6 font-title" style={{ fontSize: 'clamp(1.75rem, 4vw, 3.5rem)' }}>
+            <h1 className="responsive-h1 font-bold text-gold mb-6 font-title">
               Mes Prestations
             </h1>
-            <p className="text-text-2 max-w-3xl mx-auto leading-relaxed" style={{ fontSize: 'clamp(1rem, 1.5vw, 1.25rem)' }}>
+            <p className="responsive-text-lg text-text-2 max-w-3xl mx-auto leading-relaxed">
               Choisissez le tirage qui correspond à votre situation. Chaque prestation est réalisée avec bienveillance et authenticité pour vous guider sur votre chemin.
             </p>
           </motion.div>

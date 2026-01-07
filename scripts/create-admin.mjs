@@ -14,7 +14,7 @@ async function main() {
 
   // ⚠️ CHANGEZ CES VALEURS SI NÉCESSAIRE
   const adminData = {
-    email: 'admin@angeline-nj.fr',
+    email: 'admin@angeline-nj.xyz',
     password: 'VotreMotDePasseSecurise123!',
     name: 'Angeline',
   };

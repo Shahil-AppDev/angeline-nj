@@ -14,7 +14,7 @@ export const EXTERNAL_LINKS = {
   booking: '/prendre-rdv', // ou URL externe type Calendly
   
   // Contact
-  email: 'contact@angeline-nj.fr',
+  email: 'contact@angeline-nj.xyz',
   phone: '+33 6 XX XX XX XX', // À mettre à jour
 } as const;
 

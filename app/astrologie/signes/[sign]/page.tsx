@@ -1,6 +1,7 @@
 'use client';
 
 import Footer from '@/components/Footer';
+import JsonLd from '@/components/JsonLd';
 import Navbar from '@/components/Navbar';
 import { ZodiacSign } from '@/lib/astrology/types';
 import { zodiacSigns } from '@/lib/astrology/zodiacData';
@@ -31,6 +32,29 @@ export default function SignePage({ params }: { params: Promise<{ sign: string }
 
   return (
     <>
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": `${signData.name} - Signe Astrologique du Zodiaque`,
+        "description": signData.description,
+        "image": "https://angeline-nj.xyz/og-image.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Angeline NJ"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Angeline NJ",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://angeline-nj.xyz/icon.png"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": `https://angeline-nj.xyz/astrologie/signes/${sign}`
+        }
+      }} />
       <Navbar />
       
       <section className="pt-32 pb-16 aurora-background">

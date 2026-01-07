@@ -1,4 +1,5 @@
 import Footer from '@/components/Footer';
+import JsonLd from '@/components/JsonLd';
 import Navbar from '@/components/Navbar';
 import productsData from '@/data/products.json';
 import { Metadata } from 'next';
@@ -54,6 +55,24 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
 
   return (
     <>
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": product.title,
+        "image": product.image,
+        "description": product.description.replace(/<[^>]*>?/gm, '').slice(0, 160),
+        "brand": {
+          "@type": "Brand",
+          "name": "Angeline NJ"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": `https://angeline-nj.xyz/produit/${product.slug}`,
+          "priceCurrency": "EUR",
+          "price": product.price,
+          "availability": product.in_stock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock"
+        }
+      }} />
       <Navbar />
       
       <section className="pt-32 pb-16 min-h-screen">

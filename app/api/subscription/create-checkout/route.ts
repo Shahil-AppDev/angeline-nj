@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const userEmail = 'contact@angeline-nj.fr';
+    const userEmail = 'contact@angeline-nj.xyz';
 
     const checkoutUrl = await createCheckoutSession(planId, userEmail);
 

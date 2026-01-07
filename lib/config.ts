@@ -1,10 +1,10 @@
 export const siteConfig = {
   name: 'Angeline NJ',
   description: 'Cartomancie et guidance spirituelle pour éclairer votre chemin avec bienveillance et authenticité.',
-  url: 'https://angeline-nj.fr',
+  url: 'https://angeline-nj.xyz',
   
   contact: {
-    email: 'contact@angeline-nj.fr',
+    email: 'contact@angeline-nj.xyz',
     phone: '+33123456789',
     whatsapp: 'https://wa.me/33123456789',
     calendly: 'https://calendly.com/angeline-nj',

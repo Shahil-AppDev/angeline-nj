@@ -6,6 +6,7 @@ export interface BlogPost {
   date: string;
   tags: string[];
   cover: string;
+  imageAlt?: string;
   category: string;
   sections: BlogSection[];
 }
@@ -29,6 +30,7 @@ export const blogPosts: BlogPost[] = [
     "category": "Oracles",
     "metaDescription": "Découvrez les oracles créés par Angeline NJ : Le Mystica, L'Éveil Intérieur, T'es pas prête... Des outils divinatoires uniques pour votre développement spirituel.",
     "h1": "Les Oracles d'Angeline NJ : Des créations uniques pour votre guidance spirituelle",
+    "imageAlt": "Collection d'oracles divinatoires créés par Angeline NJ comprenant Le Mystica et l'Éveil Intérieur",
     "sections": [
       { "type": "p", "value": "Vous rêvez de maîtriser l'art des oracles divinatoires et de posséder vos propres jeux créés par une experte ? Angeline NJ vous propose une collection unique d'oracles divinatoires ET une formation complète pour apprendre à les utiliser comme une professionnelle. Investissez dans votre avenir spirituel dès aujourd'hui !" },
       { "type": "h2", "value": "Pourquoi choisir un oracle créé par Angeline NJ ?" },
@@ -54,7 +56,7 @@ export const blogPosts: BlogPost[] = [
       ]},
       { "type": "h2", "value": "Pourquoi investir dans un oracle Angeline NJ ?" },
       { "type": "p", "value": "Angeline NJ utilise ces oracles dans ses consultations payantes quotidiennes. Leur efficacité est prouvée ! En les achetant ET en suivant la Formation Oracles Divinatoires, vous obtenez les mêmes outils et compétences qu'une professionnelle. Investissement total : à partir de 86€ (formation 49€ + oracle 37€)." },
-      { "type": "cta", "value": "🎯 PACK COMPLET : Formation Oracles Divinatoires (49€) + Oracle de votre choix = Démarrez votre activité ! Visitez la boutique pour choisir votre oracle et inscrivez-vous à la formation pour maîtriser l'art divinatoire. Stocks limités !" }
+      { "type": "cta", "value": "🎯 PACK COMPLET : Formation Oracles Divinatoires (49€) + Oracle de votre choix = Démarrez votre activité ! <a href='/boutique' class='text-gold hover:underline'>Visitez la boutique</a> pour choisir votre oracle et <a href='/prestations/formations' class='text-gold hover:underline'>inscrivez-vous à la formation</a> pour maîtriser l'art divinatoire. Stocks limités !" }
     ]
   },
   {
@@ -66,6 +68,7 @@ export const blogPosts: BlogPost[] = [
     "category": "Oracles",
     "metaDescription": "Vous hésitez entre les différents oracles d'Angeline NJ ? Découvrez quel oracle correspond le mieux à vos besoins et votre niveau.",
     "h1": "Comment choisir votre oracle Angeline NJ : Guide complet",
+    "imageAlt": "Guide illustré pour choisir son oracle divinatoire Angeline NJ selon son niveau de pratique",
     "sections": [
       { "type": "p", "value": "Vous voulez investir dans un oracle divinatoire professionnel mais ne savez pas lequel choisir ? Ce guide vous aide à sélectionner l'oracle parfait pour VOTRE activité, combiné à la Formation Oracles Divinatoires pour maximiser votre investissement." },
       { "type": "h2", "value": "Pour les débutants : par où commencer ?" },
@@ -93,7 +96,7 @@ export const blogPosts: BlogPost[] = [
       ]},
       { "type": "h2", "value": "Puis-je avoir plusieurs oracles ?" },
       { "type": "p", "value": "OUI ! Stratégie recommandée : 1) Formation (49€) + 1 oracle (37-59€) pour démarrer. 2) Après vos premières consultations payantes, réinvestissez dans un 2ème oracle pour diversifier votre offre. 3) Ajoutez Les 12 Étoiles (12€) pour des consultations premium. Chaque oracle = nouvelle source de revenus !" },
-      { "type": "cta", "value": "💰 INVESTISSEZ MALIN : Formation Oracles Divinatoires (49€) + Oracle au choix = Votre activité de consultation démarre ! Rendez-vous dans la boutique pour choisir votre pack et dans les formations pour vous inscrire. Stocks limités !" }
+      { "type": "cta", "value": "💰 INVESTISSEZ MALIN : Formation Oracles Divinatoires (49€) + Oracle au choix = Votre activité de consultation démarre ! <a href='/boutique' class='text-gold hover:underline'>Rendez-vous dans la boutique</a> pour choisir votre pack et dans les <a href='/prestations/formations' class='text-gold hover:underline'>formations</a> pour vous inscrire. Stocks limités !" }
     ]
   },
   {
@@ -105,6 +108,7 @@ export const blogPosts: BlogPost[] = [
     "category": "Oracles",
     "metaDescription": "Ne manquez pas les éditions limitées des oracles d'Angeline NJ. Découvrez les packs exclusifs et coffrets collectors disponibles.",
     "h1": "Éditions limitées et packs exclusifs : Les oracles collectors d'Angeline NJ",
+    "imageAlt": "Packs exclusifs et éditions limitées des oracles Angeline NJ en coffrets collectors",
     "sections": [
       { "type": "p", "value": "ÉCONOMISEZ GROS avec les packs exclusifs d'Angeline NJ ! Ces offres limitées combinent plusieurs oracles divinatoires à prix réduit. Parfait pour démarrer votre activité de consultation avec plusieurs outils professionnels sans exploser votre budget." },
       { "type": "h2", "value": "Les packs exclusifs actuellement disponibles" },
@@ -131,7 +135,7 @@ export const blogPosts: BlogPost[] = [
       { "type": "p", "value": "OUI ! Calcul simple : Pack à 69-79€ + Formation 49€ = 118-128€. Vous proposez des consultations à 30-50€. Après 3-5 clients, vous êtes remboursé(e) et tout le reste est PROFIT. Les packs sont l'investissement le plus intelligent pour démarrer rapidement." },
       { "type": "h2", "value": "Les éditions passées qui ont marqué" },
       { "type": "p", "value": "STRATÉGIE GAGNANTE : 1) Achetez un pack limité maintenant. 2) Suivez la Formation Oracles Divinatoires. 3) Commencez vos consultations. 4) Réinvestissez vos premiers gains dans d'autres oracles. Construisez votre empire spirituel étape par étape !" },
-      { "type": "cta", "value": "🔥 OFFRE LIMITÉE : Packs exclusifs + Formation Oracles Divinatoires = Votre business clé en main ! Boutique pour les packs, Formations pour apprendre. Stocks partent vite, ne tardez pas !" }
+      { "type": "cta", "value": "🔥 OFFRE LIMITÉE : Packs exclusifs + Formation Oracles Divinatoires = Votre business clé en main ! <a href='/boutique' class='text-gold hover:underline'>Boutique pour les packs</a>, <a href='/prestations/formations' class='text-gold hover:underline'>Formations pour apprendre</a>. Stocks partent vite, ne tardez pas !" }
     ]
   },
   {
@@ -143,6 +147,7 @@ export const blogPosts: BlogPost[] = [
     "category": "Oracles",
     "metaDescription": "Découvrez comment conserver, nettoyer et utiliser vos oracles. Conseils pratiques sur l'énergie, le rangement et les meilleurs moments pour consulter vos cartes.",
     "h1": "Conseils pour utiliser et entretenir vos oracles au quotidien",
+    "imageAlt": "Pratique quotidienne des oracles divinatoires et conseils d'entretien énergétique des cartes",
     "sections": [
       { "type": "p", "value": "Les oracles sont bien plus que de simples cartes : ce sont des outils de guidance spirituelle qui peuvent vous accompagner au quotidien. Découvrez pourquoi tant de personnes intègrent les oracles dans leur routine et comment en prendre soin pour préserver leur énergie." },
       { "type": "h2", "value": "Pourquoi les oracles sont-ils si puissants ?" },
@@ -234,7 +239,7 @@ export const blogPosts: BlogPost[] = [
       ]},
       { "type": "h2", "value": "Pourquoi choisir des oracles de qualité ?" },
       { "type": "p", "value": "La qualité de vos oracles influence directement la qualité de votre pratique. Des cartes créées avec intention, imprimées sur du papier de qualité et illustrées avec soin portent une énergie différente. Les oracles Angeline NJ sont conçus avec cette conscience spirituelle : chaque carte est pensée pour transmettre un message clair et bienveillant. Investir dans des oracles de qualité, c'est investir dans votre développement spirituel." },
-      { "type": "cta", "value": "✨ Vous souhaitez approfondir votre pratique des oracles ? Découvrez nos formations complètes pour maîtriser l'art divinatoire et nos oracles créés avec intention dans la boutique. Pour des conseils personnalisés, contactez-moi !" }
+      { "type": "cta", "value": "✨ Vous souhaitez approfondir votre pratique des oracles ? Découvrez nos <a href='/prestations/formations' class='text-gold hover:underline'>formations complètes</a> pour maîtriser l'art divinatoire et nos oracles créés avec intention dans la <a href='/boutique' class='text-gold hover:underline'>boutique</a>. Pour des conseils personnalisés, <a href='/contact' class='text-gold hover:underline'>contactez-moi</a> !" }
     ]
   },
   {
